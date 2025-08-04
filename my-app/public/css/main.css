@@ -234,11 +234,15 @@ h6 {
 
 .header .logo {
   line-height: 1;
+  background-color: var(--accent-color);
+  padding:5px;
+  border-radius: 11px;
 }
 
 .header .logo img {
   max-height: 36px;
   margin-right: 8px;
+  border-radius: 11px;
 }
 
 .header .logo h1 {
@@ -247,6 +251,7 @@ h6 {
   font-weight: 700;
   color: var(--heading-color);
 }
+
 
 .header .cta-btn,
 .header .cta-btn:focus {
@@ -1691,6 +1696,12 @@ section,
   border-color: var(--accent-color);
 }
 
+.subscribe .php-email-form input[type=email]:focus{
+  box-shadow: var(--accent-color);
+  border-color: var(--accent-color);
+
+}
+
 .contact .php-email-form input[type=text]::placeholder,
 .contact .php-email-form input[type=email]::placeholder,
 .contact .php-email-form textarea::placeholder {
@@ -1868,6 +1879,14 @@ section[id='about']{
 
 div.css-ntwt7x{
   align-items: flex-start;
+}
+
+.MuiBox-root h6{
+  font-size: 0.9rem;
+}
+
+.Mui-selected.css-1xm0w4x-MuiButtonBase-root-MuiTab-root h6 {
+  color: white
 }
 
 

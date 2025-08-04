@@ -1,0 +1,41 @@
+/* Full‑screen translucent backdrop */
+.loader-backdrop {
+    position: fixed;          /* always covers the viewport */
+    inset: 0;                 /* shorthand for top/right/bottom/left: 0 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*background: rgba(255, 255, 255, 0.6); /* subtle dimming */
+    backdrop-filter: blur(4px);
+    z-index: 9999;            /* sits above everything */
+  }
+  
+  /* Loader container */
+  .loader {
+    position: relative;
+    width: 80px;
+    height: 80px;
+  }
+  
+  /* Four coloured arcs that spin with staggered delays */
+  .loader span {
+    position: absolute;
+    inset: 0;
+    border: 8px solid transparent;
+    border-radius: 50%;
+    animation: spin 1.2s linear infinite;
+  }
+  
+  /* Each arc gets a colour on a different side */
+  .loader span:nth-child(1) { border-top-color: #007bff; }
+  .loader span:nth-child(2) { border-right-color: #28a745; animation-delay: 0.3s; }
+  .loader span:nth-child(3) { border-bottom-color: #ffc107; animation-delay: 0.6s; }
+  .loader span:nth-child(4) { border-left-color:  #dc3545; animation-delay: 0.9s; }
+  
+  /* Spin & gentle pulsate */
+  @keyframes spin {
+    0%   { transform: rotate(0deg)   scale(0.95); }
+    50%  { transform: rotate(180deg) scale(1.05); }
+    100% { transform: rotate(360deg) scale(0.95); }
+  }
+  

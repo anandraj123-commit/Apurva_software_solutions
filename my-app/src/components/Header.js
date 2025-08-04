@@ -1,26 +1,26 @@
 import { useState } from "react";
+import '../assets/css/Header.css';
+import './modal/InternshipModal'
+import { Link } from "react-router-dom";
 
-const Header = () => {
-  const [activeTab, setActiveTab] = useState("hero");
+
+const Header = ({ handleInternshipModal }) => {
+  const [activeTab, setActiveTab] = useState("home");
+  const [isBlink, setIsBlink] = useState(true);
 
   return (
     <header id="header" className="header d-flex align-items-center fixed-top">
       <div className="container-fluid container-xl position-relative d-flex align-items-center">
-        <a href="index.html" className="logo d-flex align-items-center me-auto">
-          <img src="img/logo.png" alt="" />
-          <h1 className="sitename">Dewi</h1>
-        </a>
+        <Link to="/" className="logo d-flex align-items-center me-auto">
+          <img src="img/ASS.png" alt="" />
+          <h1 className="sitename" name="Apurva Software Solutions" id="Apurva Software Solutions">ASS</h1>
+        </Link>
 
         <nav id="navmenu" className="navmenu">
           <ul>
             <li>
-              <a
-                href="#hero"
-                className={activeTab === "hero" ? "active" : ""}
-                onClick={() => setActiveTab("hero")}
-              >
-                Home
-              </a>
+              <Link to = "" className={activeTab === "home" ? "active" : ""}
+                onClick={() => setActiveTab("home")}>Home</Link>
             </li>
             <li>
               <a
@@ -58,7 +58,16 @@ const Header = () => {
                 Team
               </a>
             </li>
-            <li className="dropdown">
+            <li>
+              <a
+                href="#internship"
+                className={`${activeTab === "internship" ? "active" : ""} ${isBlink ? "blink" : ''}`}
+                onClick={() => { setActiveTab("internship"); setIsBlink(false); handleInternshipModal(true) }}
+              >
+                Internship
+              </a>
+            </li>
+            {/* <li className="dropdown">
               <a href="#">
                 <span>Dropdown</span>{" "}
                 <i className="bi bi-chevron-down toggle-dropdown"></i>
@@ -82,7 +91,7 @@ const Header = () => {
                 <li><a href="#">Dropdown 3</a></li>
                 <li><a href="#">Dropdown 4</a></li>
               </ul>
-            </li>
+            </li> */}
             <li>
               <a
                 href="#contact"
@@ -93,13 +102,11 @@ const Header = () => {
               </a>
             </li>
           </ul>
-
           <i className="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
-
-        <a className="cta-btn" href="index.html#about">
+        <Link className="cta-btn" href="index.html#about">
           Get Started
-        </a>
+        </Link>
       </div>
     </header>
   );

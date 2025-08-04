@@ -47,18 +47,18 @@ const ImageCarousel= ()=>{
           {data.map((detail, index) => (
             <Box key={index}>
               {/* <img src={src} alt={`Slide ${index}`} style={{ width: '100%', height: 'auto' }} /> */}
-              <div class="swiper-slide">
-                                <div class="testimonial-item">
-                                    <img src={detail.img} class="testimonial-img" alt="" />
+              <div className="swiper-slide">
+                                <div className="testimonial-item">
+                                    <img src={detail.img} className="testimonial-img" alt="" />
                                     <h3>{detail.name}</h3>
                                     <h4>{detail.designation}</h4>
-                                    <div class="stars">
-                                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                    <div className="stars">
+                                        <i className="bi bi-star-fill"></i><i className="bi bi-star-fill"></i><i className="bi bi-star-fill"></i><i className="bi bi-star-fill"></i><i className="bi bi-star-fill"></i>
                                     </div>
                                     <p>
-                                        <i class="bi bi-quote quote-icon-left"></i>
+                                        <i className="bi bi-quote quote-icon-left"></i>
                                         <span>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.</span>
-                                        <i class="bi bi-quote quote-icon-right"></i>
+                                        <i className="bi bi-quote quote-icon-right"></i>
                                     </p>
                                 </div>
                             </div>

@@ -1,15 +1,22 @@
+import { BrowserRouter,Routes,Route} from 'react-router-dom';
 import './App.css';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import Main from './components/Main';
+import routes from './routes';
+import ScrollToTop from './components/ScrollToTop';
 function App() {
   return (
-    <>
-     <Header/>
-     <Main/>
-     <Footer/>
-    </>
+    <BrowserRouter>
+    <ScrollToTop/>
+     <Routes>
+      { routes.map((route,index)=>(
+        <Route key={index} path = {route.path} element={route.element} />
+      ))}
+    </Routes>
+
+    </BrowserRouter>
+    
    
+      
+
   );
 }
 
