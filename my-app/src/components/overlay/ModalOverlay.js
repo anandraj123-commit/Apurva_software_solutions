@@ -3,7 +3,7 @@ import React, { forwardRef, useImperativeHandle, useState } from "react";
 import ReactDOM from "react-dom";
 import InternshipModal from "../modal/InternshipModal";
 
-const ModalOverlay = forwardRef(({ onSubmitInternshipRequest }, ref) => {
+const ModalOverlay = forwardRef(({ onSubmitFormRequest }, ref) => {
   const [open, setOpen] = useState(false);
 
   useImperativeHandle(ref, () => ({
@@ -15,7 +15,7 @@ const ModalOverlay = forwardRef(({ onSubmitInternshipRequest }, ref) => {
     ? ReactDOM.createPortal(
         <InternshipModal
           onClose={() => setOpen(false)}
-          onSubmitInternshipRequest={onSubmitInternshipRequest}
+          onSubmitFormRequest={onSubmitFormRequest}
         />,
         document.getElementById("modal-overlay")
       )

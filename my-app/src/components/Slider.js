@@ -16,28 +16,33 @@ const ImageCarousel= ()=>{
       const data = [
        {
             img:"img/testimonials/testimonials-1.jpg",
-            name:'Saul Goodman',
-            designation:'Ceo &amp; Founder'
+            name:'Manohar S Lal',
+            designation:'Product Manager',
+            content:'Responsible for defining the vision and strategy of a product and guiding its development from concept to launch. They act as a bridge between business, design, and engineering teams to ensure the product meets user needs and business goals.'
        },
-        {
-            img:"img/testimonials/testimonials-2.jpg",
-            name:'Sara Wilsson',
-            designation:'Designer'
+       {
+            img:"img/testimonials/testimonials-1.jpg",
+            name:'Rohit Agarwal',
+            designation:'Software Developer',
+            content:'Creates, tests, and maintains software applications or systems tailored to user needs. They write clean, efficient code and collaborate with teams to turn requirements into reliable digital solutions.'
         },
         {
-            img:"img/testimonials/testimonials-2.jpg",
-            name:'Jena Karlis',
-            designation:'Store Owner'
+            img:"img/testimonials/testimonials-1.jpg",
+            name:'Rajat Sharma',
+            designation:'Back End Developer',
+            content:'Builds and Maintains the server-side components of web applications, including databases, APIs, and application logic. They ensure data is processed correctly and securely, enabling seamless functionality for the front end.'
         },
         {
-            img:"img/testimonials/testimonials-2.jpg",
-            name:'Matt Brandon',
-            designation:'Freelancer'
+            img:"img/testimonials/testimonials-1.jpg",
+            name:'Avishek Singh',
+            designation:'Ui Designer',
+            content:'Responsible for designing the look and feel of a digital product, focusing on visual elements like buttons, icons, spacing, and color schemes. Their goal is to create interfaces that are both aesthetically pleasing and easy to navigate for users.'
         },
         {
-            img:"img/testimonials/testimonials-2.jpg",
-            name:'John Larson',
-            designation:'Entrepreneur'
+            img:"img/testimonials/testimonials-1.jpg",
+            name:'Deepak Joshi',
+            designation:'Product Quality Analyst',
+            content:'Ensures that a product meets the required quality standards before it reaches users. They perform testing, identify bugs, and work with development teams to enhance performance, reliability, and user satisfaction.'
         }
       ];
     
@@ -57,11 +62,11 @@ const ImageCarousel= ()=>{
                                     </div>
                                     <p>
                                         <i className="bi bi-quote quote-icon-left"></i>
-                                        <span>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.</span>
+                                        <span>{detail.content}</span>
                                         <i className="bi bi-quote quote-icon-right"></i>
                                     </p>
                                 </div>
-                            </div>
+                          </div>
             </Box>
           ))}
         </Slider>

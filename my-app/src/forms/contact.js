@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import LoaderOverlay from '../components/loader/Loader';
+import AlertBox from '../components/AlertBox';
 
 const Contact = ({ onSubmitFormRequest }) => {
   const [formData, setFormData] = useState({
@@ -7,6 +8,7 @@ const Contact = ({ onSubmitFormRequest }) => {
     email: '',
     subject: '',
     message: '',
+    
   });
 
   const [status, setStatus] = useState({
@@ -44,21 +46,22 @@ const Contact = ({ onSubmitFormRequest }) => {
       setStatus({ loading: true, error: '', success: '' });
 
       // Send email
-      const{loading,error,success}= await onSubmitFormRequest(formData,"CONTACT-US");
+      const{loading,error,success} = await onSubmitFormRequest(formData,"CONTACT-US");
 
       setStatus({
         loading,
         error: error || '',
-        success: success ? 'Your message has been sent successfully. We would reach you soon!' : '',
+        success: success || '',
       });
-
-      
       setFormData({ name: '', email: '', subject: '', message: '' });
-   
   };
 
   return (
-    <form className="php-email-form" onSubmit={handleSubmit}>
+    <>
+      {status.success && <AlertBox type='success' message='✅ Action completed successfully!' duration='3000'/>}
+      {status.loading && <AlertBox type='loading' message='⏳ Sending, please wait...' duration='3000'/>}
+      {status.error && <AlertBox type='error' message='❌ Something went wrong!' duration='3000'/>}
+      <form className="php-email-form" onSubmit={handleSubmit}>
       <div className="row gy-4">
         <div className="col-md-6">
           <input
@@ -120,6 +123,9 @@ const Contact = ({ onSubmitFormRequest }) => {
         </div>
       </div>
     </form>
+    
+    </>
+  
   );
 };
 

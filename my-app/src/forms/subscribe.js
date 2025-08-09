@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import LoaderOverlay from '../components/loader/Loader';
+import AlertBox from '../components/AlertBox';
 
 const Subscribe = ({ onSubmitFormRequest }) => {
   const [formData, setFormData] = useState({
@@ -47,7 +48,7 @@ const Subscribe = ({ onSubmitFormRequest }) => {
       setStatus({
         loading,
         error: error || '',
-        success: success ? 'Your message has been sent successfully. We would reach you soon!' : '',
+        success: success ||  '',
       });
 
       setFormData({ email: ''});
@@ -55,7 +56,11 @@ const Subscribe = ({ onSubmitFormRequest }) => {
   };
 
   return (
-    <form className="php-email-form" onSubmit={handleSubmit}>
+    <>
+      {status.success && <AlertBox type='success' message='✅ Subscribed Successfully!' duration='3000'/>}
+      {status.loading && <AlertBox type='loading' message='⏳ Sending, Please Wait...' duration='3000'/>}
+      {status.error && <AlertBox type='error' message='❌ Something Went Wrong!' duration='3000'/>}
+      <form className="php-email-form" onSubmit={handleSubmit}>
       <div className="row gy-4">
         <div className="col-md-12">
           <input
@@ -72,12 +77,14 @@ const Subscribe = ({ onSubmitFormRequest }) => {
         
         <div className="col-md-12 text-center position-relative">
           {status.loading && <LoaderOverlay />}
-          <button type="submit" className="btn btn-primary" disabled={status.loading}>
+          <button type="submit" className="btn" disabled={status.loading}>
             {status.loading ? 'Sending...' : 'Send Message'}
           </button>
         </div>
       </div>
     </form>
+    </>
+    
   );
 };
 

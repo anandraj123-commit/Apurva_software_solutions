@@ -1,8 +1,7 @@
 import { useState } from "react";
 import '../assets/css/Header.css';
-import './modal/InternshipModal'
+import './modal/InternshipModal';
 import { Link } from "react-router-dom";
-
 
 const Header = ({ handleInternshipModal }) => {
   const [activeTab, setActiveTab] = useState("home");
@@ -11,20 +10,36 @@ const Header = ({ handleInternshipModal }) => {
   return (
     <header id="header" className="header d-flex align-items-center fixed-top">
       <div className="container-fluid container-xl position-relative d-flex align-items-center">
-        <Link to="/" className="logo d-flex align-items-center me-auto">
-          <img src="img/ASS.png" alt="" />
-          <h1 className="sitename" name="Apurva Software Solutions" id="Apurva Software Solutions">ASS</h1>
+
+        {/* Logo */}
+        <Link to="/" className="logo d-flex align-items-center me-auto" title="Apurva Software Solutions - Home">
+          <img
+            src="img/ASS.png"
+            alt="Apurva Software Solutions Logo"
+            title="Apurva Software Solutions Logo"
+          />
+          <h1 className="sitename" name="Apurva Software Solutions" id="Apurva Software Solutions">
+            ASS
+          </h1>
         </Link>
 
-        <nav id="navmenu" className="navmenu">
+        {/* Navigation Menu */}
+        <nav id="navmenu" className="navmenu" title="Main Navigation">
           <ul>
             <li>
-              <Link to = "" className={activeTab === "home" ? "active" : ""}
-                onClick={() => setActiveTab("home")}>Home</Link>
+              <Link
+                to="/"
+                title="Go to Home"
+                className={activeTab === "home" ? "active" : ""}
+                onClick={() => setActiveTab("home")}
+              >
+                Home
+              </Link>
             </li>
             <li>
               <a
                 href="#about"
+                title="Learn more About Apurva Software Solutions"
                 className={activeTab === "about" ? "active" : ""}
                 onClick={() => setActiveTab("about")}
               >
@@ -34,6 +49,7 @@ const Header = ({ handleInternshipModal }) => {
             <li>
               <a
                 href="#services"
+                title="Explore our Services"
                 className={activeTab === "services" ? "active" : ""}
                 onClick={() => setActiveTab("services")}
               >
@@ -43,6 +59,7 @@ const Header = ({ handleInternshipModal }) => {
             <li>
               <a
                 href="#portfolio"
+                title="View our Portfolio"
                 className={activeTab === "portfolio" ? "active" : ""}
                 onClick={() => setActiveTab("portfolio")}
               >
@@ -52,6 +69,7 @@ const Header = ({ handleInternshipModal }) => {
             <li>
               <a
                 href="#team"
+                title="Meet our Team"
                 className={activeTab === "team" ? "active" : ""}
                 onClick={() => setActiveTab("team")}
               >
@@ -61,40 +79,21 @@ const Header = ({ handleInternshipModal }) => {
             <li>
               <a
                 href="#internship"
+                title="Join our Internship Program"
                 className={`${activeTab === "internship" ? "active" : ""} ${isBlink ? "blink" : ''}`}
-                onClick={() => { setActiveTab("internship"); setIsBlink(false); handleInternshipModal(true) }}
+                onClick={() => {
+                  setActiveTab("internship");
+                  setIsBlink(false);
+                  handleInternshipModal(true);
+                }}
               >
                 Internship
               </a>
             </li>
-            {/* <li className="dropdown">
-              <a href="#">
-                <span>Dropdown</span>{" "}
-                <i className="bi bi-chevron-down toggle-dropdown"></i>
-              </a>
-              <ul>
-                <li><a href="#">Dropdown 1</a></li>
-                <li className="dropdown">
-                  <a href="#">
-                    <span>Deep Dropdown</span>{" "}
-                    <i className="bi bi-chevron-down toggle-dropdown"></i>
-                  </a>
-                  <ul>
-                    <li><a href="#">Deep Dropdown 1</a></li>
-                    <li><a href="#">Deep Dropdown 2</a></li>
-                    <li><a href="#">Deep Dropdown 3</a></li>
-                    <li><a href="#">Deep Dropdown 4</a></li>
-                    <li><a href="#">Deep Dropdown 5</a></li>
-                  </ul>
-                </li>
-                <li><a href="#">Dropdown 2</a></li>
-                <li><a href="#">Dropdown 3</a></li>
-                <li><a href="#">Dropdown 4</a></li>
-              </ul>
-            </li> */}
             <li>
               <a
                 href="#contact"
+                title="Contact Apurva Software Solutions"
                 className={activeTab === "contact" ? "active" : ""}
                 onClick={() => setActiveTab("contact")}
               >
@@ -102,9 +101,17 @@ const Header = ({ handleInternshipModal }) => {
               </a>
             </li>
           </ul>
-          <i className="mobile-nav-toggle d-xl-none bi bi-list"></i>
+
+          {/* Mobile Nav Toggle */}
+          <i className="mobile-nav-toggle d-xl-none bi bi-list" title="Toggle Mobile Navigation"></i>
         </nav>
-        <Link className="cta-btn" href="index.html#about">
+
+        {/* Call-to-Action Button */}
+        <Link
+          to="/#about"
+          className="cta-btn"
+          title="Get Started with Apurva Software Solutions"
+        >
           Get Started
         </Link>
       </div>

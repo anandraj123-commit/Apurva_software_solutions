@@ -3,6 +3,7 @@ import PortfolioBasicTabs from './Tabs';
 import FeaturesTab from './FeaturesTab';
 import ModalOverLay from './overlay/ModalOverlay';
 import Contact from '../forms/contact';
+import AlertBox from './AlertBox'
 const Main = (props) => {
     return (
         <main className="main">
@@ -17,6 +18,8 @@ const Main = (props) => {
                     </div>
                 </div>
             </section>
+            <AlertBox/>
+
             <section id="about" className="about section">
                 <div className="container">
                     <div className="row gy-4">
@@ -49,7 +52,6 @@ const Main = (props) => {
                     </div>
                 </div>
             </section>
-
 
             <section id="stats" className="stats section light-background">
                 <div className="container">
@@ -95,7 +97,6 @@ const Main = (props) => {
                     </div>
                 </div>
             </section>
-
 
             <section id="services" className="services section">
                 <div className="container section-title">
@@ -156,7 +157,6 @@ const Main = (props) => {
                 </div>
             </section>
 
-
             <section id="clients" className="clients section light-background">
                 <div className="container">
                     <div className="row gy-4">
@@ -178,9 +178,7 @@ const Main = (props) => {
                         <div className="col-xl-2 col-md-3 col-6 client-logo">
                             <img src="img/clients/client-6.png" className="img-fluid" alt="" />
                         </div>
-
                     </div>
-
                 </div>
 
             </section>
@@ -190,6 +188,7 @@ const Main = (props) => {
                 <FeaturesTab/>
                 </div>
             </section>
+
             <section id="services-2" className="services-2 section light-background">
                 <div className="container section-title">
                     <h2>Services</h2>
@@ -204,7 +203,7 @@ const Main = (props) => {
                             <div className="service-item d-flex position-relative h-100">
                                 <i className="bi bi-briefcase icon flex-shrink-0"></i>
                                 <div>
-                                    <h4 className="title"><a href="#" className="stretched-link">Custom Software Development</a></h4>
+                                    <h4 className="title"><a href="#" onClick={e=>e.preventDefault()} className="stretched-link">Custom Software Development</a></h4>
                                     <p className="description">Apurva Software Solutions delivers tailored software crafted to meet unique business goals with precision.</p>
                                 </div>
                             </div>
@@ -214,7 +213,7 @@ const Main = (props) => {
                             <div className="service-item d-flex position-relative h-100">
                                 <i className="bi bi-card-checklist icon flex-shrink-0"></i>
                                 <div>
-                                    <h4 className="title"><a href="#" className="stretched-link">Web & Mobile App Development</a></h4>
+                                    <h4 className="title"><a href="#" onClick={e=>e.preventDefault()} className="stretched-link">Web & Mobile App Development</a></h4>
                                     <p className="description">Apurva Software Solutions builds responsive web and mobile apps for seamless user experience across devices.</p>
                                 </div>
                             </div>
@@ -224,7 +223,7 @@ const Main = (props) => {
                             <div className="service-item d-flex position-relative h-100">
                                 <i className="bi bi-bar-chart icon flex-shrink-0"></i>
                                 <div>
-                                    <h4 className="title"><a href="#" className="stretched-link">Cloud Solutions</a></h4>
+                                    <h4 className="title"><a href="#" onClick={e=>e.preventDefault()} className="stretched-link">Cloud Solutions</a></h4>
                                     <p className="description">Apurva Software Solutions offers scalable cloud solutions for secure, efficient, and flexible business operations.</p>
                                 </div>
                             </div>
@@ -234,7 +233,7 @@ const Main = (props) => {
                             <div className="service-item d-flex position-relative h-100">
                                 <i className="bi bi-binoculars icon flex-shrink-0"></i>
                                 <div>
-                                    <h4 className="title"><a href="#" className="stretched-link">AI, ML & Data Analytics</a></h4>
+                                    <h4 className="title"><a href="#" onClick={e=>e.preventDefault()} className="stretched-link">AI, ML & Data Analytics</a></h4>
                                     <p className="description">Apurva Software Solutions leverages AI, ML, and Data Analytics to drive smart, data-driven business decisions.</p>
                                 </div>
                             </div>
@@ -244,7 +243,7 @@ const Main = (props) => {
                             <div className="service-item d-flex position-relative h-100">
                                 <i className="bi bi-brightness-high icon flex-shrink-0"></i>
                                 <div>
-                                    <h4 className="title"><a href="#" className="stretched-link">E-commerce Development</a></h4>
+                                    <h4 className="title"><a href="#" onClick={e=>e.preventDefault()} className="stretched-link">E-commerce Development</a></h4>
                                     <p className="description">Apurva Software Solutions creates powerful, user-friendly e-commerce platforms to boost online sales and engagement.</p>
                                 </div>
                             </div>
@@ -253,7 +252,7 @@ const Main = (props) => {
                             <div className="service-item d-flex position-relative h-100">
                                 <i className="bi bi-calendar4-week icon flex-shrink-0"></i>
                                 <div>
-                                    <h4 className="title"><a href="#" className="stretched-link"> Software Testing & QA</a></h4>
+                                    <h4 className="title"><a href="#" onClick={e=>e.preventDefault()} className="stretched-link"> Software Testing & QA</a></h4>
                                     <p className="description">Apurva Software Solutions ensures reliable performance through rigorous software testing and quality assurance practices.</p>
                                 </div>
                             </div>
@@ -263,7 +262,7 @@ const Main = (props) => {
                             <div className="service-item d-flex position-relative h-100">
                                 <i className="bi bi-file-earmark-code icon flex-shrink-0"></i>
                                 <div>
-                                    <h4 className="title"><a href="#" className="stretched-link">Cybersecurity Services</a></h4>
+                                    <h4 className="title"><a href="#" onClick={e=>e.preventDefault()} className="stretched-link">Cybersecurity Services</a></h4>
                                     <p className="description">Apurva Software Solutions provides robust cybersecurity services to protect digital assets from threats and vulnerabilities.</p>
                                 </div>
                             </div>
@@ -272,7 +271,7 @@ const Main = (props) => {
                             <div className="service-item d-flex position-relative h-100">
                                 <i className="bi bi-database icon flex-shrink-0"></i>
                                 <div>
-                                    <h4 className="title"><a href="#" className="stretched-link"> UI/UX Design</a></h4>
+                                    <h4 className="title"><a href="#" onClick={e=>e.preventDefault()} className="stretched-link"> UI/UX Design</a></h4>
                                     <p className="description">Apurva Software Solutions crafts intuitive UI/UX designs that enhance user engagement and elevate brand experience.</p>
                                 </div>
                             </div>
@@ -282,7 +281,7 @@ const Main = (props) => {
                             <div className="service-item d-flex position-relative h-100">
                                 <i className="bi bi-code-slash icon flex-shrink-0"></i>
                                 <div>
-                                    <h4 className="title"><a href="#" className="stretched-link">IT Consulting & Product Strategy</a></h4>
+                                    <h4 className="title"><a href="#" onClick={e=>e.preventDefault()} className="stretched-link">IT Consulting & Product Strategy</a></h4>
                                     <p className="description">Apurva Software Solutions offers expert IT consulting and product strategy to align technology with business goals.</p>
                                 </div>
                             </div>
@@ -292,7 +291,7 @@ const Main = (props) => {
                             <div className="service-item d-flex position-relative h-100">
                                 <i className="bi bi-hdd-network icon flex-shrink-0"></i>
                                 <div>
-                                    <h4 className="title"><a href="#" className="stretched-link">Maintenance & Support</a></h4>
+                                    <h4 className="title"><a href="#" onClick={e=>e.preventDefault()} className="stretched-link">Maintenance & Support</a></h4>
                                     <p className="description">Apurva Software Solutions provides ongoing maintenance and support to ensure your software runs smoothly and efficiently.</p>
                                 </div>
                             </div>
@@ -302,7 +301,7 @@ const Main = (props) => {
                             <div className="service-item d-flex position-relative h-100">
                                 <i className="bi bi-megaphone icon flex-shrink-0"></i>
                                 <div>
-                                    <h4 className="title"><a href="#" className="stretched-link">Digital Marketing</a></h4>
+                                    <h4 className="title"><a href="#" onClick={e=>e.preventDefault()} className="stretched-link">Digital Marketing</a></h4>
                                     <p className="description">Apurva Software Solutions delivers result-driven digital marketing strategies to boost online visibility and business growth.</p>
                                 </div>
                             </div>
@@ -312,7 +311,7 @@ const Main = (props) => {
                             <div className="service-item d-flex position-relative h-100">
                                 <i className="bi bi-globe icon flex-shrink-0"></i>
                                 <div>
-                                    <h4 className="title"><a href="#" className="stretched-link">Project Consulting & Strategy</a></h4>
+                                    <h4 className="title"><a href="#" onClick={e=>e.preventDefault()} className="stretched-link">Project Consulting & Strategy</a></h4>
                                     <p className="description">Apurva Software Solutions offers strategic project consulting to ensure successful planning, execution, and business alignment.</p>
                                 </div>
                             </div>
@@ -320,7 +319,6 @@ const Main = (props) => {
                     </div>
                 </div>
             </section>
-
 
             <section id="testimonials" className="testimonials section dark-background">
                 <img src="img/testimonials-bg.jpg" className="testimonials-bg" alt="" />
@@ -340,7 +338,6 @@ const Main = (props) => {
 
             {/* <!-- Portfolio Section --> */}
             <section id="portfolio" className="portfolio section">
-
                 {/* <!-- Section Title --> */}
                 <div className="container section-title" data-aos="fade-up">
                     <h2>Portfolio</h2>
@@ -349,10 +346,9 @@ const Main = (props) => {
 
                 <div className="container">
                     <div className="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-                        <PortfolioBasicTabs className="filter-active" />
+                        <PortfolioBasicTabs className="filter-active" tabArgument={props.tabArgument}/>
                     </div>
                 </div>
-
             </section>
 
             {/* <!-- Team Section --> */}
@@ -369,15 +365,15 @@ const Main = (props) => {
 
                         <div className="col-lg-4 col-md-6">
                             <div className="member">
-                                <div className="pic"><img src="img/team/team-1.jpg" className="img-fluid" alt="" /></div>
+                                <div className="pic"><img src="img/team/juli.jpg" className="img-fluid" alt="" /></div>
                                 <div className="member-info">
                                     <h4>JULI KUMARI</h4>
                                     <span>Chief Executive Officer & Founder</span>
                                     <div className="social">
-                                        <a href="#"><i className="bi bi-twitter-x"></i></a>
-                                        <a href="#"><i className="bi bi-facebook"></i></a>
-                                        <a href="#"><i className="bi bi-instagram"></i></a>
-                                        <a href="#"><i className="bi bi-linkedin"></i></a>
+                                        <a href="#" onClick={(e) => e.preventDefault()}><i className="bi bi-twitter-x"></i></a>
+                                        <a href="#" onClick={(e) => e.preventDefault()}><i className="bi bi-facebook"></i></a>
+                                        <a href="#" onClick={(e) => e.preventDefault()}><i className="bi bi-instagram"></i></a>
+                                        <a href="#" onClick={(e) => e.preventDefault()}><i className="bi bi-linkedin"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -385,51 +381,44 @@ const Main = (props) => {
 
                         <div className="col-lg-4 col-md-6">
                             <div className="member">
-                                <div className="pic"><img src="img/team/team-2.jpg" className="img-fluid" alt="" /></div>
+                                <div className="pic"><img src="img/team/manju.jpg" className="img-fluid" alt="" /></div>
                                 <div className="member-info">
                                     <h4>Manju Kumari</h4>
                                     <span>Director & President</span>
                                     <div className="social">
-                                        <a href=""><i className="bi bi-twitter-x"></i></a>
-                                        <a href=""><i className="bi bi-facebook"></i></a>
-                                        <a href=""><i className="bi bi-instagram"></i></a>
-                                        <a href=""><i className="bi bi-linkedin"></i></a>
+                                        <a href="#" onClick={(e) => e.preventDefault()}><i className="bi bi-twitter-x"></i></a>
+                                        <a href="#" onClick={(e) => e.preventDefault()} ><i className="bi bi-facebook"></i></a>
+                                        <a href="#" onClick={(e) => e.preventDefault()} ><i className="bi bi-instagram"></i></a>
+                                        <a href="#" onClick={(e) => e.preventDefault()}><i className="bi bi-linkedin"></i></a>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-
                         <div className="col-lg-4 col-md-6">
                             <div className="member">
-                                <div className="pic"><img src="img/team/team-3.jpg" className="img-fluid" alt="" /></div>
+                                <div className="pic"><img src="img/team/abhishek.jpg" className="img-fluid" alt="" /></div>
                                 <div className="member-info">
                                     <h4>Avishek Raj</h4>
                                     <span>CTO</span>
                                     <div className="social">
-                                        <a href=""><i className="bi bi-twitter-x"></i></a>
-                                        <a href=""><i className="bi bi-facebook"></i></a>
-                                        <a href=""><i className="bi bi-instagram"></i></a>
-                                        <a href=""><i className="bi bi-linkedin"></i></a>
+                                        <a href="#" onClick={(e) => e.preventDefault()}><i className="bi bi-twitter-x"></i></a>
+                                        <a href="#" onClick={(e) => e.preventDefault()} ><i className="bi bi-facebook"></i></a>
+                                        <a href="#" onClick={(e) => e.preventDefault()} ><i className="bi bi-instagram"></i></a>
+                                        <a href="#" onClick={(e) => e.preventDefault()}><i className="bi bi-linkedin"></i></a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
                     </div>
-
                 </div>
-
             </section>
 
             <section id="contact" className="contact section">
-
-
                 <div className="container section-title">
                     <h2>Contact</h2>
                     <p>Apurva Software Solutions-We build what you truly need.</p>
                 </div>
-
                 <div className="container">
                     <div className="row gy-4">
                         <div className="col-lg-6 ">
@@ -441,7 +430,6 @@ const Main = (props) => {
                                         <p>Veer Kuwar Singh Colony,Gaya,Bihar</p>
                                     </div>
                                 </div>
-
                                 <div className="col-md-6">
                                     <div className="info-item d-flex flex-column justify-content-center align-items-center">
                                         <i className="bi bi-telephone"></i>
@@ -450,15 +438,14 @@ const Main = (props) => {
                                         <p>+91 9629776056</p>
                                     </div>
                                 </div>
-
                                 <div className="col-md-6">
                                     <div className="info-item d-flex flex-column justify-content-center align-items-center">
                                         <i className="bi bi-envelope"></i>
                                         <h3>Email Us</h3>
                                         <p>apurvasoftware.solutions@outlook.com</p>
+                                        <p>supports@apurvasoftwaresolutions.com</p>
                                     </div>
                                 </div>
-
                             </div>
                         </div>
                         <div className="col-lg-6">

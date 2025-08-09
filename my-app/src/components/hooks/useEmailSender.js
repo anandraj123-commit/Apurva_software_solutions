@@ -5,6 +5,7 @@ const SERVICE_ID = process.env.REACT_APP_EMAILJS_SERVICE_ID;
 const TEMPLATE_ID_COMPANY = process.env.REACT_APP_EMAILJS_TEMPLATE_ID_COMPANY;
 const TEMPLATE_ID_AUTOREPLY = process.env.REACT_APP_EMAILJS_TEMPLATE_ID_AUTOREPLY;
 const COMPANY_EMAIL = process.env.REACT_APP_COMPANY_EMAIL;
+const publicKey = process.env.REACT_APP_EMAILJS_PUBLIC_KEY;
 
 const useEmailSender = () => {
   const [loading, setLoading] = useState(false);
@@ -12,14 +13,9 @@ const useEmailSender = () => {
   const [success, setSuccess] = useState(false);
 
   const sendEmails = async (formData, INFOTYPE) => {
-
-    console.log("formData", formData);
     setLoading(true);
     setError('');
     setSuccess(false);
-
-    console.log(SERVICE_ID, TEMPLATE_ID_COMPANY, TEMPLATE_ID_AUTOREPLY, COMPANY_EMAIL);
-    
     let templateParamsCompany = {};
     let templateParamsAutoReply = {};
 
@@ -33,17 +29,16 @@ const useEmailSender = () => {
         name: formData.name,
         FormType: INFOTYPE,
         email: formData.email,
+        email_Company: COMPANY_EMAIL
       }
  
-  
-
   
     let result = { success: false, error: '', loading: true };
 
     try {
       await Promise.all([
-        emailjs.send(SERVICE_ID, TEMPLATE_ID_COMPANY, templateParamsCompany),
-        emailjs.send(SERVICE_ID, TEMPLATE_ID_AUTOREPLY, templateParamsAutoReply),
+        emailjs.send(SERVICE_ID, TEMPLATE_ID_COMPANY, templateParamsCompany,publicKey),
+        emailjs.send(SERVICE_ID, TEMPLATE_ID_AUTOREPLY, templateParamsAutoReply,publicKey),
       ]);
       setSuccess(true);
       result.success = true;

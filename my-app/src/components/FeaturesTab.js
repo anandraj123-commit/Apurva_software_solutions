@@ -97,7 +97,7 @@ const FeatureContent = ({ title, italic, points = [], paragraph, image }) => (
 );
 
 export default function FeaturesTab() {
-  const [value, setValue] = useState(0);
+  const [value, setValue] = useState(2);
 
   return (
     <Box sx={{ width: "100%", px: { xs: 2, md: 4 } }}>
@@ -138,7 +138,7 @@ export default function FeaturesTab() {
           }
         />
       </CustomTabs>
-
+      
       {/* Tab Panels */}
       <TabPanel value={value} index={0}>
         <FeatureContent
