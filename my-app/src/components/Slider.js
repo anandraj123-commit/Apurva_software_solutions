@@ -15,7 +15,7 @@ const ImageCarousel= ()=>{
     
       const data = [
        {
-            img:"img/testimonials/testimonials-1.jpg",
+            img:"img/testimonials/ravi.jpg",
             name:'Manohar S Lal',
             designation:'Product Manager',
             content:'Responsible for defining the vision and strategy of a product and guiding its development from concept to launch. They act as a bridge between business, design, and engineering teams to ensure the product meets user needs and business goals.'
@@ -33,7 +33,7 @@ const ImageCarousel= ()=>{
             content:'Builds and Maintains the server-side components of web applications, including databases, APIs, and application logic. They ensure data is processed correctly and securely, enabling seamless functionality for the front end.'
         },
         {
-            img:"img/testimonials/testimonials-1.jpg",
+            img:"img/testimonials/yaan.jpg",
             name:'Avishek Singh',
             designation:'Ui Designer',
             content:'Responsible for designing the look and feel of a digital product, focusing on visual elements like buttons, icons, spacing, and color schemes. Their goal is to create interfaces that are both aesthetically pleasing and easy to navigate for users.'
