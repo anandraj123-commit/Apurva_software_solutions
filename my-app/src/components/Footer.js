@@ -1,6 +1,7 @@
 import Subscribe from '../forms/subscribe';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
+import '../assets/css/Footer.css';
 
 const Footer = (props) => {
     const [isBlink, setIsBlink] = useState(true);

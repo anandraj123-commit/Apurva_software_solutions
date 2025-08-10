@@ -6,13 +6,35 @@ import { Link } from "react-router-dom";
 const Header = ({ handleInternshipModal }) => {
   const [activeTab, setActiveTab] = useState("home");
   const [isBlink, setIsBlink] = useState(true);
+  const [mobileNavOpen, setMobileNavOpen] = useState(false);
+
+  const toggleMobileNav = () => {
+    setMobileNavOpen(!mobileNavOpen);
+  };
+
+  const handleNavLinkClick = (tabName) => {
+    setActiveTab(tabName);
+    setMobileNavOpen(false);
+  };
 
   return (
     <header id="header" className="header d-flex align-items-center fixed-top">
       <div className="container-fluid container-xl position-relative d-flex align-items-center">
 
+        {/* Mobile Nav Toggle on left */}
+        <i
+          className="mobile-nav-toggle d-xl-none bi bi-list"
+          title="Toggle Mobile Navigation" style={{ color: "var(--accent-color)" }}
+          onClick={toggleMobileNav}
+        ></i>
+
         {/* Logo */}
-        <Link to="/" className="logo d-flex align-items-center me-auto" title="Apurva Software Solutions - Home">
+        <Link
+          to="/"
+          className="logo d-flex align-items-center me-auto"
+          title="Apurva Software Solutions - Home"
+          onClick={() => handleNavLinkClick("home")}
+        >
           <img
             src="img/ASS.png"
             alt="Apurva Software Solutions Logo"
@@ -24,14 +46,18 @@ const Header = ({ handleInternshipModal }) => {
         </Link>
 
         {/* Navigation Menu */}
-        <nav id="navmenu" className="navmenu" title="Main Navigation">
+        <nav
+          id="navmenu"
+          className={`navmenu ${mobileNavOpen ? "mobile-nav-active" : ""}`}
+          title="Main Navigation"
+        >
           <ul>
             <li>
               <Link
                 to="/"
                 title="Go to Home"
                 className={activeTab === "home" ? "active" : ""}
-                onClick={() => setActiveTab("home")}
+                onClick={() => handleNavLinkClick("home")}
               >
                 Home
               </Link>
@@ -41,7 +67,7 @@ const Header = ({ handleInternshipModal }) => {
                 href="#about"
                 title="Learn more About Apurva Software Solutions"
                 className={activeTab === "about" ? "active" : ""}
-                onClick={() => setActiveTab("about")}
+                onClick={() => handleNavLinkClick("about")}
               >
                 About
               </a>
@@ -51,7 +77,7 @@ const Header = ({ handleInternshipModal }) => {
                 href="#services"
                 title="Explore our Services"
                 className={activeTab === "services" ? "active" : ""}
-                onClick={() => setActiveTab("services")}
+                onClick={() => handleNavLinkClick("services")}
               >
                 Services
               </a>
@@ -61,7 +87,7 @@ const Header = ({ handleInternshipModal }) => {
                 href="#portfolio"
                 title="View our Portfolio"
                 className={activeTab === "portfolio" ? "active" : ""}
-                onClick={() => setActiveTab("portfolio")}
+                onClick={() => handleNavLinkClick("portfolio")}
               >
                 Portfolio
               </a>
@@ -71,7 +97,7 @@ const Header = ({ handleInternshipModal }) => {
                 href="#team"
                 title="Meet our Team"
                 className={activeTab === "team" ? "active" : ""}
-                onClick={() => setActiveTab("team")}
+                onClick={() => handleNavLinkClick("team")}
               >
                 Team
               </a>
@@ -80,10 +106,11 @@ const Header = ({ handleInternshipModal }) => {
               <a
                 href="#internship"
                 title="Join our Internship Program"
-                className={`${activeTab === "internship" ? "active" : ""} ${isBlink ? "blink" : ''}`}
+                className={`${activeTab === "internship" ? "active" : ""} ${isBlink ? "blink" : ""}`}
                 onClick={() => {
                   setActiveTab("internship");
                   setIsBlink(false);
+                  setMobileNavOpen(false);
                   handleInternshipModal(true);
                 }}
               >
@@ -95,15 +122,12 @@ const Header = ({ handleInternshipModal }) => {
                 href="#contact"
                 title="Contact Apurva Software Solutions"
                 className={activeTab === "contact" ? "active" : ""}
-                onClick={() => setActiveTab("contact")}
+                onClick={() => handleNavLinkClick("contact")}
               >
                 Contact
               </a>
             </li>
           </ul>
-
-          {/* Mobile Nav Toggle */}
-          <i className="mobile-nav-toggle d-xl-none bi bi-list" title="Toggle Mobile Navigation"></i>
         </nav>
 
         {/* Call-to-Action Button */}

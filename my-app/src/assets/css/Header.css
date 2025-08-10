@@ -1,16 +1,130 @@
 @keyframes blink {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0; }
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
 
+.blink {
+  animation: blink 1s infinite;
+  color: #ff4a17 !important;
+}
+
+.active {
+  color: red;
+  font-weight: bold;
+}
+
+/* Base nav styles */
+.navmenu ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Mobile styles */
+@media (max-width: 991px) {
+  /* Container flex tweaks */
+  .container-xl.d-flex {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* align left */
+    gap: 15px; /* spacing between toggle, logo, and nav */
   }
 
-  
-  .blink {
-    animation: blink 1s infinite;
-    color: #ff4a17 !important;
+  /* Mobile nav toggle on left */
+  .mobile-nav-toggle {
+    order: -1; /* show before other items */
+    font-size: 28px;
+    cursor: pointer;
+    color: #333;
   }
-  
-  .active {
+
+  /* Nav menu styles */
+  .navmenu {
+    flex-grow: 1;
+  }
+
+  .navmenu ul {
+    display: none;
+    flex-direction: column;
+    background: white;
+    position: absolute;
+    top: 60px; /* adjust to header height */
+    left: 0;
+    right: 0;
+    width: 100vw;
+    max-height: 315px; /* enough to show ~7 links */
+    overflow-y: auto;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    padding: 10px 0;
+    margin: 0;
+    border-radius: 0;
+    z-index: 9999;
+    box-sizing: border-box;
+  }
+
+  /* Show nav when mobile menu active */
+  .navmenu.mobile-nav-active ul {
+    display: flex;
+  }
+
+  .navmenu ul li {
+    margin: 0;
+  }
+
+  .navmenu ul li a {
+    padding: 12px 20px;
+    display: block;
+    color: #333;
+    font-weight: normal;
+    text-decoration: none;
+    white-space: nowrap;
+    line-height: 21px;
+  }
+
+  .navmenu ul li a:hover,
+  .navmenu ul li .active {
+    background-color: #f0f0f0;
     color: red;
     font-weight: bold;
   }
+}
+
+@media (max-width: 1200px) {
+  .header .cta-btn {
+      position: absolute;
+      right: 15px;
+      order: 2;
+      padding: 6px 15px;
+  }
+}
+
+@media (max-width: 991px) {
+  .navmenu ul {
+      max-width: 100%;
+      text-align: center;
+      display: none;
+      flex-direction: column;
+      background: white;
+      position: absolute;
+      left: 0;
+      height: 79px;
+      right: 0;
+      width: 100%;
+      max-height: 315px;
+      overflow-y: auto;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      padding: 10px 0;
+      border-radius: 0;
+      z-index: 9999;
+      box-sizing: border-box;
+  }
+}
+
+
+.navmenu ul li a:hover {
+  color: white !important;
+  background-color: #ff4a17 !important;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}

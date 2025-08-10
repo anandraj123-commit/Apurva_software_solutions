@@ -981,6 +981,7 @@ section,
   border-radius: 4px;
   transition: 0.3s;
   text-transform: uppercase;
+  border-color: var(--accent-color);
 }
 
 .hero .btn-get-started:hover {
