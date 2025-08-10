@@ -7,7 +7,9 @@ import {
   List,
   ListItem,
   ListItemIcon,
-  ListItemText
+  ListItemText,
+  useTheme,
+  useMediaQuery,
 } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import Diversity3Icon from "@mui/icons-material/Diversity3";
@@ -23,12 +25,13 @@ const DARK = "#1b3442";
 // ---- custom styled MUI Tabs & Tab -----------------------------------------
 const CustomTabs = styled(Tabs)(({ theme }) => ({
   width: "100%",
+  // Hide default indicator
   ".MuiTabs-indicator": { display: "none" },
   ".MuiTabs-flexContainer": {
     display: "flex",
     width: "100%",
-    gap: theme.spacing(2)
-  }
+    gap: theme.spacing(2),
+  },
 }));
 
 const CustomTab = styled(Tab)(({ theme }) => ({
@@ -43,13 +46,23 @@ const CustomTab = styled(Tab)(({ theme }) => ({
   "& .MuiSvgIcon-root": {
     fontSize: 40,
     marginRight: theme.spacing(2),
-    color: DARK
+    color: DARK,
   },
   "&.Mui-selected": {
     backgroundColor: ORANGE,
     color: "#fff",
-    "& .MuiSvgIcon-root": { color: "#fff" }
-  }
+    "& .MuiSvgIcon-root": { color: "#fff" },
+  },
+  // Responsive adjustments for small screens
+  [theme.breakpoints.down("sm")]: {
+    minHeight: 80,
+    padding: theme.spacing(1.5),
+    fontSize: "0.8rem",
+    "& .MuiSvgIcon-root": {
+      fontSize: 28,
+      marginRight: theme.spacing(1),
+    },
+  },
 }));
 
 function TabPanel({ value, index, children }) {
@@ -62,7 +75,8 @@ const FeatureContent = ({ title, italic, points = [], paragraph, image }) => (
       display: "flex",
       flexDirection: { xs: "column", md: "row" },
       gap: 4,
-      alignItems: "center"
+      alignItems: "center",
+      px: { xs: 2, md: 0 },
     }}
   >
     <Box sx={{ flex: 1 }}>
@@ -76,8 +90,8 @@ const FeatureContent = ({ title, italic, points = [], paragraph, image }) => (
       )}
       <List dense>
         {points.map((text, i) => (
-          <ListItem key={i}>
-            <ListItemIcon>
+          <ListItem key={i} sx={{ py: 0.5 }}>
+            <ListItemIcon sx={{ minWidth: 32 }}>
               <CheckCircleIcon sx={{ color: ORANGE }} />
             </ListItemIcon>
             <ListItemText primary={text} />
@@ -85,30 +99,47 @@ const FeatureContent = ({ title, italic, points = [], paragraph, image }) => (
         ))}
       </List>
       {paragraph && (
-        <Typography mt={2}>
+        <Typography mt={2} fontSize={{ xs: "0.9rem", md: "inherit" }}>
           {paragraph}
         </Typography>
       )}
     </Box>
     <Box sx={{ flex: 1, textAlign: "center" }}>
-      <img src={image} alt="feature" style={{ maxWidth: "100%" }} />
+      <img
+        src={image}
+        alt="feature"
+        style={{
+          maxWidth: "100%",
+          height: "auto",
+          borderRadius: 8,
+          marginTop: 16,
+        }}
+      />
     </Box>
   </Box>
 );
 
 export default function FeaturesTab() {
   const [value, setValue] = useState(2);
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
 
   return (
     <Box sx={{ width: "100%", px: { xs: 2, md: 4 } }}>
-      <CustomTabs value={value} onChange={(_, v) => setValue(v)}>
+      <CustomTabs
+        value={value}
+        onChange={(_, v) => setValue(v)}
+        variant={isMobile ? "scrollable" : "fullWidth"} // Scrollable on mobile for better UX
+        scrollButtons="auto"
+        aria-label="feature tabs"
+      >
         <CustomTab
           icon={<Diversity3Icon />}
           label={
             <Box>
               <Typography variant="subtitle1" fontWeight={600}>
-             Modern Solutions Delivered <br/>
-               Innovation Space
+                Modern Solutions Delivered <br />
+                Innovation Space
               </Typography>
             </Box>
           }
@@ -125,7 +156,9 @@ export default function FeaturesTab() {
           icon={<LightModeIcon />}
           label={
             <Typography variant="subtitle1" fontWeight={600}>
-              Smart Execution<br />Workspace
+              Smart Execution
+              <br />
+              Workspace
             </Typography>
           }
         />
@@ -138,7 +171,7 @@ export default function FeaturesTab() {
           }
         />
       </CustomTabs>
-      
+
       {/* Tab Panels */}
       <TabPanel value={value} index={0}>
         <FeatureContent
@@ -148,7 +181,7 @@ export default function FeaturesTab() {
             "We ensure seamless service delivery with optimized efficiency.",
             "Experience performance-driven solutions with precision and clarity.",
             "We prevent errors and enhance stability for complex challenges.",
-            "We build smart, user-friendly software that delivers real results—without compromising on speed, stability, or user experience.."
+            "We build smart, user-friendly software that delivers real results—without compromising on speed, stability, or user experience.",
           ]}
           paragraph="We deliver seamless, secure digital solutions that enhance performance, streamline workflows, and support business growth — with scalable architecture, intuitive design, and a commitment to quality, innovation, and user satisfaction."
           image="/img/working-1.jpg"
@@ -159,43 +192,43 @@ export default function FeaturesTab() {
           title="We resolve complex technical issues with precision and accountability."
           italic="Delivering modern applications through agile development, user-focused design, and scalable architecture for long-term business success and innovation."
           points={[
-           "We build smart software for scalable and seamless performance.", 
-  "Delivering clean user interfaces with secure backend integration.",
-  "Our experts craft tailored digital solutions that handle complex problems with speed, clarity, and business-driven logic.", 
-  "We design innovative, reliable software that empowers businesses to adapt, grow, and lead with confidence across platforms — delivering performance, usability, and results every step of the way." // 28 words
+            "We build smart software for scalable and seamless performance.",
+            "Delivering clean user interfaces with secure backend integration.",
+            "Our experts craft tailored digital solutions that handle complex problems with speed, clarity, and business-driven logic.",
+            "We design innovative, reliable software that empowers businesses to adapt, grow, and lead with confidence across platforms — delivering performance, usability, and results every step of the way.",
           ]}
           paragraph="We build secure, high-performance software that enhances user experience, streamlines operations, and drives digital transformation—engineered with precision, tested for quality, and designed to meet modern business needs without compromise."
           image="/img/working-2.jpg"
         />
       </TabPanel>
       <TabPanel value={value} index={2}>
-  <FeatureContent
-    title="Scalable systems that transform complexity into elegant software experiences"
-    italic="We develop intuitive, high-performance applications through agile methods and expert engineering across all modern digital platforms."
-    points={[
-      "We build fast, scalable products that meet business-specific performance goals.",
-      "User-centric interfaces crafted with precision, performance, and usability first.",
-      "Engineered solutions that solve tough software problems with clarity and speed.",
-      "Engineered solutions that solve tough software problems with clarity and speed."
-    ]}
-    paragraph="Our platforms are tailored to streamline operations, support innovation, and deliver secure, responsive digital solutions for clients worldwide through tested frameworks and modern development best practices."
-    image="/img/working-3.jpg"
-  />
-</TabPanel>
-<TabPanel value={value} index={3}>
-  <FeatureContent
-    title="Streamlined digital tools built to solve real challenges effortlessly"
-    italic="We craft tailored software that enhances efficiency, flexibility, and growth across fast-moving digital ecosystems and modern platforms."
-    points={[
-      "We create reliable systems to simplify complex business operations.",
-      "Precise interfaces engineered for usability and optimal interaction.",
-      "Our engineers architect scalable platforms with intuitive design, strong security, and smooth performance across various digital environments.",
-      "Robust architecture resolves challenges with efficient, user-focused logic."
-    ]}
-    paragraph="We deliver dependable digital solutions built for speed, quality, and growth — reducing friction, enhancing experience, and enabling seamless collaboration across your core business systems."
-    image="/img/working-4.jpg"
-  />
-</TabPanel>
+        <FeatureContent
+          title="Scalable systems that transform complexity into elegant software experiences"
+          italic="We develop intuitive, high-performance applications through agile methods and expert engineering across all modern digital platforms."
+          points={[
+            "We build fast, scalable products that meet business-specific performance goals.",
+            "User-centric interfaces crafted with precision, performance, and usability first.",
+            "Engineered solutions that solve tough software problems with clarity and speed.",
+            "Robust architecture resolves challenges with efficient, user-focused logic.",
+          ]}
+          paragraph="Our platforms are tailored to streamline operations, support innovation, and deliver secure, responsive digital solutions for clients worldwide through tested frameworks and modern development best practices."
+          image="/img/working-3.jpg"
+        />
+      </TabPanel>
+      <TabPanel value={value} index={3}>
+        <FeatureContent
+          title="Streamlined digital tools built to solve real challenges effortlessly"
+          italic="We craft tailored software that enhances efficiency, flexibility, and growth across fast-moving digital ecosystems and modern platforms."
+          points={[
+            "We create reliable systems to simplify complex business operations.",
+            "Precise interfaces engineered for usability and optimal interaction.",
+            "Our engineers architect scalable platforms with intuitive design, strong security, and smooth performance across various digital environments.",
+            "Robust architecture resolves challenges with efficient, user-focused logic.",
+          ]}
+          paragraph="We deliver dependable digital solutions built for speed, quality, and growth — reducing friction, enhancing experience, and enabling seamless collaboration across your core business systems."
+          image="/img/working-4.jpg"
+        />
+      </TabPanel>
     </Box>
   );
 }
