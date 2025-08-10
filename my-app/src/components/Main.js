@@ -14,11 +14,18 @@ const Main = (props) => {
                     <p>We craft solutions that empower growing businesses worldwide with innovation and impact.</p>
                     <div className="d-flex mt-4">
                         <a href="#about" className="btn-get-started">Get Started</a>
-                        <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" className="glightbox btn-watch-video d-flex align-items-center"><i className="bi bi-play-circle"></i><span>Watch Video</span></a>
-                    </div>
+                        <a
+                            href="https://www.youtube.com/watch?v=8eHWiixeoj0"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="glightbox btn-watch-video d-flex align-items-center"
+                        >
+                            <i className="bi bi-play-circle"></i>
+                            <span>Watch Video</span>
+                        </a>                    </div>
                 </div>
             </section>
-            <AlertBox/>
+            <AlertBox />
 
             <section id="about" className="about section">
                 <div className="container">
@@ -32,7 +39,7 @@ const Main = (props) => {
                         <div className="col-lg-6" data-aos="fade-up" data-aos-delay="250">
                             <div className="content ps-0 ps-lg-5">
                                 <p className="fst-italic">
-                                At Apurva Software Solutions, we are dedicated to crafting innovative digital experiences through thoughtful design and seamless development. With a focus on quality, performance, and user-centric solutions, we transform your ideas into intelligent, scalable software that drives success.
+                                    At Apurva Software Solutions, we are dedicated to crafting innovative digital experiences through thoughtful design and seamless development. With a focus on quality, performance, and user-centric solutions, we transform your ideas into intelligent, scalable software that drives success.
                                 </p>
                                 <ul>
                                     <li><i className="bi bi-check-circle-fill"></i> <span>We deliver solutions that work — with seamless performance, smart design, and a commitment to your business goals.</span></li>
@@ -40,7 +47,7 @@ const Main = (props) => {
                                     <li><i className="bi bi-check-circle-fill"></i> <span>At Apurva Software Solutions, we don’t just deliver code — we craft experiences. Our solutions are designed to simplify complexity, empower users, and create lasting impact without compromise.</span></li>
                                 </ul>
                                 <p>
-                                At Apurva Software Solutions, we believe in delivering only what truly adds value — no fluff, no shortcuts. Every solution we craft is designed with precision, built for performance, and tested for real-world impact. We ensure a seamless experience, free from unnecessary complications, guided by trust, innovation, and a passion for excellence.
+                                    At Apurva Software Solutions, we believe in delivering only what truly adds value — no fluff, no shortcuts. Every solution we craft is designed with precision, built for performance, and tested for real-world impact. We ensure a seamless experience, free from unnecessary complications, guided by trust, innovation, and a passion for excellence.
                                 </p>
 
                                 <div className="position-relative mt-4">
@@ -185,7 +192,7 @@ const Main = (props) => {
 
             <section id="features" className="features section">
                 <div className="container">
-                <FeaturesTab/>
+                    <FeaturesTab />
                 </div>
             </section>
 
@@ -203,7 +210,7 @@ const Main = (props) => {
                             <div className="service-item d-flex position-relative h-100">
                                 <i className="bi bi-briefcase icon flex-shrink-0"></i>
                                 <div>
-                                    <h4 className="title"><a href="#" onClick={e=>e.preventDefault()} className="stretched-link">Custom Software Development</a></h4>
+                                    <h4 className="title"><a href="#" onClick={e => e.preventDefault()} className="stretched-link">Custom Software Development</a></h4>
                                     <p className="description">Apurva Software Solutions delivers tailored software crafted to meet unique business goals with precision.</p>
                                 </div>
                             </div>
@@ -213,7 +220,7 @@ const Main = (props) => {
                             <div className="service-item d-flex position-relative h-100">
                                 <i className="bi bi-card-checklist icon flex-shrink-0"></i>
                                 <div>
-                                    <h4 className="title"><a href="#" onClick={e=>e.preventDefault()} className="stretched-link">Web & Mobile App Development</a></h4>
+                                    <h4 className="title"><a href="#" onClick={e => e.preventDefault()} className="stretched-link">Web & Mobile App Development</a></h4>
                                     <p className="description">Apurva Software Solutions builds responsive web and mobile apps for seamless user experience across devices.</p>
                                 </div>
                             </div>
@@ -223,7 +230,7 @@ const Main = (props) => {
                             <div className="service-item d-flex position-relative h-100">
                                 <i className="bi bi-bar-chart icon flex-shrink-0"></i>
                                 <div>
-                                    <h4 className="title"><a href="#" onClick={e=>e.preventDefault()} className="stretched-link">Cloud Solutions</a></h4>
+                                    <h4 className="title"><a href="#" onClick={e => e.preventDefault()} className="stretched-link">Cloud Solutions</a></h4>
                                     <p className="description">Apurva Software Solutions offers scalable cloud solutions for secure, efficient, and flexible business operations.</p>
                                 </div>
                             </div>
@@ -233,7 +240,7 @@ const Main = (props) => {
                             <div className="service-item d-flex position-relative h-100">
                                 <i className="bi bi-binoculars icon flex-shrink-0"></i>
                                 <div>
-                                    <h4 className="title"><a href="#" onClick={e=>e.preventDefault()} className="stretched-link">AI, ML & Data Analytics</a></h4>
+                                    <h4 className="title"><a href="#" onClick={e => e.preventDefault()} className="stretched-link">AI, ML & Data Analytics</a></h4>
                                     <p className="description">Apurva Software Solutions leverages AI, ML, and Data Analytics to drive smart, data-driven business decisions.</p>
                                 </div>
                             </div>
@@ -243,7 +250,7 @@ const Main = (props) => {
                             <div className="service-item d-flex position-relative h-100">
                                 <i className="bi bi-brightness-high icon flex-shrink-0"></i>
                                 <div>
-                                    <h4 className="title"><a href="#" onClick={e=>e.preventDefault()} className="stretched-link">E-commerce Development</a></h4>
+                                    <h4 className="title"><a href="#" onClick={e => e.preventDefault()} className="stretched-link">E-commerce Development</a></h4>
                                     <p className="description">Apurva Software Solutions creates powerful, user-friendly e-commerce platforms to boost online sales and engagement.</p>
                                 </div>
                             </div>
@@ -252,7 +259,7 @@ const Main = (props) => {
                             <div className="service-item d-flex position-relative h-100">
                                 <i className="bi bi-calendar4-week icon flex-shrink-0"></i>
                                 <div>
-                                    <h4 className="title"><a href="#" onClick={e=>e.preventDefault()} className="stretched-link"> Software Testing & QA</a></h4>
+                                    <h4 className="title"><a href="#" onClick={e => e.preventDefault()} className="stretched-link"> Software Testing & QA</a></h4>
                                     <p className="description">Apurva Software Solutions ensures reliable performance through rigorous software testing and quality assurance practices.</p>
                                 </div>
                             </div>
@@ -262,7 +269,7 @@ const Main = (props) => {
                             <div className="service-item d-flex position-relative h-100">
                                 <i className="bi bi-file-earmark-code icon flex-shrink-0"></i>
                                 <div>
-                                    <h4 className="title"><a href="#" onClick={e=>e.preventDefault()} className="stretched-link">Cybersecurity Services</a></h4>
+                                    <h4 className="title"><a href="#" onClick={e => e.preventDefault()} className="stretched-link">Cybersecurity Services</a></h4>
                                     <p className="description">Apurva Software Solutions provides robust cybersecurity services to protect digital assets from threats and vulnerabilities.</p>
                                 </div>
                             </div>
@@ -271,7 +278,7 @@ const Main = (props) => {
                             <div className="service-item d-flex position-relative h-100">
                                 <i className="bi bi-database icon flex-shrink-0"></i>
                                 <div>
-                                    <h4 className="title"><a href="#" onClick={e=>e.preventDefault()} className="stretched-link"> UI/UX Design</a></h4>
+                                    <h4 className="title"><a href="#" onClick={e => e.preventDefault()} className="stretched-link"> UI/UX Design</a></h4>
                                     <p className="description">Apurva Software Solutions crafts intuitive UI/UX designs that enhance user engagement and elevate brand experience.</p>
                                 </div>
                             </div>
@@ -281,7 +288,7 @@ const Main = (props) => {
                             <div className="service-item d-flex position-relative h-100">
                                 <i className="bi bi-code-slash icon flex-shrink-0"></i>
                                 <div>
-                                    <h4 className="title"><a href="#" onClick={e=>e.preventDefault()} className="stretched-link">IT Consulting & Product Strategy</a></h4>
+                                    <h4 className="title"><a href="#" onClick={e => e.preventDefault()} className="stretched-link">IT Consulting & Product Strategy</a></h4>
                                     <p className="description">Apurva Software Solutions offers expert IT consulting and product strategy to align technology with business goals.</p>
                                 </div>
                             </div>
@@ -291,7 +298,7 @@ const Main = (props) => {
                             <div className="service-item d-flex position-relative h-100">
                                 <i className="bi bi-hdd-network icon flex-shrink-0"></i>
                                 <div>
-                                    <h4 className="title"><a href="#" onClick={e=>e.preventDefault()} className="stretched-link">Maintenance & Support</a></h4>
+                                    <h4 className="title"><a href="#" onClick={e => e.preventDefault()} className="stretched-link">Maintenance & Support</a></h4>
                                     <p className="description">Apurva Software Solutions provides ongoing maintenance and support to ensure your software runs smoothly and efficiently.</p>
                                 </div>
                             </div>
@@ -301,7 +308,7 @@ const Main = (props) => {
                             <div className="service-item d-flex position-relative h-100">
                                 <i className="bi bi-megaphone icon flex-shrink-0"></i>
                                 <div>
-                                    <h4 className="title"><a href="#" onClick={e=>e.preventDefault()} className="stretched-link">Digital Marketing</a></h4>
+                                    <h4 className="title"><a href="#" onClick={e => e.preventDefault()} className="stretched-link">Digital Marketing</a></h4>
                                     <p className="description">Apurva Software Solutions delivers result-driven digital marketing strategies to boost online visibility and business growth.</p>
                                 </div>
                             </div>
@@ -311,7 +318,7 @@ const Main = (props) => {
                             <div className="service-item d-flex position-relative h-100">
                                 <i className="bi bi-globe icon flex-shrink-0"></i>
                                 <div>
-                                    <h4 className="title"><a href="#" onClick={e=>e.preventDefault()} className="stretched-link">Project Consulting & Strategy</a></h4>
+                                    <h4 className="title"><a href="#" onClick={e => e.preventDefault()} className="stretched-link">Project Consulting & Strategy</a></h4>
                                     <p className="description">Apurva Software Solutions offers strategic project consulting to ensure successful planning, execution, and business alignment.</p>
                                 </div>
                             </div>
@@ -346,7 +353,7 @@ const Main = (props) => {
 
                 <div className="container">
                     <div className="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-                        <PortfolioBasicTabs className="filter-active" tabArgument={props.tabArgument}/>
+                        <PortfolioBasicTabs className="filter-active" tabArgument={props.tabArgument} />
                     </div>
                 </div>
             </section>
@@ -449,12 +456,12 @@ const Main = (props) => {
                             </div>
                         </div>
                         <div className="col-lg-6">
-                        <Contact onSubmitFormRequest={props.onSubmitFormRequest}/>
+                            <Contact onSubmitFormRequest={props.onSubmitFormRequest} />
                         </div>
                     </div>
                 </div>
             </section>
-            <ModalOverLay ref={props.modalRef} {...props}/>
+            <ModalOverLay ref={props.modalRef} {...props} />
         </main>
     )
 }
