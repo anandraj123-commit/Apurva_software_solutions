@@ -41,6 +41,67 @@ Here, we share:
 
 Stay tuned for updates 🚀  
 
+# 🚀 Internship Program – Apurva Software Solutions
+
+Welcome to the **Apurva Software Solutions Internship Program**!  
+We provide **3 to 6 month internships** in **Full Stack Development (MERN, MEAN, Ionic, Vue, React, Node.js, MongoDB, MySQL)**.  
+This program is designed for **students, freshers, and aspiring developers** who want real-world project experience.
+
+🌐 Learn more: [www.apurvasoftwaresolutions.com](https://www.apurvasoftwaresolutions.com)
+
+---
+
+## 🎯 Why Join Our Internship?
+- Gain **hands-on experience** in real client & in-house projects  
+- Work on **latest technologies** – MERN, MEAN, Vue, Angular, React, Ionic  
+- Learn **best coding practices** & industry standards  
+- Work-from-home flexibility  
+- Certificate of Completion  
+
+📌 Apply now: [Apply for Internship](https://www.apurvasoftwaresolutions.com)
+
+---
+
+## 📚 Internship Tracks
+1. **MERN Stack Development**  
+2. **MEAN Stack Development**  
+3. **Hybrid Mobile App Development (Ionic)**  
+4. **Vue.js / React.js Frontend Development**  
+
+👉 Detailed course info: [Internship Courses](https://www.apurvasoftwaresolutions.com)
+
+---
+
+## 🛠 Tools & Technologies You Will Learn
+- **Frontend**: HTML, CSS, JavaScript, Angular, React, Vue  
+- **Backend**: Node.js, Express  
+- **Database**: MongoDB, MySQL  
+- **Mobile Apps**: Ionic Framework  
+
+📖 Explore more: [Technologies We Use](https://www.apurvasoftwaresolutions.com)
+
+---
+
+## 📩 How to Apply?
+1. Visit our Internship Page → [www.apurvasoftwaresolutions.com/internships](https://www.apurvasoftwaresolutions.com)  
+2. Fill the application form  
+3. Get confirmation email & instructions  
+4. Start your learning journey 🚀  
+
+---
+
+## 📞 Contact Us
+- 🌍 Website: [www.apurvasoftwaresolutions.com](https://www.apurvasoftwaresolutions.com)  
+- 📧 Email: supports@apurvasoftwaresolutions.com  
+- 📌 Apply Here: [Internship Application](https://www.apurvasoftwaresolutions.com)  
+
+---
+
+### ⭐ Stay Connected
+- 🌐 Website: [www.apurvasoftwaresolutions.com](https://www.apurvasoftwaresolutions.com)  
+- 📖 Blog: [Apurva Blog](https://www.apurvasoftwaresolutions.com)  
+- 📩 Contact: [Get in Touch](https://www.apurvasoftwaresolutions.com)  
+
 ---
 
 ## 📬 Contact Us
