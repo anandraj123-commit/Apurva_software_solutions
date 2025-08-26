@@ -1,46 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
   <url>
     <loc>https://apurvasoftwaresolutions.com/</loc>
     <lastmod>2025-08-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
+
   <url>
     <loc>https://apurvasoftwaresolutions.com/blogs</loc>
-    <lastmod>2025-08-26</lastmod> <!-- Update this date to the latest blog update -->
+    <lastmod>2025-08-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
-  <url>
-  <loc>https://apurvasoftwaresolutions.com/blog?id=1&title=Improve%20design%20with%20typography</loc>
-  <lastmod>2025-08-26</lastmod>
-  <changefreq>weekly</changefreq>
-  <priority>0.8</priority>
-</url>
- <url>
-  <loc>https://apurvasoftwaresolutions.com/blog?id=1&title=Improve%20design%20with%20typography</loc>
-  <lastmod>2025-08-26</lastmod>
-  <changefreq>weekly</changefreq>
-  <priority>0.8</priority>
-</url>
- <url>
-  <loc>https://apurvasoftwaresolutions.com/blog?id=1&title=Improve%20design%20with%20typography</loc>
-  <lastmod>2025-08-26</lastmod>
-  <changefreq>weekly</changefreq>
-  <priority>0.8</priority>
-</url>
- <url>
-  <loc>https://apurvasoftwaresolutions.com/blog?id=1&title=Improve%20design%20with%20typography</loc>
-  <lastmod>2025-08-26</lastmod>
-  <changefreq>weekly</changefreq>
-  <priority>0.8</priority>
-</url>
- <url>
-  <loc>https://apurvasoftwaresolutions.com/blog?id=1&title=Improve%20design%20with%20typography</loc>
-  <lastmod>2025-08-26</lastmod>
-  <changefreq>weekly</changefreq>
-  <priority>0.8</priority>
-</url>
-</urlset>
 
+  <url>
+    <loc>https://apurvasoftwaresolutions.com/blog?id=1&amp;title=Social%20Media%20Marketing%3A%20A%20Key%20to%20Business%20Growth</loc>
+    <lastmod>2025-08-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://apurvasoftwaresolutions.com/blog?id=2&amp;title=Web%20%26%20Mobile%20App%20Development%3A%20How%20it%20Boosts%20Your%20Business</loc>
+    <lastmod>2025-08-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://apurvasoftwaresolutions.com/blog?id=3&amp;title=Boost%20Your%20Business%20Locally%20with%20Local%20SEO</loc>
+    <lastmod>2025-08-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://apurvasoftwaresolutions.com/blog?id=4&amp;title=Transform%20Your%20Business%20with%20E-Commerce%20Applications</loc>
+    <lastmod>2025-08-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+</urlset>
