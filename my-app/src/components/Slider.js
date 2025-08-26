@@ -18,7 +18,7 @@ const ImageCarousel = () => {
   const data = [
     {
       img: "img/testimonials/ravi.jpg",
-      name: "Manohar S Lal",
+      name: "Utkarsh Bansal",
       designation: "Product Manager",
       content:
         "Responsible for defining the vision and strategy of a product and guiding its development from concept to launch. They act as a bridge between business, design, and engineering teams to ensure the product meets user needs and business goals.",

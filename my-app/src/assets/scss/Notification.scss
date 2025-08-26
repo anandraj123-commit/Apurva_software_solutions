@@ -1,0 +1,46 @@
+// assets/scss/Notification.scss
+
+.notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    min-width: 250px;
+    padding: 15px 20px;
+    border-radius: 8px;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 9999;
+    animation: slideIn 0.3s ease-out;
+    .success {
+        background-color: #4caf50; // green
+      }
+    .pending {
+        background-color: #f0ad4e; // yellow/orange
+      }
+
+    .error {
+        background-color: #f44336; // red
+      }
+      
+    .notification-content {
+        flex: 1;
+      }  
+
+    .close-btn {
+        background: none;
+        border: none;
+        color: white;
+        font-size: 18px;
+        cursor: pointer;
+        margin-left: 10px;
+      }
+  }
+  
+  @keyframes slideIn {
+    from { opacity: 0; transform: translateX(100%); }
+    to { opacity: 1; transform: translateX(0); }
+  }
+  

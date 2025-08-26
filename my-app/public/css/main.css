@@ -1879,13 +1879,13 @@ section,
 border:none !important;
 }
 
-section[id='portfolio']{
-  padding:0px;
+section[id='portfolio'] .container{
+  margin-top: -40px;
 }
 
-section[id='about']{
-  padding:0px;
-}
+ section[id='portfolio']{
+      margin-top: 55px;
+} 
 
 div.css-ntwt7x{
   align-items: flex-start;
