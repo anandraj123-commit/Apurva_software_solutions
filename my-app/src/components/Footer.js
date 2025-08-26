@@ -55,6 +55,7 @@ const Footer = (props) => {
                             <li><i className="bi bi-chevron-right"></i> <a href="#services" title="Services offered by Apurva Software Solutions">Services</a></li>
                             <li><i className="bi bi-chevron-right"></i> <a href="#portfolio" title="Portfolio of Apurva Software Solutions">Portfolio</a></li>
                             <li><i className="bi bi-chevron-right"></i> <a href="#team" title="Our Team at Apurva Software Solutions">Teams</a></li>
+                            <li><i className="bi bi-chevron-right"></i> <Link to="/blogs" title="Our Blogs at Apurva Software Solutions">Blogs</Link></li>
                             <li>
                                 <i className="bi bi-chevron-right"></i>
                                 <a
