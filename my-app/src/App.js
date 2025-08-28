@@ -1,4 +1,4 @@
-import { Router, Routes, Route, useLocation } from 'react-router-dom';
+import { Routes, Route, useLocation } from 'react-router-dom';
 import './App.css';
 import routes from './routes';
 import ScrollToTop from './components/ScrollToTop';
