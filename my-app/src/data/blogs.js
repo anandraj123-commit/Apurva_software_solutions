@@ -127,47 +127,330 @@ const blogsArray = [
       comments:[],
       creator:{...creator3,description:'Avishek is the Chief Technology Officer (CTO) at Apurva Software Solutions. With extensive experience in software architecture, mobile and web application development, he leads the technology strategy and innovation at the company.'},
       createdAt: new Date("2025-8-19")
-    }
-    // {
-    //   id: 5,
-    //   type:'Engineering',
-    //   src: '/img/blog/3.jpg',
-    //   title: 'Improve design with typography hello shyam',
-    //   excerpt: 'Non illo quas blanditiis repellendus laboriosam minima animi. Consectetur accusantium pariatur repudiandae!',
-    //   shortDesciption:` Non illo quas blanditiis repellendus laboriosam minima animi.<br /> Consectetur accusantium pariatur repudiandae!`,
-    //   description:`<p class="highlight">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus natus, consectetur? Illum libero vel nihil nisi quae, voluptatem, sapiente necessitatibus distinctio voluptates, iusto qui. Laboriosam autem, nam voluptate in beatae.</p>
-    //               <p>The same is true as we experience the emotional sensation of stress from our first instances of social rejection ridicule. We quickly learn to fear and thus automatically.</p>
-    //               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, rerum beatae repellat tenetur incidunt quisquam libero dolores laudantium. Nesciunt quis itaque quidem, voluptatem autem eos animi laborum iusto expedita sapiente.</p>`,
-    //   socialLink:socialLink ,
-    //   tags:` <span>Tags:</span><br></br>
-    //   <span>Advancher</span>
-    //   <span>Landscape</span>
-    //   <span>Travel</span>`,
-    //   keywords:['Web','Agency','Company','Creative','Html','Marketing','Social Media','Branding'],
-    //   comments:[],
-    //   creator:{...creator4,description:'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, dolore.'},
-    //   createdAt: new Date("2025-8-22")
-    // },
-    // {
-    //   id: 6,
-    //   type:'Cyber Security',
-    //   src: '/img/blog/2.jpg',
-    //   title: 'Improve design with typography hello daddy',
-    //   excerpt: 'Non illo quas blanditiis repellendus laboriosam minima animi. Consectetur accusantium pariatur repudiandae!',
-    //   shortDesciption:` Non illo quas blanditiis repellendus laboriosam minima animi.<br /> Consectetur accusantium pariatur repudiandae!`,
-    //   description:`<p class="highlight">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus natus, consectetur? Illum libero vel nihil nisi quae, voluptatem, sapiente necessitatibus distinctio voluptates, iusto qui. Laboriosam autem, nam voluptate in beatae.</p>
-    //               <p>The same is true as we experience the emotional sensation of stress from our first instances of social rejection ridicule. We quickly learn to fear and thus automatically.</p>
-    //               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, rerum beatae repellat tenetur incidunt quisquam libero dolores laudantium. Nesciunt quis itaque quidem, voluptatem autem eos animi laborum iusto expedita sapiente.</p>`,
-    //   socialLink:socialLink ,
-    //   tags:` <span>Tags:</span><br></br>
-    //   <span>Advancher</span>
-    //   <span>Landscape</span>
-    //   <span>Travel</span>`,
-    //   keywords:['Web','Agency','Company','Creative','Html','Marketing','Social Media','Branding'],
-    //   comments:[],
-    //   creator:{...creator4,description:'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, dolore.'},
-    //   createdAt: new Date("2025-8-25")
-    // }
+    },
+    {
+      id: 5,
+      type: 'Software Development',
+      src: '/img/blog/crm_customer-relationship-management.jpg',
+      title: 'Boost Your Business Efficiency with CRM Software Applications',
+      excerpt: 'Implement powerful CRM software applications with Apurva Software Solutions. Enhance customer relationships, streamline sales processes, and drive business growth!',
+      shortDescription: `Implement powerful CRM software applications.<br />Enhance customer relationships, streamline sales processes, and drive business growth!`,
+      description: `
+      <p class="highlight">CRM (Customer Relationship Management) software applications are essential tools for businesses looking to manage customer interactions effectively and optimize sales processes.</p>
+      <p>CRM applications centralize customer data, allowing teams to track leads, manage contacts, and monitor interactions across multiple channels. This ensures no opportunity is lost and improves overall communication.</p>
+      <p>Automation features such as follow-up reminders, email campaigns, and task management help sales and marketing teams save time and focus on high-priority activities.</p>
+      <p>Analytics and reporting modules provide insights into sales performance, customer behavior, and engagement metrics, enabling data-driven decisions for business growth.</p>
+      <p>Integration with other business tools, like email platforms, social media, and e-commerce systems, ensures a seamless workflow across departments.</p>
+      <p>Mobile access allows sales teams to update records, check customer history, and respond to leads on the go, increasing efficiency and responsiveness.</p>
+      <p>An intuitive dashboard helps managers visualize performance, monitor KPIs, and identify opportunities for improvement quickly.</p>
+      <p>Apurva Software Solutions specializes in developing robust, scalable CRM software tailored to your business needs, focusing on user experience, security, and operational efficiency.</p>`,
+      socialLink: socialLink,
+      tags: `<span>Tags:</span><br></br>
+      <span>CRM</span>
+      <span>Customer Relationship Management</span>
+      <span>Sales Automation</span>
+      <span>Business Growth</span>`,
+      keywords: ['CRM', 'Customer Management', 'Sales Automation', 'Leads', 'Analytics', 'Customer Engagement', 'Business Growth', 'Data Insights', 'Mobile CRM', 'Workflow Optimization'],
+      comments: [],
+      creator: {
+        ...creator3,
+        description: 'Avishek is the Chief Technology Officer (CTO) at Apurva Software Solutions. With extensive experience in software architecture, mobile and web application development, he leads the technology strategy and innovation at the company.'
+      },
+      createdAt: new Date("2025-12-19")
+    },
+    {
+      id: 6,
+      type: 'Software Development',
+      src: '/img/blog/custom-software-development.jpg',
+      title: 'Why Choose Apurva Software Solutions for Custom Software Development',
+      excerpt: 'Discover why Apurva Software Solutions is the trusted partner for custom software development. We deliver scalable, secure, and business-driven digital solutions tailored to your needs.',
+      shortDescription: `Discover why Apurva Software Solutions is the trusted partner for custom software development.<br />We deliver scalable, secure, and business-driven digital solutions tailored to your needs.`,
+      description: `
+      <p class="highlight">Custom software development enables businesses to build solutions tailored exactly to their operational needs, goals, and growth plans.</p>
+    
+      <p>At Apurva Software Solutions, we focus on understanding your business challenges before writing a single line of code. This ensures that the software we develop aligns perfectly with your workflows and long-term vision.</p>
+    
+      <p>Our team specializes in building scalable, high-performance web and mobile applications using modern technologies such as React, Angular, Next.js, Node.js, MongoDB, and MySQL.</p>
+    
+      <p>We follow a structured and transparent development process, including requirement analysis, UI/UX design, development, testing, and deployment, to ensure timely delivery and high-quality results.</p>
+    
+      <p>Security and data protection are integral to our development approach. We implement best practices for authentication, authorization, encryption, and secure APIs to protect your business data.</p>
+    
+      <p>Our solutions are designed to be flexible and future-ready, allowing easy upgrades, feature enhancements, and integrations with third-party tools as your business grows.</p>
+    
+      <p>We adopt agile development methodologies, enabling faster iterations, continuous feedback, and better collaboration with clients throughout the project lifecycle.</p>
+    
+      <p>Apurva Software Solutions stands out by offering cost-effective custom software development without compromising on quality, performance, or reliability.</p>
+    
+      <p>Whether you are a startup, MSME, or enterprise, we help you transform your ideas into powerful digital products that drive efficiency, innovation, and business success.</p>
+      `,
+      socialLink: socialLink,
+      tags: `<span>Tags:</span><br></br>
+      <span>Custom Software Development</span>
+      <span>Web Development</span>
+      <span>Mobile Applications</span>
+      <span>Business Solutions</span>`,
+      keywords: [
+        'Custom Software Development',
+        'Apurva Software Solutions',
+        'Web Application Development',
+        'Mobile App Development',
+        'Business Automation',
+        'Enterprise Software',
+        'Scalable Applications',
+        'Secure Software',
+        'Agile Development',
+        'Digital Transformation'
+      ],
+      comments: [],
+      creator: {
+        ...creator3,
+        description: 'Avishek is the Chief Technology Officer (CTO) at Apurva Software Solutions. With extensive experience in software architecture, web and mobile application development, he drives innovation and delivers scalable, business-focused digital solutions.'
+      },
+      createdAt: new Date("2025-12-19")
+    },
+    {
+      id: 7,
+      type: 'Software Development',
+      src: '/img/blog/software-solutions-startups-msmes.jpg',
+      title: 'Software Development Solutions for Startups & MSMEs',
+      excerpt: 'Empower your startup or MSME with custom software development solutions by Apurva Software Solutions. Build scalable, cost-effective, and growth-oriented digital products.',
+      shortDescription: `Empower your startup or MSME with custom software development solutions.<br />Build scalable, cost-effective, and growth-oriented digital products.`,
+      description: `
+      <p class="highlight">Startups and MSMEs require flexible, scalable, and cost-effective software solutions to compete and grow in today’s digital-first business environment.</p>
+    
+      <p>At Apurva Software Solutions, we specialize in developing custom software tailored to the unique needs of startups and small-to-medium enterprises, helping them streamline operations and accelerate growth.</p>
+    
+      <p>We focus on building Minimum Viable Products (MVPs) that allow startups to validate ideas quickly, reduce development costs, and reach the market faster.</p>
+    
+      <p>Our software solutions include web applications, mobile apps, CRM systems, ERP platforms, and custom business automation tools designed to improve efficiency and productivity.</p>
+    
+      <p>Using modern and reliable technologies such as React, Angular, Next.js, Node.js, MongoDB, and MySQL, we ensure high performance, scalability, and long-term maintainability.</p>
+    
+      <p>We adopt agile development methodologies, enabling continuous feedback, faster iterations, and flexibility to adapt as business requirements evolve.</p>
+    
+      <p>Security, performance optimization, and user experience are core priorities in our development process, ensuring reliable and user-friendly software solutions.</p>
+    
+      <p>Our cost-effective development models help startups and MSMEs get enterprise-grade software without heavy upfront investments.</p>
+    
+      <p>Apurva Software Solutions partners with startups and MSMEs as a long-term technology ally, delivering solutions that support sustainable growth and digital transformation.</p>
+      `,
+      socialLink: socialLink,
+      tags: `<span>Tags:</span><br></br>
+      <span>Startups</span>
+      <span>MSMEs</span>
+      <span>Custom Software</span>
+      <span>Business Growth</span>`,
+      keywords: [
+        'Software Development for Startups',
+        'MSME Software Solutions',
+        'Custom Software Development',
+        'MVP Development',
+        'Business Automation',
+        'Web Application Development',
+        'Mobile App Development',
+        'Scalable Software',
+        'Cost-Effective Development',
+        'Digital Transformation'
+      ],
+      comments: [],
+      creator: {
+        ...creator3,
+        description: 'Avishek is the Chief Technology Officer (CTO) at Apurva Software Solutions. With strong expertise in startup-focused product development and scalable software architecture, he helps businesses turn ideas into successful digital solutions.'
+      },
+      createdAt: new Date("2025-12-19")
+    },
+    {
+      id: 8,
+      type: 'Mobile App Development',
+      src: '/img/blog/mobile-app-development-solutions.jpg',
+      title: 'Mobile App Development Solutions for Modern Businesses',
+      excerpt: 'Build powerful, scalable, and user-friendly mobile applications with Apurva Software Solutions. Transform your ideas into high-performing Android and iOS apps.',
+      shortDescription: `Build powerful, scalable, and user-friendly mobile applications.<br />Transform your ideas into high-performing Android and iOS apps.`,
+      description: `
+      <p class="highlight">Mobile applications have become essential tools for businesses to engage customers, streamline operations, and drive digital growth.</p>
+    
+      <p>At Apurva Software Solutions, we design and develop custom mobile applications that align with business goals and deliver seamless user experiences.</p>
+    
+      <p>Our mobile app development services cover Android, iOS, and cross-platform solutions, ensuring maximum reach and performance.</p>
+    
+      <p>We focus on intuitive UI/UX design, fast loading times, and smooth navigation to enhance user engagement and retention.</p>
+    
+      <p>Using modern frameworks and technologies, we build secure, scalable, and future-ready mobile applications.</p>
+    
+      <p>Our agile development approach ensures faster delivery, continuous feedback, and flexibility throughout the project lifecycle.</p>
+    
+      <p>Security, performance optimization, and app scalability remain core priorities in every mobile solution we deliver.</p>
+    
+      <p>Apurva Software Solutions helps businesses leverage mobile technology to boost productivity, improve customer experience, and achieve sustainable growth.</p>
+      `,
+      socialLink: socialLink,
+      tags: `<span>Tags:</span><br></br>
+      <span>Mobile App Development</span>
+      <span>Android Apps</span>
+      <span>iOS Apps</span>
+      <span>Business Mobility</span>`,
+      keywords: [
+        'Mobile App Development',
+        'Android App Development',
+        'iOS App Development',
+        'Cross Platform Apps',
+        'Business Mobile Apps',
+        'Custom App Development',
+        'Scalable Mobile Apps',
+        'Secure Applications'
+      ],
+      comments: [],
+      creator: {
+        ...creator3,
+        description: 'Avishek is the CTO at Apurva Software Solutions, specializing in scalable mobile and web application development for startups and enterprises.'
+      },
+      createdAt: new Date("2025-12-19")
+    }, 
+    {
+      id: 9,
+      type: 'Web Development',
+      src: '/img/blog/web-application-development.jpg',
+      title: 'Custom Web Application Development for Business Growth',
+      excerpt: 'Develop scalable, secure, and high-performance web applications with Apurva Software Solutions to accelerate your digital transformation.',
+      shortDescription: `Develop scalable, secure, and high-performance web applications.<br />Accelerate your digital transformation.`,
+      description: `
+      <p class="highlight">Web applications play a crucial role in enabling businesses to automate processes and deliver seamless digital experiences.</p>
+    
+      <p>Apurva Software Solutions builds custom web applications designed to match specific business workflows and scalability requirements.</p>
+    
+      <p>We use modern frontend and backend technologies to ensure speed, responsiveness, and reliability.</p>
+    
+      <p>Our development process focuses on clean architecture, optimized performance, and strong security measures.</p>
+    
+      <p>We ensure smooth integration with third-party tools, APIs, and cloud services.</p>
+    
+      <p>Agile development allows continuous improvement and faster deployment cycles.</p>
+    
+      <p>Our web solutions help businesses improve efficiency, customer engagement, and operational visibility.</p>
+      `,
+      socialLink: socialLink,
+      tags: `<span>Tags:</span><br></br>
+      <span>Web Development</span>
+      <span>Custom Web Apps</span>
+      <span>Business Automation</span>`,
+      keywords: [
+        'Web Application Development',
+        'Custom Web Development',
+        'Business Web Apps',
+        'Scalable Web Solutions',
+        'Secure Web Applications'
+      ],
+      comments: [],
+      creator: {
+        ...creator3,
+        description: 'Avishek leads the web development strategy at Apurva Software Solutions, focusing on performance-driven and scalable applications.'
+      },
+      createdAt: new Date("2025-12-19")
+    },
+    {
+      id: 10,
+      type: 'PWA Development',
+      src: '/img/blog/pwa-reduce-development-costs.jpg',
+      title: 'How PWA Applications Help Businesses Reduce Development Costs',
+      excerpt: 'Progressive Web Applications (PWAs) help businesses lower development and maintenance costs while delivering fast, reliable, and app-like user experiences.',
+      shortDescription: `Progressive Web Applications help businesses lower development and maintenance costs.<br />Deliver fast, reliable, and app-like user experiences.`,
+      description: `
+      <p class="highlight">Progressive Web Applications (PWAs) offer a cost-effective alternative to native mobile apps by combining the best features of web and mobile technologies.</p>
+    
+      <p>One of the biggest advantages of PWA applications is the single codebase approach. Businesses can build one application that works seamlessly across web, Android, and iOS platforms, significantly reducing development and maintenance expenses.</p>
+    
+      <p>PWAs eliminate the need to develop and manage separate native apps, which lowers costs related to multiple development teams, testing environments, and long-term maintenance.</p>
+    
+      <p>Offline access and smart caching using service workers reduce server load and improve performance, resulting in lower infrastructure and operational costs.</p>
+    
+      <p>PWA applications do not require app store approvals, fees, or frequent store updates, saving both time and distribution costs for businesses.</p>
+    
+      <p>Faster load times and improved performance enhance user engagement and conversion rates, helping businesses achieve better ROI without additional marketing spend.</p>
+    
+      <p>PWAs are easier to update and deploy, allowing businesses to roll out new features instantly without forcing users to download updates.</p>
+    
+      <p>Apurva Software Solutions develops scalable and secure PWA applications that help businesses reduce costs while delivering high-quality digital experiences.</p>
+    
+      <p>For startups, MSMEs, and enterprises, PWA development provides an efficient way to enter the mobile market without heavy upfront investment.</p>
+      `,
+      socialLink: socialLink,
+      tags: `<span>Tags:</span><br></br>
+      <span>PWA</span>
+      <span>Progressive Web Apps</span>
+      <span>Cost Optimization</span>
+      <span>Web Development</span>`,
+      keywords: [
+        'PWA Applications',
+        'Progressive Web Apps',
+        'Cost Effective App Development',
+        'PWA for Business',
+        'Web App Development',
+        'Single Codebase',
+        'Offline Web Apps',
+        'Service Workers',
+        'Digital Transformation'
+      ],
+      comments: [],
+      creator: {
+        ...creator3,
+        description: 'Avishek is the Chief Technology Officer (CTO) at Apurva Software Solutions. He specializes in building scalable, cost-efficient PWA and web solutions that help businesses optimize development costs and improve performance.'
+      },
+      createdAt: new Date("2025-12-19")
+    },
+    {
+      id: 11,
+      type: 'Web Development',
+      src: '/img/blog/single-page-application-fast-responsive.jpg',
+      title: 'Single Page Applications (SPA): Building Fast & Responsive Web Experiences',
+      excerpt: 'Single Page Applications (SPAs) enable fast, responsive, and seamless user experiences. Learn how SPAs help businesses build modern, high-performance web applications.',
+      shortDescription: `Single Page Applications enable fast, responsive, and seamless user experiences.<br />Build modern, high-performance web applications with SPA technology.`,
+      description: `
+      <p class="highlight">Single Page Applications (SPAs) are modern web applications designed to deliver fast, responsive, and app-like user experiences by dynamically updating content without full page reloads.</p>
+    
+      <p>Unlike traditional multi-page websites, SPAs load a single HTML page and update data asynchronously, resulting in faster navigation and smoother interactions.</p>
+    
+      <p>SPAs rely on efficient client-side rendering and API-driven communication, reducing server load and improving overall performance.</p>
+    
+      <p>Modern JavaScript frameworks such as React, Angular, and Vue.js enable developers to build scalable and maintainable SPA architectures.</p>
+    
+      <p>Fast response times and smooth transitions improve user engagement, lower bounce rates, and increase conversion rates.</p>
+    
+      <p>SPAs are ideal for dashboards, SaaS platforms, e-commerce interfaces, and interactive business applications requiring real-time updates.</p>
+    
+      <p>Performance optimization techniques such as lazy loading, code splitting, caching, and state management further enhance SPA speed and reliability.</p>
+    
+      <p>Security best practices, including token-based authentication and secure API communication, ensure data safety in SPA applications.</p>
+    
+      <p>Apurva Software Solutions specializes in building secure, scalable, and high-performance Single Page Applications tailored to business requirements.</p>
+    
+      <p>For startups, MSMEs, and enterprises, SPAs provide a future-ready approach to delivering fast and engaging digital experiences.</p>
+      `,
+      socialLink: socialLink,
+      tags: `<span>Tags:</span><br></br>
+      <span>Single Page Application</span>
+      <span>SPA</span>
+      <span>Fast Web Apps</span>
+      <span>Responsive Design</span>`,
+      keywords: [
+        'Single Page Applications',
+        'SPA Development',
+        'Fast Web Applications',
+        'Responsive Web Design',
+        'React SPA',
+        'Angular SPA',
+        'Vue.js SPA',
+        'High Performance Web Apps',
+        'Modern Web Development',
+        'Web Application Architecture'
+      ],
+      comments: [],
+      creator: {
+        ...creator3,
+        description: 'Avishek is the Chief Technology Officer (CTO) at Apurva Software Solutions. He leads the development of fast, scalable, and responsive SPA-based web applications using modern frontend technologies.'
+      },
+      createdAt: new Date("2025-12-19")
+    }           
   ]
 
   export default blogsArray;

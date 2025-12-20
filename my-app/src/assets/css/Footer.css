@@ -164,4 +164,17 @@
       margin-right: 5px;
     }
   }
+
+  .footer-seo {
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+    padding-top: 12px;
+  }
+  
+  .footer-seo-text {
+    font-size: 12px;
+    line-height: 1.7;
+    color: #bdbdbd;
+    text-align: justify;
+    margin: 0;
+  }
   
