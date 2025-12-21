@@ -6,6 +6,7 @@ import Notification from './components/Notification';
 import { useEffect, useState } from 'react';
 import LoaderOverLay from './components/loader/RouterLoader';
 import AnalyticsTracker from './components/AnalyticsTracker';
+import WhatsAppButton from "./components/WhatsAppButton";
 
 function App() {
   const location = useLocation();
@@ -32,6 +33,7 @@ function App() {
           <Route key={index} path={route.path} element={route.element} />
         ))}
       </Routes>
+      <WhatsAppButton></WhatsAppButton>
     </>
   );
 }

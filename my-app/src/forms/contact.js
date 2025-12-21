@@ -8,7 +8,6 @@ const Contact = ({ onSubmitFormRequest }) => {
     email: '',
     subject: '',
     message: '',
-    
   });
 
   const [status, setStatus] = useState({
@@ -123,9 +122,7 @@ const Contact = ({ onSubmitFormRequest }) => {
         </div>
       </div>
     </form>
-    
     </>
-  
   );
 };
 

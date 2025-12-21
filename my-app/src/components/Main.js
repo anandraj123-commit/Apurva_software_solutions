@@ -680,7 +680,6 @@ const Main = (props) => {
                   <div className="info-item d-flex flex-column justify-content-center align-items-center">
                     <i className="bi bi-envelope"></i>
                     <h3>Email Us</h3>
-                    <p>apurvasoftware.solutions@outlook.com</p>
                     <p>supports@apurvasoftwaresolutions.com</p>
                   </div>
                 </div>

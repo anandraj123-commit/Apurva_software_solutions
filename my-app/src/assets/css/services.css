@@ -1,0 +1,295 @@
+/* ===========================
+   HERO SERVICES SECTION
+=========================== */
+
+.hero-services {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0b0f14, #0e2a2a);
+    padding: 80px 0;
+    color: #ffffff;
+  }
+  
+  /* LOGO */
+  .hero-logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .hero-logo img {
+    height: 45px;
+  }
+  
+  /* TEXT */
+  .hero-title {
+    font-size: 42px;
+    font-weight: 700;
+    color:white;
+  }
+  
+  .highlight {
+    color: #f75757;
+    font-size: 34px;
+    font-weight: 700;
+  }
+  
+  .hero-description {
+    color: #cbd5e1;
+    max-width: 600px;
+    font-size: 16px;
+  }
+  
+  .plan-title {
+    font-weight: 600;
+    color: #e5e7eb;
+  }
+  
+  /* INFO CARDS */
+  .info-card {
+    background: #ff4a17;
+    padding: 18px;
+    border-radius: 14px;
+    color: #ffffff;
+    font-size: 14px;
+    height: 100%;
+    transition: all 0.3s ease;
+  }
+  
+  .info-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+  }
+  
+  .free-text {
+    color: #9ca3af;
+    font-weight: 500;
+  }
+  
+  /* IMAGE GRID */
+  .image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+  }
+  
+  .img-box {
+    border-radius: 32px;
+    padding: 12px;
+  }
+  
+  .img-box img {
+    width: 100%;
+    border-radius: 22px;
+    object-fit: cover;
+  }
+  
+  /* COLORS */
+  .green {
+    background: #6aa84f;
+  }
+  
+  .orange {
+    background: #ff7a30;
+  }
+  
+  .yellow {
+    background: #f1c232;
+  }
+  
+  .blue {
+    background: #5ccadf;
+  }
+  
+  /* RESPONSIVE */
+  @media (max-width: 991px) {
+    .hero-services {
+      text-align: center;
+    }
+  
+    .hero-logo {
+      justify-content: center;
+    }
+  
+    .image-grid {
+      margin-top: 40px;
+    }
+  }
+  
+ /*  /////////////////////////////////////////////////////////////////////   */
+
+
+.hero-benefits-section {
+    background: linear-gradient(135deg, #f8f1ff, #f6edff);
+  }
+  
+  .benefits-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #3f3f46;
+  }
+  
+  .highlight-text {
+    color: #f75757;
+  }
+  
+  .benefits-subtitle {
+    color: #6b7280;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
+  /* CARD */
+  .benefit-card {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 35px;
+    height: 100%;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+  }
+  
+  .benefit-card h4 {
+    margin-top: 20px;
+    font-weight: 700;
+  }
+  
+  .benefit-card p {
+    color: #6b7280;
+    margin: 10px 0 15px;
+  }
+  
+  .benefit-card ul {
+    padding-left: 20px;
+  }
+  
+  .benefit-card ul li {
+    margin-bottom: 8px;
+    color: #374151;
+  }
+  
+  /* ICON */
+  .icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    color: #ffffff;
+  }
+  
+  .icon.purple {
+    background: #c084fc;
+  }
+  
+  .icon.orange {
+    background: #fb923c;
+  }
+
+  .icon.pink{
+    background: pink;
+  }
+
+  .icon.red {
+    background: red;
+  }
+
+
+
+
+
+  /*******************************************************************************/
+
+  /* Section */
+.maintenance-process {
+    background: #ffffff;
+  }
+  
+  .maintenance-process .section-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #333;
+  }
+  
+  .maintenance-process .section-subtitle {
+    max-width: 700px;
+    margin: 10px auto 0;
+    color: #6b7280;
+    font-size: 16px;
+  }
+  
+  /* Step */
+  .maintenance-process .step-label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #6b7280;
+    margin-bottom: 20px;
+  }
+  
+  .maintenance-process .step-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 20px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+    color: #fff;
+  }
+  
+  /* Icon Colors */
+  .step-icon.yellow { background: #facc15; }
+  .step-icon.blue { background: #60a5fa; }
+  .step-icon.purple { background: #a78bfa; }
+  .step-icon.orange { background: #fb923c; }
+  
+  .step-subtitle {
+    font-weight: 600;
+    color: #6b7280;
+    margin-top: 8px;
+  }
+  
+  .step-desc {
+    font-size: 14px;
+    color: #6b7280;
+    max-width: 260px;
+    margin: 0 auto;
+  }
+  
+
+
+
+  /**********************************************************************************/
+
+  .faq-section {
+    background: #fff;
+  }
+  
+  .faq-section .text-purple {
+    color: #7a2ff4;
+  }
+  
+  .faq-section .faq-accordion .accordion-item {
+    border: none;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+  }
+  
+  .faq-section .faq-accordion .accordion-button {
+    font-weight: 500;
+    border-radius: 10px;
+    padding: 18px 22px;
+  }
+  
+  .faq-section .faq-accordion .accordion-button:not(.collapsed) {
+    background: #f7f5ff;
+    color: #000;
+  }
+  
+  .faq-section .faq-accordion .accordion-body {
+    color: #555;
+    line-height: 1.7;
+  }
+  
