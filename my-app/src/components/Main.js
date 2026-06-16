@@ -4,6 +4,9 @@ import FeaturesTab from './FeaturesTab';
 import ModalOverLay from './overlay/ModalOverlay';
 import Contact from '../forms/contact';
 import AlertBox from './AlertBox';
+import Industries from './Industries';
+import TechnologySection from './TechnologySection';
+import SocialOrbitAnimation from './SocialOrbitAnimation';
 
 const Main = (props) => {
   return (
@@ -554,7 +557,10 @@ const Main = (props) => {
         </div>
       </section>
 
-      <section id="team" className="team section light-background">
+      <Industries/>
+      <TechnologySection/>
+
+      <section id="team" className="team section bg-[#f1f4fa]">
         <div className="container section-title text-center">
           <h2>Team</h2>
           <p>Check Our Team</p>
@@ -652,46 +658,13 @@ const Main = (props) => {
         </div>
       </section>
 
-      <section id="contact" className="contact section">
-        <div className="container section-title text-center">
-          <h2>Contact</h2>
-          <p>Apurva Software Solutions - We build what you truly need.</p>
-        </div>
-        <div className="container">
-          <div className="row gy-4">
-            <div className="col-lg-6 col-md-12">
-              <div className="row gy-4">
-                <div className="col-lg-12 col-md-12 col-sm-12">
-                  <div className="info-item d-flex flex-column justify-content-center align-items-center">
-                    <i className="bi bi-geo-alt"></i>
-                    <h3>Address</h3>
-                    <p>Veer Kuwar Singh Colony, Gaya, Bihar</p>
-                  </div>
-                </div>
-                <div className="col-md-6 col-sm-12">
-                  <div className="info-item d-flex flex-column justify-content-center align-items-center">
-                    <i className="bi bi-telephone"></i>
-                    <h3>Call Us</h3>
-                    <p>+91 6203253537</p>
-                    <p>+91 9629776056</p>
-                  </div>
-                </div>
-                <div className="col-md-6 col-sm-12">
-                  <div className="info-item d-flex flex-column justify-content-center align-items-center">
-                    <i className="bi bi-envelope"></i>
-                    <h3>Email Us</h3>
-                    <p>supports@apurvasoftwaresolutions.com</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-6 col-md-12">
+     
+          
               <Contact onSubmitFormRequest={props.onSubmitFormRequest} />
-            </div>
-          </div>
-        </div>
-      </section>
+         
       <ModalOverLay ref={props.modalRef} {...props} />
+
+      <SocialOrbitAnimation/>
     </main>
   );
 };

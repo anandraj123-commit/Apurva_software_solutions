@@ -3,6 +3,7 @@ import {Navigate} from 'react-router-dom';
 import Blogs from './pages/blogs';
 import Blog from './pages/blog';
 import HeroServices from './pages/services';
+import MobileService from './pages/mobile-service';
 const routes = [
     {
         path:'/',
@@ -14,7 +15,12 @@ const routes = [
     },
     {
         path: 'blog',          // blog detail with query params
-        element: <Blog />
+        element: <Blogs />
+      },
+
+      {
+        path: 'MobileService', 
+        element:<MobileService/>
       },
     {
         path:"*",
