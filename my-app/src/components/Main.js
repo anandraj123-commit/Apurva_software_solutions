@@ -528,7 +528,7 @@ const Main = (props) => {
         <h2 className="text-4xl font-bold">
         Our{" "}
           <span className="bg-[#ff4a17] bg-clip-text text-transparent">
-            Portfolio
+            Services
           </span>
         </h2>
 
