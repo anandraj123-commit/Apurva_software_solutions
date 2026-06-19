@@ -4,6 +4,7 @@ import Blogs from './pages/blogs';
 import Blog from './pages/blog';
 import HeroServices from './pages/services';
 import MobileService from './pages/mobile-service';
+import DiscussYourProject from './pages/DiscussYourProject';
 const routes = [
     {
         path:'/',
@@ -12,6 +13,10 @@ const routes = [
     {
         path:'blogs',
         element:<Blogs/>
+    },
+    {
+        path:'discussYourProject',
+        element:<DiscussYourProject/>
     },
     {
         path: 'blog',          // blog detail with query params

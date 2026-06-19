@@ -96,16 +96,23 @@ const Contact = ({ onSubmitFormRequest }) => {
       {status.error && (
         <AlertBox type="error" message={status.error} duration="3000" />
       )}{" "}
-      <section id="contact" className="contact section py-16">
+      <section id="contact" className="contact section py-16 bg-[#f1f4fa]">
         {" "}
         <div className="container">
           {" "}
-          <div className="section-title text-center mb-12">
-            {" "}
-            <h2>Contact</h2>{" "}
-            <p> Apurva Software Solutions - We build what you truly need. </p>{" "}
-          </div>{" "}
-          <div className="row g-4 align-items-center">
+
+          <div className="text-center max-w-7xl mx-auto px-5">
+        <h2 className="text-4xl font-bold text-gray-900">
+        Contact{" "}
+          <span className="bg-[#ff4a17] bg-clip-text text-transparent">
+            US
+          </span>
+        </h2>
+
+        <div className="w-20 h-[2px] bg-[#ff4a17] mx-auto mt-4"></div>
+
+        </div>
+          <div className="row g-4 align-items-center mt-4">
             {" "}
             {/* LEFT SIDE */}{" "}
             <div className="col-lg-6">
@@ -167,7 +174,7 @@ const Contact = ({ onSubmitFormRequest }) => {
                       placeholder="Full Name *"
                       value={formData.name}
                       onChange={handleChange}
-                      className="w-full h-12 rounded-2xl  border bg-[white] px-5 text-black placeholder-slate-400 focus:border-cyan-500 focus:outline-none"
+                      className="w-full h-12 rounded-2xl text-sm border bg-[white] px-5 text-black placeholder-slate-400 focus:border-cyan-500 focus:outline-none"
                       required
                     />{" "}
                     <input
@@ -176,7 +183,7 @@ const Contact = ({ onSubmitFormRequest }) => {
                       placeholder="Email Address *"
                       value={formData.email}
                       onChange={handleChange}
-                      className="w-full h-12 rounded-2xl  border border-slate-700 px-5 text-black placeholder-slate-400 focus:border-cyan-500 focus:outline-none"
+                      className="w-full h-12 rounded-2xl text-sm  border border-slate-700 px-5 text-black placeholder-slate-400 focus:border-cyan-500 focus:outline-none"
                       required
                     />{" "}
                     <input
@@ -185,7 +192,7 @@ const Contact = ({ onSubmitFormRequest }) => {
                       placeholder="Phone Number"
                       value={formData.phone}
                       onChange={handleChange}
-                      className="w-full h-12 rounded-2xl  border border-slate-700 px-5 text-black placeholder-slate-400 focus:border-cyan-500 focus:outline-none"
+                      className="w-full h-12 rounded-2xl text-sm  border border-slate-700 px-5 text-black placeholder-slate-400 focus:border-cyan-500 focus:outline-none"
                     />{" "}
                     <input
                       type="text"
@@ -193,7 +200,7 @@ const Contact = ({ onSubmitFormRequest }) => {
                       placeholder="Job Title"
                       value={formData.jobTitle}
                       onChange={handleChange}
-                      className="w-full h-12 rounded-2xl  border border-slate-700 px-5 text-black placeholder-slate-400 focus:border-cyan-500 focus:outline-none"
+                      className="w-full h-12 rounded-2xl text-sm border border-slate-700 px-5 text-black placeholder-slate-400 focus:border-cyan-500 focus:outline-none"
                     />{" "}
                     <input
                       type="text"
@@ -201,7 +208,7 @@ const Contact = ({ onSubmitFormRequest }) => {
                       placeholder="Company Name"
                       value={formData.company}
                       onChange={handleChange}
-                      className="w-full h-12 rounded-2xl border border-slate-700 px-5 text-black placeholder-slate-400 focus:border-cyan-500 focus:outline-none"
+                      className="w-full h-12 rounded-2xl text-sm border border-slate-700 px-5 text-black placeholder-slate-400 focus:border-cyan-500 focus:outline-none"
                     />{" "}
                     <input
                       type="text"
@@ -209,13 +216,13 @@ const Contact = ({ onSubmitFormRequest }) => {
                       placeholder="Industry"
                       value={formData.industry}
                       onChange={handleChange}
-                      className="w-full h-12 rounded-2xl  border border-slate-700 px-5 text-black placeholder-slate-400 focus:border-cyan-500 focus:outline-none"
+                      className="w-full h-12 rounded-2xl text-sm border border-slate-700 px-5 text-black placeholder-slate-400 focus:border-cyan-500 focus:outline-none"
                     />{" "}
                     <select
                       name="companySize"
                       value={formData.companySize}
                       onChange={handleChange}
-                      className="w-full h-12 rounded-2xl  border border-slate-700 px-5 text-black focus:border-cyan-500 focus:outline-none"
+                      className="w-full h-12 rounded-2xl text-sm border border-slate-700 px-5 text-black focus:border-cyan-500 focus:outline-none"
                     >
                       {" "}
                       <option value="">Company Size</option>{" "}
@@ -245,7 +252,7 @@ const Contact = ({ onSubmitFormRequest }) => {
                       name="timeline"
                       value={formData.timeline}
                       onChange={handleChange}
-                      className="w-full h-12 rounded-2xl  border border-slate-700 px-5 text-black focus:border-cyan-500 focus:outline-none"
+                      className="w-full h-12 rounded-2xl text-sm border border-slate-700 px-5 text-black focus:border-cyan-500 focus:outline-none"
                     >
                       {" "}
                       <option value="">Project Timeline</option>{" "}
@@ -259,7 +266,7 @@ const Contact = ({ onSubmitFormRequest }) => {
                       name="requirement"
                       value={formData.requirement}
                       onChange={handleChange}
-                      className="w-full h-12 rounded-2xl  border border-cyan-500 px-5 text-black focus:outline-none"
+                      className="w-full h-12 rounded-2xl text-sm border border-cyan-500 px-5 text-black focus:outline-none"
                       required
                     >
                       {" "}
@@ -282,7 +289,7 @@ const Contact = ({ onSubmitFormRequest }) => {
                       placeholder="Project Description *"
                       value={formData.message}
                       onChange={handleChange}
-                      className="w-full rounded-2xl  border border-slate-700 p-5 text-black placeholder-slate-400 focus:border-cyan-500 focus:outline-none"
+                      className="w-full rounded-2xl text-sm border border-slate-700 p-5 text-black placeholder-slate-400 focus:border-cyan-500 focus:outline-none"
                       required
                     />{" "}
                   </div>{" "}
@@ -294,7 +301,7 @@ const Contact = ({ onSubmitFormRequest }) => {
                       placeholder="Current Challenges (Optional)"
                       value={formData.challenges}
                       onChange={handleChange}
-                      className="w-full rounded-2xl  border border-slate-700 p-5 text-black placeholder-slate-400 focus:border-cyan-500 focus:outline-none"
+                      className="w-full rounded-2xl text-sm border border-slate-700 p-5 text-black placeholder-slate-400 focus:border-cyan-500 focus:outline-none"
                     />{" "}
                     <textarea
                       rows="2"
@@ -302,7 +309,7 @@ const Contact = ({ onSubmitFormRequest }) => {
                       placeholder="Expected Outcomes (Optional)"
                       value={formData.expectedOutcomes}
                       onChange={handleChange}
-                      className="w-full rounded-2xl  border border-slate-700 p-5 text-black placeholder-slate-400 focus:border-cyan-500 focus:outline-none"
+                      className="w-full rounded-2xl text-sm border border-slate-700 p-5 text-black placeholder-slate-400 focus:border-cyan-500 focus:outline-none"
                     />{" "}
                   </div>{" "}
                   <div className="mt-6 relative">
@@ -311,7 +318,7 @@ const Contact = ({ onSubmitFormRequest }) => {
                     <button
                       type="submit"
                       disabled={status.loading}
-                      className="w-full h-20 rounded-3xl text-xl font-bold text-white bg-[#ff4a17] hover:scale-[1.01] transition-all duration-300"
+                      className="w-full h-12 rounded-3xl text-sm text-xl font-bold text-white bg-[#ff4a17] hover:scale-[1.01] transition-all duration-300"
                     >
                       {" "}
                       {status.loading ? "Sending..." : "SUBMIT"}{" "}

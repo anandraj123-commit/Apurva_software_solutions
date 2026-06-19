@@ -62,3 +62,26 @@ body, html {
     50% { transform: translateY(-18px); }
   }
 
+
+  .floating-svg {
+    animation: floatY 4s ease-in-out infinite;
+    filter: drop-shadow(0 0 10px var(--accent-color))
+            drop-shadow(0 0 20px var(--accent-color));
+  }
+  
+  @keyframes floatY {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0px); }
+
+  }
+
+
+  @keyframes scrollLeft {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }

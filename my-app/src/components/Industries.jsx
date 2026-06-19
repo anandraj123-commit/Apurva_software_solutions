@@ -64,9 +64,6 @@ export default function Industries() {
 
         <div className="w-20 h-[2px] bg-[#ff4a17] mx-auto mt-4"></div>
 
-        <p className="text-gray-400 mt-4">
-          Industry-Specific Custom Software Development Services
-        </p>
       </div>
 
       {/* Grid */}
@@ -88,7 +85,7 @@ export default function Industries() {
             </div>
 
             {/* Content */}
-            <div className="group  p-6 rounded-2xl">
+            <div className="group bg-[white] p-6 rounded-2xl">
   
   <h3 className="text-lg text-black font-semibold mb-2 transition-colors duration-300 group-hover:text-[#ff4a17]">
     {item.title}

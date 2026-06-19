@@ -192,7 +192,7 @@ export default function SocialOrbitHero() {
       </div>
 
       {/* Content */}
-      <div className="absolute bottom-20 left-0 right-0 z-30 text-center px-4">
+      <div className="absolute bottom-5 left-0 right-0 z-30 text-center px-4 py-3">
         {/* <h1 className="text-sm font-bold text-black md:text-5xl">
           Subscribe
         </h1> */}

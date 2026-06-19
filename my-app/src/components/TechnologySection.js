@@ -32,7 +32,7 @@ const techData = [
   },
   {
     title: "Angular.js",
-    icon: <FaAngular className="text-[#dd1b16]" />,
+    icon: <FaAngular className="text-[white]" />,
     border: "hover:border-[#dd1b16]",
     shadow: "hover:shadow-[0_10px_30px_rgba(221,27,22,0.4)]",
     desc: "Angular is a powerful framework for enterprise-grade applications. It provides structured architecture, dependency injection, and strong typing.\n\nWe use Angular to develop scalable single-page applications (SPAs) with maintainable codebases.",
@@ -74,7 +74,7 @@ const techData = [
   },
   {
     title: "Jenkins",
-    icon: <FaJenkins className="text-[#d24939]" />,
+    icon: <FaJenkins className="text-[white]" />,
     border: "hover:border-[#d24939]",
     shadow: "hover:shadow-[0_10px_30px_rgba(210,73,57,0.4)]",
     desc: "Jenkins is used for continuous integration and continuous deployment (CI/CD).\n\nIt automates build, testing, and deployment pipelines for faster and reliable delivery.",

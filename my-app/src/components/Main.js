@@ -7,41 +7,25 @@ import AlertBox from './AlertBox';
 import Industries from './Industries';
 import TechnologySection from './TechnologySection';
 import SocialOrbitAnimation from './SocialOrbitAnimation';
+import WhyChooseUs from './WhyChooseUs';
+import DevelopmentExpertise from './DevelopmentExpertise';
+import AboutUs from './AboutUs';
+import Stats from './Stats';
+import Hero from './Hero';
+import Services from './Services';
+import TeamSection from './TeamSection';
+import TestimonialScroller from './TestimonialScroller';
+import FAQSection from './FAQSection';
+import NeedCustomSoftwareDevelopment from './NeedCustomSoftwareDevelopment';
 
 const Main = (props) => {
   return (
     <main className="main">
-      <section id="hero" className="hero section dark-background">
-        <img
-          src="/img/hero-bg.jpg"
-          alt="Hero Background"
-          className="img-fluid w-100"
-        />
-        <div className="container d-flex flex-column align-items-center text-center">
-          <h2 className="display-4">Plan. Build. Grow.</h2>
-          <p className="lead">
-            We craft solutions that empower growing businesses worldwide with
-            innovation and impact.
-          </p>
-          <div className="d-flex flex-column flex-sm-row mt-4 gap-3">
-            <a href="#about" className="btn btn-primary btn-get-started">
-              Get Started
-            </a>
-            <a
-              href="https://www.youtube.com/watch?v=8eHWiixeoj0"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="glightbox btn-watch-video d-flex align-items-center justify-content-center"
-            >
-              <i className="bi bi-play-circle me-2"></i>
-              <span>Watch Video</span>
-            </a>
-          </div>
-        </div>
-      </section>
+     <Hero/>
+     
       <AlertBox />
 
-      <section id="about" className="about section">
+      {/* <section id="about" className="about section">
         <div className="container">
           <div className="row gy-4">
             <div
@@ -134,9 +118,10 @@ const Main = (props) => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
+      <AboutUs/>
 
-      <section id="stats" className="stats section light-background">
+      {/* <section id="stats" className="stats section light-background">
         <div className="container">
           <div className="row gy-4">
             <div className="col-lg-3 col-md-6 col-sm-6 col-12">
@@ -177,12 +162,19 @@ const Main = (props) => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
+
+      <Stats/>
+      <Services/>
+      <NeedCustomSoftwareDevelopment/>
+      <Industries/>
+      <WhyChooseUs/>
+      <TeamSection/>
 
       <section id="services" className="services section">
         <div className="container section-title text-center">
-          <h2>Services</h2>
-          <p>Featured Services</p>
+        <p>Featured <span className="text-[#ff4a17]">Services</span></p>
+          <h2></h2>
         </div>
         <div className="container">
           <div className="row gy-5">
@@ -259,54 +251,40 @@ const Main = (props) => {
         </div>
       </section>
 
-      <section id="clients" className="clients section light-background">
-        <div className="container">
-          <div className="row gy-4">
-            <div className="col-xl-2 col-md-3 col-sm-4 col-6 client-logo">
-              <img
-                src="img/clients/client-1.png"
-                className="img-fluid"
-                alt="Client 1"
-              />
-            </div>
-            <div className="col-xl-2 col-md-3 col-sm-4 col-6 client-logo">
-              <img
-                src="img/clients/client-2.png"
-                className="img-fluid"
-                alt="Client 2"
-              />
-            </div>
-            <div className="col-xl-2 col-md-3 col-sm-4 col-6 client-logo">
-              <img
-                src="img/clients/client-3.png"
-                className="img-fluid"
-                alt="Client 3"
-              />
-            </div>
-            <div className="col-xl-2 col-md-3 col-sm-4 col-6 client-logo">
-              <img
-                src="img/clients/client-4.png"
-                className="img-fluid"
-                alt="Client 4"
-              />
-            </div>
-            <div className="col-xl-2 col-md-3 col-sm-4 col-6 client-logo">
-              <img
-                src="img/clients/client-5.png"
-                className="img-fluid"
-                alt="Client 5"
-              />
-            </div>
-            <div className="col-xl-2 col-md-3 col-sm-4 col-6 client-logo">
-              <img
-                src="img/clients/client-6.png"
-                className="img-fluid"
-                alt="Client 6"
-              />
-            </div>
-          </div>
+
+
+<section className="py-10 bg-gray-50 overflow-hidden">
+  <div className="relative w-full">
+
+    {/* TRACK */}
+    <div className="flex w-max animate-scrollLeft">
+
+      {/* FIRST SET */}
+      {[1,2,3,4,5,6].map((item, index) => (
+        <div key={"first-"+index} className="flex-shrink-0 w-32 mx-5">
+          <img
+            src={`img/clients/client-${item}.png`}
+            alt=""
+            className="w-full"
+          />
         </div>
-      </section>
+      ))}
+
+      {/* SECOND SET (CLONE) */}
+      {[1,2,3,4,5,6].map((item, index) => (
+        <div key={"second-"+index} className="flex-shrink-0 w-32 mx-5">
+          <img
+            src={`img/clients/client-${item}.png`}
+            alt=""
+            className="w-full"
+          />
+        </div>
+      ))}
+
+    </div>
+
+  </div>
+</section>
 
       <section id="features" className="features section">
         <div className="container">
@@ -314,12 +292,19 @@ const Main = (props) => {
         </div>
       </section>
 
-      <section id="services-2" className="services-2 section light-background">
-        <div className="container section-title text-center">
-          <h2>Services</h2>
-          <p>Check Our Services</p>
-        </div>
-        <div className="container">
+    <section id="services-2" className="services-2 section light-background">
+      <div className="text-center max-w-3xl mx-auto">
+        <h2 className="text-4xl font-bold">
+          Check Our{" "}
+          <span className="bg-[#ff4a17] bg-clip-text text-transparent">
+            Services
+          </span>
+        </h2>
+
+        <div className="w-20 h-[2px] bg-[#ff4a17] mx-auto mt-4"></div>
+
+      </div>
+        <div className="container mt-12">
           <div className="row gy-4">
             <div className="col-md-6 col-sm-12">
               <div className="service-item d-flex position-relative h-100 p-3">
@@ -516,7 +501,7 @@ const Main = (props) => {
           </div>
         </div>
       </section>
-
+{/* 
       <section id="testimonials" className="testimonials section dark-background">
         <img
           src="img/testimonials-bg.jpg"
@@ -535,13 +520,20 @@ const Main = (props) => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <section id="portfolio" className="portfolio section">
-        <div className="container section-title text-center" data-aos="fade-up">
-          <h2>Portfolio</h2>
-          <p>Check Our Portfolio</p>
-        </div>
+
+      <div className="text-center max-w-3xl mx-auto">
+        <h2 className="text-4xl font-bold">
+        Our{" "}
+          <span className="bg-[#ff4a17] bg-clip-text text-transparent">
+            Portfolio
+          </span>
+        </h2>
+
+      <div className="w-20 h-[2px] bg-[#ff4a17] mx-auto mt-4"></div>
+      </div>
         <div className="container">
           <div
             className="isotope-layout"
@@ -560,7 +552,7 @@ const Main = (props) => {
       <Industries/>
       <TechnologySection/>
 
-      <section id="team" className="team section bg-[#f1f4fa]">
+      {/* <section id="team" className="team section bg-[#f1f4fa]">
         <div className="container section-title text-center">
           <h2>Team</h2>
           <p>Check Our Team</p>
@@ -656,15 +648,18 @@ const Main = (props) => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
-     
-          
-              <Contact onSubmitFormRequest={props.onSubmitFormRequest} />
+     <Contact onSubmitFormRequest={props.onSubmitFormRequest} />
          
       <ModalOverLay ref={props.modalRef} {...props} />
 
+      
+      <DevelopmentExpertise/>
+      <TestimonialScroller/>
+      <FAQSection/>
       <SocialOrbitAnimation/>
+      
     </main>
   );
 };

@@ -25,7 +25,6 @@ const DARK = "#1b3442";
 // ---- custom styled MUI Tabs & Tab -----------------------------------------
 const CustomTabs = styled(Tabs)(({ theme }) => ({
   width: "100%",
-  // Hide default indicator
   ".MuiTabs-indicator": { display: "none" },
   ".MuiTabs-flexContainer": {
     display: "flex",
@@ -37,25 +36,46 @@ const CustomTabs = styled(Tabs)(({ theme }) => ({
 const CustomTab = styled(Tab)(({ theme }) => ({
   flex: 1,
   minHeight: 120,
+  height: 120, // ✅ equal height
+  display: "flex",
+  flexDirection: "row", // ✅ inline layout
+  alignItems: "center",
+  justifyContent: "flex-start",
   textAlign: "left",
-  alignItems: "flex-start",
   padding: theme.spacing(3),
   border: "1px solid #dcdcdc",
   backgroundColor: "#fff",
   color: DARK,
+
   "& .MuiSvgIcon-root": {
     fontSize: 40,
     marginRight: theme.spacing(2),
     color: DARK,
   },
-  "&.Mui-selected": {
-    backgroundColor: ORANGE,
-    color: "#fff",
-    "& .MuiSvgIcon-root": { color: "#fff" },
+
+  "& .MuiTab-wrapper": {
+    flexDirection: "row", // ✅ icon + text same line
+    alignItems: "center",
+    justifyContent: "flex-start",
+    width: "100%",
   },
-  // Responsive adjustments for small screens
+
+ "&.Mui-selected": {
+  backgroundColor: ORANGE,
+  color: "#fff",
+
+  "& .MuiSvgIcon-root": {
+    color: "#fff",
+  },
+
+  "& *": {
+    color: "#fff !important",
+  },
+},
+
   [theme.breakpoints.down("sm")]: {
     minHeight: 80,
+    height: 80,
     padding: theme.spacing(1.5),
     fontSize: "0.8rem",
     "& .MuiSvgIcon-root": {
@@ -125,11 +145,24 @@ export default function FeaturesTab() {
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
 
   return (
-    <Box sx={{ width: "100%", px: { xs: 2, md: 4 } }}>
+    <section className="bg-[#f1f4fa] text-black py-20 px-6">
+    {/* Heading */}
+    <div className="text-center max-w-3xl mx-auto">
+      <h2 className="text-4xl font-bold">
+      All In One {" "}
+        <span className="bg-[#ff4a17] bg-clip-text text-transparent">
+        Solutions
+        </span>
+      </h2>
+
+      <div className="w-20 h-[2px] bg-[#ff4a17] mx-auto mt-4"></div>
+
+    </div>
+    <Box sx={{ width: "100%", px: { xs: 2, md: 4 } }} class="mt-5">
       <CustomTabs
         value={value}
         onChange={(_, v) => setValue(v)}
-        variant={isMobile ? "scrollable" : "fullWidth"} // Scrollable on mobile for better UX
+        variant={isMobile ? "scrollable" : "fullWidth"}
         scrollButtons="auto"
         aria-label="feature tabs"
       >
@@ -138,8 +171,7 @@ export default function FeaturesTab() {
           label={
             <Box>
               <Typography variant="subtitle1" fontWeight={600}>
-                Modern Solutions Delivered <br />
-                Innovation Space
+                Modern Solutions Delivered 
               </Typography>
             </Box>
           }
@@ -166,7 +198,7 @@ export default function FeaturesTab() {
           icon={<CommandIcon />}
           label={
             <Typography variant="subtitle1" fontWeight={600}>
-              Backend Service Hub
+              Backend Service<br/> Hub
             </Typography>
           }
         />
@@ -187,6 +219,7 @@ export default function FeaturesTab() {
           image="/img/working-1.jpg"
         />
       </TabPanel>
+
       <TabPanel value={value} index={1}>
         <FeatureContent
           title="We resolve complex technical issues with precision and accountability."
@@ -201,6 +234,7 @@ export default function FeaturesTab() {
           image="/img/working-2.jpg"
         />
       </TabPanel>
+
       <TabPanel value={value} index={2}>
         <FeatureContent
           title="Scalable systems that transform complexity into elegant software experiences"
@@ -215,6 +249,7 @@ export default function FeaturesTab() {
           image="/img/working-3.jpg"
         />
       </TabPanel>
+
       <TabPanel value={value} index={3}>
         <FeatureContent
           title="Streamlined digital tools built to solve real challenges effortlessly"
@@ -230,5 +265,6 @@ export default function FeaturesTab() {
         />
       </TabPanel>
     </Box>
+    </section>
   );
 }

@@ -50,44 +50,74 @@ export default function PortfolioBasicTabs(props) {
   };
 
   return (
-    <Box sx={{ width: '100%', margin: { xs: '10px 5px', sm: '20px 10px', md: '50px' } }}>
-      <Box sx={{ borderBottom: 1, borderColor: 'divider', overflowX: 'auto' }}>
-        <Tabs
-          value={value}
-          onChange={handleChange}
-          aria-label="portfolio tabs"
-          variant="scrollable"
-          scrollButtons="auto"
-          allowScrollButtonsMobile
-          sx={{
-            '& .MuiTabs-flexContainer': {
-              flexWrap: { xs: 'nowrap', sm: 'wrap' },
-              justifyContent: { xs: 'flex-start', sm: 'center' },
-            },
-            '& .MuiTab-root': {
-              fontSize: { xs: '0.7rem', sm: '0.8rem', md: '0.875rem' },
-              padding: { xs: '8px 10px', sm: '10px 12px', md: '12px 16px' },
-              minWidth: { xs: '80px', sm: '100px' },
-              textTransform: 'none',
-              whiteSpace: 'nowrap',
-              margin: { xs: '0 4px', sm: '0 8px' },
-            },
-            '& .MuiTabs-scroller': {
-              overflowX: 'auto !important',
-            },
-          }}
-        >
-          <Tab label="ALL" {...a11yProps(0)} />
-          <Tab label="SOFTWARE" {...a11yProps(1)} />
-          <Tab label="CLOUD" {...a11yProps(2)} />
-          <Tab label="SECURITY" {...a11yProps(3)} />
-          <Tab label="MARKETING" {...a11yProps(4)} />
-          <Tab label="SUPPORT" {...a11yProps(5)} />
-        </Tabs>
+<Box sx={{ width: '100%' }}>
+<Box
+  sx={{
+    borderBottom: 0,
+    border: 'none',
+    overflowX: 'auto',
+  }}
+>
+      <Tabs
+  value={value}
+  onChange={handleChange}
+  aria-label="portfolio tabs"
+  variant="scrollable"
+  scrollButtons="auto"
+  allowScrollButtonsMobile
+  sx={{
+    py: 2,
+
+    '& .MuiTabs-indicator': {
+      display: 'none', // removes active underline
+    },
+
+    '& .MuiTabs-flexContainer': {
+      flexWrap: { xs: 'nowrap', sm: 'wrap' },
+      justifyContent: { xs: 'flex-start', sm: 'center' },
+      gap: '10px',
+    },
+
+    '& .MuiTab-root': {
+      border: '1px solid #e5e7eb',
+      borderRadius: '12px',
+      backgroundColor: '#fff',
+      minHeight: '48px',
+      minWidth: { xs: '90px', sm: '120px' },
+      padding: '12px 20px',
+      textTransform: 'none',
+      fontWeight: 600,
+      color: '#555',
+      transition: 'all 0.3s ease',
+      boxShadow: '0 2px 8px rgba(0,0,0,0.08)',
+
+      '&:hover': {
+        backgroundColor: '#ff4a17',
+        color: '#fff',
+        borderColor: '#ff4a17',
+        transform: 'translateY(-2px)',
+      },
+    },
+
+    '& .MuiTab-root.Mui-selected': {
+      backgroundColor: '#fff',
+      color: '#ff4a17',
+      border: '2px solid #ff4a17',
+      boxShadow: '0 4px 12px rgba(255,74,23,0.15)',
+    },
+  }}
+>
+  <Tab label="ALL" />
+  <Tab label="SOFTWARE" />
+  <Tab label="CLOUD" />
+  <Tab label="SECURITY" />
+  <Tab label="MARKETING" />
+  <Tab label="SUPPORT" />
+</Tabs>
       </Box>
 
       <TabPanel value={value} index={0}>
-        <div className="row gy-3 isotope-container">
+        <div className="row gy-4 justify-content-center mx-0">
           <div className="col-12 col-sm-6 col-md-6 col-lg-4 portfolio-item isotope-item filter-books">
             <div className="portfolio-content">
               <img src="img/portfolio/performance_monitoring.jpg" className="img-fluid" alt="Performance Monitoring" loading="lazy" />
@@ -334,7 +364,7 @@ export default function PortfolioBasicTabs(props) {
         </div>
       </TabPanel>
       <TabPanel value={value} index={1}>
-        <div className="row gy-3 isotope-container">
+        <div className="row gy-4 justify-content-center mx-0">
           <div className="col-12 col-sm-6 col-md-6 col-lg-4 portfolio-item isotope-item filter-books">
             <div className="portfolio-content">
               <img src="img/portfolio/web_app.jpg" className="img-fluid" alt="Web Applications" loading="lazy" />
@@ -392,7 +422,7 @@ export default function PortfolioBasicTabs(props) {
         </div>
       </TabPanel>
       <TabPanel value={value} index={2}>
-        <div className="row gy-3 isotope-container">
+        <div className="row gy-4 justify-content-center mx-0">
           <div className="col-12 col-sm-6 col-md-6 col-lg-4 portfolio-item isotope-item filter-branding">
             <div className="portfolio-content">
               <img src="img/portfolio/data_loss_prevention.jpg" className="img-fluid" alt="Cloud Storage Solutions" loading="lazy" />
@@ -423,7 +453,7 @@ export default function PortfolioBasicTabs(props) {
         </div>
       </TabPanel>
       <TabPanel value={value} index={3}>
-        <div className="row gy-3 isotope-container">
+        <div className="row gy-4 justify-content-center mx-0">
           <div className="col-12 col-sm-6 col-md-6 col-lg-4 portfolio-item isotope-item filter-branding">
             <div className="portfolio-content">
               <img src="img/portfolio/network_security.jpg" className="img-fluid" alt="Network Security" loading="lazy" />
@@ -481,7 +511,7 @@ export default function PortfolioBasicTabs(props) {
         </div>
       </TabPanel>
       <TabPanel value={value} index={4}>
-        <div className="row gy-3 isotope-container">
+        <div className="row gy-4 justify-content-center mx-0">
           <div className="col-12 col-sm-6 col-md-6 col-lg-4 portfolio-item isotope-item filter-branding">
             <div className="portfolio-content">
               <img src="img/portfolio/seo.jpg" className="img-fluid" alt="Search Engine Optimization (SEO)" loading="lazy" />
@@ -539,7 +569,7 @@ export default function PortfolioBasicTabs(props) {
         </div>
       </TabPanel>
       <TabPanel value={value} index={5}>
-        <div className="row gy-3 isotope-container">
+        <div className="row gy-4 justify-content-center mx-0">
           <div className="col-12 col-sm-6 col-md-6 col-lg-4 portfolio-item isotope-item filter-branding">
             <div className="portfolio-content">
               <img src="img/portfolio/software_updates.jpg" className="img-fluid" alt="Software Updates" loading="lazy" />

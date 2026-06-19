@@ -1,0 +1,57 @@
+.discussYourProject{
+.input {
+    padding: 12px 16px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    transition: all 0.3s ease;
+  }
+
+  .input:focus {
+    border-color: #ff4a17;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(59,130,246,0.2);
+  }
+
+  .service-card {
+    padding: 18px;
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .service-card:hover {
+    transform: translateY(-5px);
+    background: white;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    color:black;
+  }
+
+  .budget-card {
+    padding: 16px;
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .budget-card:hover {
+    background: white;
+    color: black;
+  }
+
+  .submit-btn {
+    background: #ff4a17;
+    color: white;
+    padding: 14px 28px;
+    border-radius: 30px;
+    font-weight: 600;
+  }
+
+  .submit-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  }
+}
