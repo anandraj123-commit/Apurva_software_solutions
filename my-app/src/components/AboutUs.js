@@ -3,7 +3,6 @@ import { useEffect } from "react";
 const AboutUs = () => {
   useEffect(() => {
     const els = document.querySelectorAll(".reveal");
-
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -27,10 +26,6 @@ const AboutUs = () => {
         <p>What We <span className="text-[#ff4a17]">Do</span></p>
           <h2></h2>
         </div>
-
-
-
-      {/* TITLE */}
 
       <div className="container">
         <div className="row gy-4">

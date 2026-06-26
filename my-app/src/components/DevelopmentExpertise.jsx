@@ -1,6 +1,6 @@
 export default function DevelopmentExpertise() {
     return (
-      <section className="text-white py-20 px-6 md:px-20 overflow-hidden"     style={{ backgroundColor: "#222" }}>
+      <section className="text-black py-20 px-6 md:px-20 overflow-hidden"     style={{ backgroundColor: "#222" }}>
         <div className="grid md:grid-cols-2 gap-10 items-center">
   
           {/* LEFT CONTENT */}
@@ -13,7 +13,7 @@ export default function DevelopmentExpertise() {
             </div>
   
             {/* HEADING */}
-            <h1 className="text-4xl md:text-6xl font-bold leading-tight text-white">
+            <h1 className="text-4xl md:text-6xl font-bold leading-tight text-black">
               Development <br />
               <span
                 className="text-transparent bg-clip-text"
@@ -26,7 +26,7 @@ export default function DevelopmentExpertise() {
             </h1>
   
             {/* LIST */}
-            <ul className="mt-6 space-y-3 text-white">
+            <ul className="mt-6 space-y-3 text-black">
               <ListItem text="Expert Team of Developers & Designers" />
               <ListItem text="Cutting-Edge Technology Stack" />
               <ListItem text="24/7 Support & Maintenance" />
@@ -71,7 +71,7 @@ function Tag({ text }) {
 
 function ListItem({ text }) {
     return (
-      <li className="flex items-center text-white gap-3">
+      <li className="flex items-center text-black gap-3">
         <span
           className="w-2 h-2 rounded-full"
           style={{ backgroundColor: "var(--accent-color)" }}

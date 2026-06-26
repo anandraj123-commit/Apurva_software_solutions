@@ -65,7 +65,16 @@ body, html {
 
   .floating-svg {
     animation: floatY 4s ease-in-out infinite;
-    filter: drop-shadow(0 0 10px var(--accent-color))
+  
+    /* ✅ Make icon use logo color */
+    color: var(--accent-color);
+  
+    /* ✅ Fill + Border */
+    fill: currentColor;        /* main color */
+    stroke: black;             /* border color */
+    stroke-width: 4;
+  
+    filter: drop-shadow(0 0 20px var(--accent-color))
             drop-shadow(0 0 20px var(--accent-color));
   }
   

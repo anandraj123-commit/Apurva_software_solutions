@@ -5,10 +5,20 @@ import Blog from './pages/blog';
 import HeroServices from './pages/services';
 import MobileService from './pages/mobile-service';
 import DiscussYourProject from './pages/DiscussYourProject';
+import AboutUs from './pages/AboutUs';
+import ContactUs from './pages/ContactUs';
 const routes = [
     {
         path:'/',
         element:<Home/>
+    },
+    {
+        path:'/about',
+        element:<AboutUs/>
+    },
+    {
+        path:'/contact',
+        element:<ContactUs/>
     },
     {
         path:'blogs',

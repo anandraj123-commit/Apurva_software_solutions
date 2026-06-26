@@ -112,16 +112,16 @@ const Contact = ({ onSubmitFormRequest }) => {
         <div className="w-20 h-[2px] bg-[#ff4a17] mx-auto mt-4"></div>
 
         </div>
-          <div className="row g-4 align-items-center mt-4">
+          <div className="row g-4  mt-4">
             {" "}
             {/* LEFT SIDE */}{" "}
             <div className="col-lg-6">
               {" "}
               <div className="flex flex-col gap-6">
                 {" "}
-                <div className="bg-[#f1f4fa] rounded-3xl p-8 border border-slate-800 text-center">
+                <div className="bg-[white] rounded-3xl p-8 border border-slate-800 text-center">
                   {" "}
-                  <i className="bi bi-geo-alt text-cyan-400 text-4xl"></i>{" "}
+                  <i className="bi bi-geo-alt text-[#ff4a17] text-xl"></i>{" "}
                   <h4 className="text-black text-lg font-semibold mt-4">
                     {" "}
                     Address{" "}
@@ -131,9 +131,9 @@ const Contact = ({ onSubmitFormRequest }) => {
                     Veer Kuwar Singh Colony, Gaya, Bihar{" "}
                   </p>{" "}
                 </div>{" "}
-                <div className="bg-[#f1f4fa] rounded-3xl p-8 border border-slate-800 text-center">
+                <div className="bg-[white] rounded-3xl p-4 border border-slate-800 text-center">
                   {" "}
-                  <i className="bi bi-telephone text-cyan-400 text-4xl"></i>{" "}
+                  <i className="bi bi-telephone text-[#ff4a17] text-xl"></i>{" "}
                   <h4 className="text-black text-lg font-semibold mt-4">
                     {" "}
                     Call Us{" "}
@@ -141,9 +141,9 @@ const Contact = ({ onSubmitFormRequest }) => {
                   <p className="text-black text-sm">+91 6203253537</p>{" "}
                   <p className="text-black text-sm">+91 9629776056</p>{" "}
                 </div>{" "}
-                <div className="bg-[#f1f4fa] rounded-3xl p-8 border border-slate-800 text-center">
+                <div className="bg-[white] rounded-3xl p-4 border border-slate-800 text-center">
                   {" "}
-                  <i className="bi bi-envelope text-cyan-400 text-4xl"></i>{" "}
+                  <i className="bi bi-envelopetext-[#ff4a17] text-xl"></i>{" "}
                   <h4 className="text-black text-lg font-semibold mt-4">
                     {" "}
                     Email Us{" "}
@@ -158,7 +158,7 @@ const Contact = ({ onSubmitFormRequest }) => {
             {/* RIGHT SIDE */}{" "}
             <div className="col-lg-6">
               {" "}
-              <div className="bg-[#f1f4fa] border border-slate-800 rounded-[32px] p-6 md:p-10">
+              <div className="bg-[white] border border-slate-800 rounded-[32px] p-6 md:p-10">
                 {" "}
                 <h3 className="text-lg font-bold text-black mb-8">
                   {" "}

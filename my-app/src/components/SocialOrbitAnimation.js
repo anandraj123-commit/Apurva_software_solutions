@@ -28,7 +28,7 @@ const middleIcons = [
   FaTelegram,
 ];
 
-export default function SocialOrbitHero() {
+export default function SocialOrbitHero(props) {
     const { sendEmails } = useEmailSender();
 
     async function onSubmitFormRequest(formData, INFOTYPE) {
