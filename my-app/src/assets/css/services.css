@@ -266,9 +266,7 @@
     background: #fff;
   }
   
-  .faq-section .text-purple {
-    color: #7a2ff4;
-  }
+
   
   .faq-section .faq-accordion .accordion-item {
     border: none;
@@ -284,12 +282,12 @@
   }
   
   .faq-section .faq-accordion .accordion-button:not(.collapsed) {
-    background: #f7f5ff;
-    color: #000;
+    background: white;
+    color: #f75757;
   }
   
   .faq-section .faq-accordion .accordion-body {
-    color: #555;
+    color: #f75757;
     line-height: 1.7;
   }
   

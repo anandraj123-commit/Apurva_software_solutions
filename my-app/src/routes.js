@@ -7,10 +7,15 @@ import MobileService from './pages/mobile-service';
 import DiscussYourProject from './pages/DiscussYourProject';
 import AboutUs from './pages/AboutUs';
 import ContactUs from './pages/ContactUs';
+import CustomWebApplication from './pages/CustomWebApplication';
 const routes = [
     {
         path:'/',
         element:<Home/>
+    },
+    {
+        path:'/custom web application',
+        element:<CustomWebApplication/>
     },
     {
         path:'/about',
