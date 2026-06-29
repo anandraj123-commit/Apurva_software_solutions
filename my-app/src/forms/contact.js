@@ -96,20 +96,27 @@ const Contact = ({ onSubmitFormRequest }) => {
       {status.error && (
         <AlertBox type="error" message={status.error} duration="3000" />
       )}{" "}
-      <section id="contact" className="contact section py-16 bg-[#f1f4fa]">
+      <section id="contact" className="contact section py-16 bg-[#f1f4fa]" style={{
+          backgroundImage:
+            "url('https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=1920&auto=format&fit=crop')",
+
+        }}>
         {" "}
         <div className="container">
           {" "}
 
           <div className="text-center max-w-7xl mx-auto px-5">
         <h2 className="text-4xl font-bold text-gray-900">
-        Contact{" "}
+        Get In{" "}
           <span className="bg-[#ff4a17] bg-clip-text text-transparent">
-            US
+          Touch
           </span>
         </h2>
 
-        <div className="w-20 h-[2px] bg-[#ff4a17] mx-auto mt-4"></div>
+        
+        <div className="w-20 h-[2px] bg-[#ff4a17] mx-auto mt-2"></div>
+        <p className="mt-2"> Let's discuss your next project and bring your ideas to life</p>
+
 
         </div>
           <div className="row g-4  mt-4">

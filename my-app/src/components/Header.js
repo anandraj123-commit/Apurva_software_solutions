@@ -19,7 +19,7 @@ const Header = ({ handleInternshipModal }) => {
 
   return (
     <header id="header" className="header d-flex align-items-center fixed-top">
-      <div className="container-fluid container-xl position-relative d-flex align-items-center">
+      <div className="container-fluid text-center container-xl position-relative d-flex align-items-center">
 
         {/* Mobile Nav Toggle on left */}
         <i
@@ -36,13 +36,10 @@ const Header = ({ handleInternshipModal }) => {
           onClick={() => handleNavLinkClick("home")}
         >
           <img
-            src="img/ASS.png"
+            src="img/ASS.png" className="m-auto"
             alt="Apurva Software Solutions Logo"
             title="Apurva Software Solutions Logo"
           />
-          <h1 className="sitename" name="Apurva Software Solutions" id="Apurva Software Solutions">
-            ASS
-          </h1>
         </Link>
 
         {/* Navigation Menu */}

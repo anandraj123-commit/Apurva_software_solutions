@@ -97,7 +97,7 @@ const Footer = (props) => {
               Subscribe to receive the latest updates on software development,
               PWA solutions, SPA performance, and digital innovation.
             </p>
-            <Subscribe onSubmitFormRequest={props.onSubmitFormRequest} />
+            <Subscribe onSubmitFormRequest={props.onSubmitFormRequest} top="0" lft="0" rtl="0" />
           </div>
 
         </div>

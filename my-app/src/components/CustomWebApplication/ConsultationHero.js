@@ -21,9 +21,16 @@ const ConsultationHero = () => {
           Apurva Software Solutions focuses on delivering tailored software development, expert consulting, and innovative product solutions that align with modern business needs. We believe true success in the tech industry comes from building forward-thinking, scalable, and impactful digital products. By combining creativity with technical excellence, we help our clients stay ahead through cutting-edge and reliable software solutions designed for long-term growth.
           </p>
 
-          <button className="bg-[#ff4a17] text-white px-8 py-4 rounded-xl font-medium shadow-lg hover:scale-105 transition">
-            Consult Today
-          </button>
+          <button
+  onClick={() => {
+    document
+      .getElementById("contact")
+      .scrollIntoView({ behavior: "smooth" });
+  }}
+  className="bg-[#ff4a17] text-white px-8 py-4 rounded-xl font-medium shadow-lg hover:scale-105 transition"
+>
+  Consult Today
+</button>
         </div>
 
         {/* RIGHT IMAGE */}

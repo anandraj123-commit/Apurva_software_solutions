@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import LoaderOverlay from '../components/loader/Loader';
 import AlertBox from '../components/AlertBox';
 
-const Subscribe = ({ onSubmitFormRequest }) => {
+const Subscribe = ({ onSubmitFormRequest ,lft,rtl,top}) => {
+  console.log('lft',lft,'rtl',rtl);
   const [formData, setFormData] = useState({
     email: ''
   });
@@ -94,8 +95,10 @@ const Subscribe = ({ onSubmitFormRequest }) => {
           <div className="col-md-12">
             <div
               className="position-relative"
-              style={{ width: '100%' }}
-            >
+              style={{ width: '100%',
+                top: `${top}px`,
+                left: `${lft}px`,
+                right:`${rtl}px`}} >
               <input
                 type="email"
                 name="email"

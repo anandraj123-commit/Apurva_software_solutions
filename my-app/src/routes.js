@@ -8,6 +8,7 @@ import DiscussYourProject from './pages/DiscussYourProject';
 import AboutUs from './pages/AboutUs';
 import ContactUs from './pages/ContactUs';
 import CustomWebApplication from './pages/CustomWebApplication';
+import FrontEndDevelopmentService from './pages/FrontEndDevelopmentService';
 const routes = [
     {
         path:'/',
@@ -16,6 +17,10 @@ const routes = [
     {
         path:'/custom web application',
         element:<CustomWebApplication/>
+    },
+    {
+        path:'front end services',
+        element:<FrontEndDevelopmentService/>
     },
     {
         path:'/about',

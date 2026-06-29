@@ -23,9 +23,16 @@ const HeroSection = () => {
         
           {/* Buttons */}
           <div className="mt-8 flex gap-4">
-            <button className="bg-[#ff4a17] text-white  px-6 py-3 rounded-full font-medium transition">
-              Get a Free Consultation
-            </button>
+          <button
+  onClick={() => {
+    document
+      .getElementById("contact")
+      .scrollIntoView({ behavior: "smooth" });
+  }}
+  className="bg-[#ff4a17] text-white px-6 py-3 rounded-full font-medium transition hover:bg-black"
+>
+  Get a Free Consultation
+</button>
             
           </div>
         </div>
