@@ -28,15 +28,8 @@ export default function SocialOrbitHero() {
           <div className="max-w-sm">
             <Subscribe onSubmitFormRequest={onSubmitFormRequest} lft="29" rtl="0" top="132"/>
           </div>
-
-          
         </div>
-        
-
       </div>
-
-
-      
     </section>
   );
 }

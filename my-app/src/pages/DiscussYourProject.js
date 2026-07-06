@@ -46,12 +46,12 @@ const budgetOptions = {
 
       {/* ================= FORM SECTION ================= */}
       <section className="py-16 bg-gray-100">
-        <div className="max-w-5xl mx-auto bg-white rounded-2xl shadow-lg overflow-hidden">
+        <div className="max-w-6xl mx-auto bg-white rounded-2xl shadow-lg overflow-hidden">
 
           {/* HEADER */}
-          <div className="bg-gradient-to-r from-[#ff4a17] to-[#ff7a50] text-white p-8">
-            <h2 className="text-2xl font-bold">Share Your Requirements</h2>
-            <p className="opacity-90">
+          <div className="text-white p-8 text-center">
+            <h2 className="text-2xl font-bold">Share Your <span className="text-[#ff4a17]">Requirements</span></h2>
+            <p className="opacity-90 mt-2 text-black">
               Fill in the details below and we'll reach out within one working day.
             </p>
           </div>

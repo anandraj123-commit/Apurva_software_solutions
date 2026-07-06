@@ -9,6 +9,8 @@ import AboutUs from './pages/AboutUs';
 import ContactUs from './pages/ContactUs';
 import CustomWebApplication from './pages/CustomWebApplication';
 import FrontEndDevelopmentService from './pages/FrontEndDevelopmentService';
+import FullStackDevelopmentService from './pages/FullStackDevelopmentService';
+import MobileAppDevelopment from './pages/MobileAppDevelopment';
 const routes = [
     {
         path:'/',
@@ -21,6 +23,15 @@ const routes = [
     {
         path:'front end services',
         element:<FrontEndDevelopmentService/>
+    },
+    {
+        path:'full stack development service',
+        element:<FullStackDevelopmentService/>
+    },
+
+    {
+        path:'mobile app development',
+        element:<MobileAppDevelopment/>
     },
     {
         path:'/about',
