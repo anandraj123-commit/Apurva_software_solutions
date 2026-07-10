@@ -11,6 +11,7 @@ import CustomWebApplication from './pages/CustomWebApplication';
 import FrontEndDevelopmentService from './pages/FrontEndDevelopmentService';
 import FullStackDevelopmentService from './pages/FullStackDevelopmentService';
 import MobileAppDevelopment from './pages/MobileAppDevelopment';
+import AndroidApplication from './pages/AndroidApplication';
 const routes = [
     {
         path:'/',
@@ -29,6 +30,10 @@ const routes = [
         element:<FullStackDevelopmentService/>
     },
 
+    {
+        path:'Android Application',
+        element:<AndroidApplication/>
+    },
     {
         path:'mobile app development',
         element:<MobileAppDevelopment/>
