@@ -8,7 +8,7 @@ export default function TeamSection() {
 
         <div className="text-center mb-16">
 
-          <h2 className="mt-6 text-4xl md:text-5xl font-bold text-gray-900">
+          <h2 className="mt-6 text-3xl md:text-5xl font-bold text-gray-900">
             Experts Behind
             <span className="block text-[#ff4a17]">
               Apurva Software Solutions

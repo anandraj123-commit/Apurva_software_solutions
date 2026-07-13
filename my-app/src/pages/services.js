@@ -17,7 +17,7 @@ export default function HeroServices() {
 
 <section class="maintenance-process py-5">
   <div class="container text-center">
-  <h2 className="text-4xl font-bold">
+  <h2 className="text-3xl font-bold">
         Website Development &{" "}
           <span className="bg-[#ff4a17] bg-clip-text text-transparent">
           Maintenance Process
@@ -89,7 +89,7 @@ export default function HeroServices() {
 <section class="faq-section py-5">
   <div class="container">
     <div class="text-center">
-  <h2 className="text-4xl font-bold">
+  <h2 className="text-3xl font-bold">
         Frequently{" "}
           <span className="bg-[#ff4a17] bg-clip-text text-transparent">
           Asked Question

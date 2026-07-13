@@ -149,7 +149,7 @@ const Technologies = () => {
         transition={{ duration: 0.6 }}
         className="text-center mb-16"
       >
-        <h2 className="text-4xl lg:text-5xl font-bold">
+        <h2 className="text-3xl lg:text-5xl font-bold">
           Technologies <span className="text-[#ff4a17]">We Master</span>
         </h2>
         <p className="mt-4 text-lg">

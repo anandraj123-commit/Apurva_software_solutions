@@ -56,11 +56,11 @@ const MobileShowcase = () => {
       <div className="w-full px-4 ">
 
          {/* Heading */}
-         <h2 className="text-4xl md:text-5xl font-bold text-black text-center">
+         <h2 className="text-3xl md:text-5xl font-bold text-black text-center">
          Stunning Mobile Experiences
         </h2>
 
-        <h3 className="text-4xl md:text-5xl font-bold  text-black bg-clip-text mt-2 text-center">
+        <h3 className="text-3xl md:text-5xl font-bold  text-black bg-clip-text mt-2 text-center">
           <span class="text-[#ff4a17]">& Next-Gen UI Design</span>
         </h3>
 

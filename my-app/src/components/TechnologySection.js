@@ -172,7 +172,7 @@ export default function TechnologySection() {
   return (
     <section className="bg-white py-20">
       <div className="text-center max-w-7xl mx-auto px-5">
-        <h2 className="text-4xl font-bold text-gray-900">
+        <h2 className="text-3xl font-bold text-gray-900">
           Our{" "}
           <span className="bg-[#ff4a17] bg-clip-text text-transparent">
             Technology

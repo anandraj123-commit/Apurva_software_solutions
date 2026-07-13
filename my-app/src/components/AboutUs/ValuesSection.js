@@ -78,7 +78,7 @@ export default function ValuesSection() {
       <div className="max-w-7xl mx-auto relative z-10">
         {/* HEADER */}
         <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900">
+          <h2 className="text-3xl sm:text-3xl md:text-5xl font-bold text-gray-900">
             Our Core Values
           </h2>
           <p className="mt-4 text-gray-600 max-w-2xl mx-auto text-sm sm:text-base">

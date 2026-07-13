@@ -44,7 +44,7 @@ export default function Achievements() {
 
         {/* LEFT */}
         <div>
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
+          <h1 className="text-3xl md:text-3xl lg:text-5xl font-bold mb-6">
             Our Achievements
           </h1>
 

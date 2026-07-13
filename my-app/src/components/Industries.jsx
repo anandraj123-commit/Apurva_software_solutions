@@ -127,7 +127,7 @@ export default function Industries() {
       
       {/* Heading */}
       <div className="text-center max-w-3xl mx-auto">
-        <h2 className="text-4xl font-bold text-black">
+        <h2 className="text-3xl font-bold text-black">
           Industries we{" "}
           <span className="text-[#ff4a17]">empower</span>
         </h2>

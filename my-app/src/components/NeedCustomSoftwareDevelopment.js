@@ -10,7 +10,7 @@ export default function NeedCustomSoftwareDevelopment() {
       <div className="max-w-xl z-10">
 
         {/* Heading */}
-        <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-6">
+        <h1 className="text-3xl md:text-6xl font-bold leading-tight mb-6">
           Need a Custom <br />
           Software{" "}
           <span className="bg-[#ff4a17] text-transparent bg-clip-text">

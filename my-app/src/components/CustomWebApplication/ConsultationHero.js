@@ -10,7 +10,7 @@ const ConsultationHero = () => {
             SIMPLE TO GET STARTED
           </p>
 
-          <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-6">
+          <h1 className="text-3xl md:text-6xl font-bold leading-tight mb-6">
             Get A Free{" "}
             <span className=" text-[#ff4a17] bg-clip-text">
               Consultation

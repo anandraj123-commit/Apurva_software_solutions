@@ -185,7 +185,7 @@ export default function TechStack() {
       <section className="bg-white py-20 px-6">
         {/* Heading */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold">
+          <h2 className="text-3xl md:text-5xl font-bold">
             Full Stack <span className="text-[#ff4a17]">Technology Stack</span>
           </h2>
           <p className="mt-4 text-gray-700">
@@ -195,7 +195,7 @@ export default function TechStack() {
         </div>
   
         {/* Grid */}
-        <div className="grid md:grid-cols-3 gap-8 max-w-7xl mx-auto">
+        <div className="grid md:grid-cols-4 gap-8 max-w-7xl mx-auto">
           {techStack.map((tech, index) => {
             const Icon = tech.icon;
   

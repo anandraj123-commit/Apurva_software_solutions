@@ -7,9 +7,30 @@ import {
   Shield,
   Code2,
   GitBranch,
+  Monitor,
+  Settings
 } from "lucide-react";
 
 const services = [
+  {
+    title: "Frontend Development",
+    icon: Monitor,
+    iconColor: "text-orange-500",
+    hoverIcon: "group-hover:text-orange-700",
+    border: "hover:border-orange-500",
+    bg: "hover:bg-orange-100",
+    animation: "group-hover:-translate-y-1",
+    desc: [
+      "Modern UI built with React and Next.js.",
+      "Responsive design for all screen sizes.",
+      "Pixel-perfect and premium UI/UX.",
+      "Optimized performance and fast loading.",
+      "Reusable and scalable components.",
+      "Smooth animations and transitions.",
+      "SEO-friendly frontend architecture.",
+      "User-focused design approach.",
+    ],
+  },
   {
     title: "End-to-End Development",
     icon: Code2,
@@ -124,6 +145,25 @@ const services = [
       "Continuous monitoring and updates.",
     ],
   },
+  {
+    title: "Maintenance & Support",
+    icon: Settings,
+    iconColor: "text-red-500",
+    hoverIcon: "group-hover:text-red-700",
+    border: "hover:border-red-500",
+    bg: "hover:bg-red-100",
+    animation: "group-hover:rotate-90",
+    desc: [
+      "24/7 monitoring and issue resolution.",
+      "Regular updates and performance tuning.",
+      "Bug fixing and stability improvements.",
+      "Security patches and upgrades.",
+      "Continuous feature enhancements.",
+      "Server and infrastructure maintenance.",
+      "Backup and recovery management.",
+      "Long-term technical support partnership.",
+    ],
+  }
 ];
 
 export default function FullStackServices() {
@@ -131,7 +171,7 @@ export default function FullStackServices() {
     <section className="bg-white text-black py-20 px-6">
       {/* Heading */}
       <div className="text-center max-w-3xl mx-auto mb-16">
-        <h2 className="text-4xl md:text-5xl font-bold">
+        <h2 className="text-3xl md:text-5xl font-bold">
           Full Stack Development{" "}
           <span className="text-[#ff4a17]">Services</span>
         </h2>
@@ -143,7 +183,7 @@ export default function FullStackServices() {
       </div>
 
       {/* Grid */}
-      <div className="grid md:grid-cols-3 gap-8 max-w-7xl mx-auto">
+      <div className="grid md:grid-cols-4 gap-8 max-w-7xl mx-auto">
         {services.map((service, index) => {
           const Icon = service.icon;
 

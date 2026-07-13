@@ -50,16 +50,17 @@ import {
     return (
       <section className="py-24 bg-white">
         <div className="container mx-auto px-6">
-          <div className="text-center max-w-4xl mx-auto mb-16">
-            <h2 className="text-4xl md:text-6xl font-bold text-gray-900 leading-tight">
+          <div className="text-center max-w-3xl mx-auto">
+            <h2 className="text-3xl font-bold text-black">
               Software Development
               <span className="block text-[#ff4a17]">Services</span>
             </h2>
+            <div class="w-20 h-[2px] bg-[#ff4a17] mx-auto mt-4"></div>
           </div>
   
           {/* Service Cards */}
   
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-14 ">
             {services.map((service, index) => {
               const Icon = service.icon;
   
@@ -70,19 +71,19 @@ import {
               >
                 {/* Icon */}
               
-                <div className="w-20 h-20 rounded-2xl bg-[#ff4a17] flex items-center justify-center text-white text-3xl shadow-lg mb-6 group-hover:bg-white group-hover:!text-[#ff4a17] transition-all duration-500">
+                <div className="w-10 h-10 rounded-2xl bg-[#ff4a17] flex items-center justify-center text-white text-3xl shadow-lg mb-6 group-hover:bg-white group-hover:!text-[#ff4a17] transition-all duration-500">
                   <Icon />
                 </div>
               
                 {/* Title */}
               
-                <h3 className="text-3xl font-bold text-gray-900 mb-4 group-hover:text-white transition-colors duration-500">
+                <h3 className="text-lg font-semibold  text-gray-900 mb-4 group-hover:text-white transition-colors duration-500">
                   {service.title}
                 </h3>
               
                 {/* Description */}
               
-                <p className="text-gray-600 leading-relaxed text-lg group-hover:text-white/90 transition-colors duration-500">
+                <p className="text-gray-600 leading-relaxed text-sm group-hover:text-white/90 transition-colors duration-500">
                   {service.description}
                 </p>
               

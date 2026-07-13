@@ -15,7 +15,7 @@ const AboutSection = () => {
           </div>
 
           {/* Heading */}
-          <h1 className="text-4xl md:text-5xl font-bold leading-tight">
+          <h1 className="text-3xl md:text-5xl font-bold leading-tight">
             A Company that{" "}
             <span className="text-transparent bg-clip-text bg-[#ff4a17]">
               help

@@ -46,7 +46,7 @@ const processSteps = [
         
         {/* Heading */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-black text-transparent bg-clip-text">
+          <h2 className="text-3xl md:text-5xl font-bold text-black text-transparent bg-clip-text">
             How We Build <span className="text-[#ff4a17]">Digital Products</span>
           </h2>
           <p className="text-black mt-4">

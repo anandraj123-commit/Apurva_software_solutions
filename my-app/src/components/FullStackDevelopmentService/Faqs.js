@@ -49,7 +49,7 @@ export default function FAQ() {
           >
             <button
               onClick={() => toggleFAQ(index)}
-              className="w-full flex justify-between items-center p-5 text-left font-medium"
+              className="w-full flex justify-between items-center p-3 text-left font-medium"
             >
               {faq.question}
               <span

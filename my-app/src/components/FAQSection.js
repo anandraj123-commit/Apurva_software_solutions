@@ -50,7 +50,7 @@ export default function FAQSection() {
   return (
     <section className="bg-white text-black py-16 px-4">
 <div className="text-center max-w-7xl mx-auto px-5">
-        <h2 className="text-4xl font-bold text-gray-900">
+        <h2 className="text-3xl font-bold text-gray-900">
         Frequently Asked{" "}
           <span className="bg-[#ff4a17] bg-clip-text text-transparent">
           Questions

@@ -19,7 +19,7 @@ const FullStackDevelopmentService = ()=>{
       .getElementById("contact")
       .scrollIntoView({ behavior: "smooth" });
   }}
-  className="absolute bottom-62 left-[52px] bg-[#ff4a17] text-white px-6 py-3 rounded-lg font-semibold shadow-lg" style={{ left: "52px",bottom:' 62px'
+  className="absolute bottom-62 left-[52px] bg-[#ff4a17] text-white px-6 py-3 rounded-lg font-semibold shadow-lg" style={{ left: '114px',bottom:' 62px'
   }}
 > 
   Start a Project

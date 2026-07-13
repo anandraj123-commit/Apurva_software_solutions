@@ -106,7 +106,7 @@ const Contact = ({ onSubmitFormRequest }) => {
           {" "}
 
           <div className="text-center max-w-7xl mx-auto px-5">
-        <h2 className="text-4xl font-bold text-gray-900">
+        <h2 className="text-3xl font-bold text-gray-900">
         Get In{" "}
           <span className="bg-[#ff4a17] bg-clip-text text-transparent">
           Touch

@@ -148,7 +148,7 @@ export default function FeaturesTab() {
     <section className="bg-[#f1f4fa] text-black py-20 px-6">
     {/* Heading */}
     <div className="text-center max-w-3xl mx-auto">
-      <h2 className="text-4xl font-bold">
+      <h2 className="text-3xl font-bold">
       All In One {" "}
         <span className="bg-[#ff4a17] bg-clip-text text-transparent">
         Solutions

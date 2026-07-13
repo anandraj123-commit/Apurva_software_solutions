@@ -26,7 +26,7 @@ const Mastermind = () => {
         
         {/* LEFT CONTENT */}
         <div>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-black">
+          <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold leading-tight text-black">
             Masterminds To <br /> Your Positive Goal
           </h1>
 

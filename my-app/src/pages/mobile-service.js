@@ -190,7 +190,7 @@ function Services() {
 
   return (
     <section id="services" className="py-24 max-w-7xl mx-auto px-6">
-      <h2 className="text-4xl font-bold text-center">
+      <h2 className="text-3xl font-bold text-center">
         Mobile App Development Services
       </h2>
 
@@ -231,7 +231,7 @@ function About() {
         />
 
         <div>
-          <h2 className="text-4xl font-bold">Why Choose Us</h2>
+          <h2 className="text-3xl font-bold">Why Choose Us</h2>
 
           <div className="mt-8 space-y-5">
             {[
@@ -267,7 +267,7 @@ function Industries() {
 
   return (
     <section className="py-24 text-center">
-      <h2 className="text-4xl font-bold">Industries We Serve</h2>
+      <h2 className="text-3xl font-bold">Industries We Serve</h2>
 
       <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto mt-12 px-6">
         {list.map((i, index) => (
@@ -295,7 +295,7 @@ function Process() {
 
   return (
     <section id="process" className="bg-gray-100 py-24 text-center">
-      <h2 className="text-4xl font-bold">Our Development Process</h2>
+      <h2 className="text-3xl font-bold">Our Development Process</h2>
 
       <div className="grid md:grid-cols-5 gap-6 max-w-6xl mx-auto mt-12 px-6">
         {steps.map((s, i) => (
@@ -317,7 +317,7 @@ function Process() {
 function CTA() {
   return (
     <section id="contact" className="bg-blue-600 text-white py-20 text-center">
-      <h2 className="text-4xl font-bold">
+      <h2 className="text-3xl font-bold">
         Ready to Build Your Mobile App?
       </h2>
 

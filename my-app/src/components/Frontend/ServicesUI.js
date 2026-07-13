@@ -73,7 +73,7 @@ export default function ServicesUI() {
       
       {/* HEADER */}
       <div className="text-center max-w-3xl mx-auto mb-16">
-        <h1 className="text-4xl md:text-5xl font-bold mb-6">
+        <h1 className="text-3 md:text-5xl font-bold mb-6">
           Frontend Development <span className="text-[#ff4a17]">Services</span>
         </h1>
         <p className="text-gray-600 leading-relaxed">

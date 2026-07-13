@@ -8,7 +8,7 @@ const HeroSection = () => {
         
         {/* LEFT CONTENT */}
         <div>
-          <h1 className="text-4xl md:text-6xl font-bold leading-tight">
+          <h1 className="text-3xl md:text-6xl font-bold leading-tight">
             Customized Web <br />
             Development <br />
             <span className="text-[#ff4a17]">Solutions</span>

@@ -72,11 +72,11 @@ const FAQSection = () => {
       <div className="w-full mx-auto text-center">
 
         {/* Heading */}
-        <h2 className="text-4xl md:text-5xl font-bold text-black">
+        <h2 className="text-3xl md:text-5xl font-bold text-black">
           Mobile App Development
         </h2>
 
-        <h3 className="text-4xl md:text-5xl font-bold  text-black bg-clip-text mt-2">
+        <h3 className="text-3xl md:text-5xl font-bold  text-black bg-clip-text mt-2">
           <span class="text-[#ff4a17]">Questions & Answers</span>
         </h3>
 

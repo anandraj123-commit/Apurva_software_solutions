@@ -294,7 +294,7 @@ const Main = (props) => {
 
     <section id="services-2" className="services-2 section light-background">
       <div className="text-center max-w-3xl mx-auto">
-        <h2 className="text-4xl font-bold">
+        <h2 className="text-3xl font-bold">
           Check Our{" "}
           <span className="bg-[#ff4a17] bg-clip-text text-transparent">
             Services
@@ -525,7 +525,7 @@ const Main = (props) => {
       <section id="portfolio" className="portfolio section">
 
       <div className="text-center max-w-3xl mx-auto">
-        <h2 className="text-4xl font-bold">
+        <h2 className="text-3xl font-bold">
         Our{" "}
           <span className="bg-[#ff4a17] bg-clip-text text-transparent">
             Services
