@@ -54,7 +54,7 @@ return ( <section className="py-16 px-6 bg-gray-50"> <div className="max-w-6xl m
         >
           <button
             onClick={() => toggleFAQ(index)}
-            className="w-full text-left p-5 flex justify-between items-center font-semibold text-sm"
+            className="w-full text-left p-3 flex justify-between items-center font-semibold text-sm"
           >
             {faq.question}
             <span className="text-xl">

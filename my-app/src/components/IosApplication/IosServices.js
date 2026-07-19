@@ -11,7 +11,7 @@ import {
   
   import { useState } from "react";
   
-  const iosServices = [
+  const services = [
     {
       title: "Expert iOS App Development Solutions",
       icon: <FaMobileAlt />,
@@ -143,14 +143,14 @@ import {
   
         {/* Row 1 */}
         <div className="grid md:grid-cols-4 gap-6 mb-6">
-          {iosServices.slice(0, 4).map((service, index) => (
+          {services.slice(0, 4).map((service, index) => (
             <Card key={index} service={service} />
           ))}
         </div>
   
         {/* Row 2 */}
         <div className="grid md:grid-cols-4 gap-6">
-          {iosServices.slice(4, 8).map((service, index) => (
+          {services.slice(4, 8).map((service, index) => (
             <Card key={index} service={service} />
           ))}
         </div>

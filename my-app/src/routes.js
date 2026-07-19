@@ -1,7 +1,6 @@
 import Home from './pages/Home';
 import {Navigate} from 'react-router-dom';
 import Blogs from './pages/blogs';
-import Blog from './pages/blog';
 import HeroServices from './pages/services';
 import MobileService from './pages/mobile-service';
 import DiscussYourProject from './pages/DiscussYourProject';
@@ -12,6 +11,10 @@ import FrontEndDevelopmentService from './pages/FrontEndDevelopmentService';
 import FullStackDevelopmentService from './pages/FullStackDevelopmentService';
 import MobileAppDevelopment from './pages/MobileAppDevelopment';
 import AndroidApplication from './pages/AndroidApplication';
+import IosApplication from './pages/IosApplication';
+import ReactNative from './pages/ReactNative';
+import AllServices from './pages/AllServices';
+import DigitalMarketing from './pages/digital-marketing';
 const routes = [
     {
         path:'/',
@@ -70,6 +73,22 @@ const routes = [
     {
         path:'services',
         element:<HeroServices/>
+    },
+    {
+    path:'Ios Application',
+    element:<IosApplication/>
+    },
+    {
+        path:'React Native Application',
+        element:<ReactNative/>
+    },
+    {
+        path:'Services-We-Offer',
+        element:<AllServices/>
+    },
+    {
+        path:'Digital Marketing',
+        element:<DigitalMarketing/>
     }
 ]
 export default routes;
