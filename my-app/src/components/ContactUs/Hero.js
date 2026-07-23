@@ -1,40 +1,47 @@
 const Hero = () => {
     return (
-      <section className="relative h-[80vh] flex items-center text-white overflow-hidden">
+  <>
+       <div className="relative w-full h-auto text-white">
   
-        {/* Background Image (Zoom Animation) */}
-        <img
-          src="/img/hero-bg.jpg"
-          className="absolute w-full h-full object-cover animate-zoom"
-          alt=""
-        />
-  
-        {/* Dark Overlay */}
-        <div className="absolute inset-0 bg-black/60"></div>
-  
-        {/* Animated Gradient Glow */}
-        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#ff4a1720] to-transparent animate-glowMove"></div>
-  
-        {/* Content */}
-        <div className="relative z-10 container mx-auto px-6">
-{/* Heading */}
-<h1 className="text-3xl font-bold leading-tight overflow-hidden text-white">
-  <span className="block animate-slideUp">
-    Let's Start a Conversation
-  </span>
+  {/* Background Image (Zoom Animation) */}
+  <img src="/img/apurvasoftwaresolutions-contactus-page.png"
+          className="w-full"
+          alt=" apurva software solutions contact us page"
+/>
 
-  <span className="block text-[#ff4a17]">
-    We're Here to Help You
-  </span>
+  {/* Dark Overlay */}
+  <div className="absolute inset-0 bg-black/60"></div>
+
+  {/* Animated Gradient Glow */}
+  
+  <div className="absolute  hidden lg:block top-1/2 left-10 transform -translate-y-1/2 max-w-lg text-left">
+  
+  <h1 className="text-3xl font-bold text-white leading-tight">
+  Get In Touch 
+  <span className="text-[#ff4a17]"> With Us</span> <br />
+  We’d Love To Hear From You
 </h1>
 
-{/* Paragraph */}
-<p className="mt-4 text-lg max-w-xl font-bold text-white animate-fadeIn delay-300">
-  Reach out to our team for any queries or ideas — we’re ready to listen,
-  guide, and turn your vision into a successful digital solution.
+<p className="mt-4 text-white/90 text-sm leading-relaxed">
+  Have questions, ideas, or need assistance with your next project? 
+  The team at Apurva Software Solutions is here to help. 
+
+  Reach out to us with your requirements, and our experts will get back to you 
+  with the right guidance and tailored solutions. Let’s connect and create 
+  something impactful together.
 </p>
 
-</div>
+  {/* Button */}
+  <button 
+    className="mt-6 px-6 py-3 bg-[#ff4a17] text-white rounded-lg shadow-lg hover:bg-orange-600 transition"
+    onClick={() => {
+      document
+        .getElementById("contact")
+        .scrollIntoView({ behavior: "smooth" });
+    }}
+  >
+    Start Your Project
+  </button>
   
         {/* CSS (inside same file) */}
         <style>{`
@@ -95,7 +102,9 @@ const Hero = () => {
           }
   
         `}</style>
-      </section>
+        </div>
+</div>
+</>
     );
   };
   
