@@ -170,8 +170,8 @@ const TechCard = ({ item }) => {
 
 export default function TechnologySection() {
   return (
-    <section className="bg-white py-20">
-      <div className="text-center max-w-7xl mx-auto px-5">
+    <section className="bg-white w-full max-w-none px-6">
+      <div className="text-center  mx-auto">
         <h2 className="text-3xl font-bold text-gray-900">
           Our{" "}
           <span className="bg-[#ff4a17] bg-clip-text text-transparent">
@@ -185,7 +185,7 @@ export default function TechnologySection() {
           We use modern tools, frameworks, and DevOps practices to build scalable digital solutions.
         </p>
 
-        <div className="mt-14 grid sm:grid-cols-2 lg:grid-cols-3 gap-8 text-left">
+        <div className="mt-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-8 text-left">
           {techData.map((item, i) => (
             <TechCard key={i} item={item} />
           ))}

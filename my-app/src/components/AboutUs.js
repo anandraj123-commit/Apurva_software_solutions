@@ -22,12 +22,11 @@ const AboutUs = () => {
     <section id="about" className="about section">
   
 
-  <div className="container section-title text-center">
-        <p>What We <span className="text-[#ff4a17]">Do</span></p>
-          <h2></h2>
+  <div className="w-full max-w-none px-0 section-title text-center">
+        <p className="!text-3xl">What We <span className="text-[#ff4a17]">Do</span></p>
         </div>
 
-      <div className="container">
+      <div className="w-full max-w-none px-6">
         <div className="row gy-4">
 
           {/* LEFT */}

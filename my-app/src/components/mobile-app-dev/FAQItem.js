@@ -72,17 +72,17 @@ const FAQSection = () => {
       <div className="w-full mx-auto text-center">
 
         {/* Heading */}
-        <h2 className="text-3xl md:text-5xl font-bold text-black">
+        <h2 className="text-3xl font-bold text-black">
           Mobile App Development
         </h2>
 
-        <h3 className="text-3xl md:text-5xl font-bold  text-black bg-clip-text mt-2">
+        <h3 className="text-3xl  font-bold  text-black bg-clip-text mt-2">
           <span class="text-[#ff4a17]">Questions & Answers</span>
         </h3>
 
         
 
-        <p className="text-black mt-4 text-sm md:text-base">
+        <p className="text-black mt-4 text-sm md:text-xl">
           Find answers to common questions about mobile app development services and our expertise.
         </p>
 

@@ -92,7 +92,7 @@ const techData = [
     title: "AWS",
     icon: <FaServer />,
     desc: "AWS provides scalable cloud infrastructure, enabling secure, flexible, and high-performance application deployment.",
-    color: "from-yellow-400 to-orange-500",
+    color: "from-yellow-400 to-[#ff4a17]",
   },
   {
     title: "MySQL",
@@ -140,7 +140,7 @@ const cardVariants = {
 
 const Technologies = () => {
   return (
-    <section className="bg-white text-black py-20 px-6 lg:px-20 overflow-hidden">
+    <section className="bg-white text-black  px-6  overflow-hidden w-full max-w-none">
       
       {/* Heading */}
       <motion.div
@@ -149,7 +149,7 @@ const Technologies = () => {
         transition={{ duration: 0.6 }}
         className="text-center mb-16"
       >
-        <h2 className="text-3xl lg:text-5xl font-bold">
+        <h2 className="text-3xl  font-bold">
           Technologies <span className="text-[#ff4a17]">We Master</span>
         </h2>
         <p className="mt-4 text-lg">
@@ -162,7 +162,7 @@ const Technologies = () => {
         variants={containerVariants}
         initial="hidden"
         whileInView="visible"
-        className="grid md:grid-cols-2 lg:grid-cols-3 gap-10"
+        className="grid md:grid-cols-2 lg:grid-cols-4 gap-10"
       >
         {techData.map((tech, index) => (
           <motion.div

@@ -29,8 +29,8 @@ const services = [
 
 const OurServices = () => {
   return (
-    <section className="py-16 px-6 bg-gray-50">
-      <div className="max-w-6xl mx-auto text-center">
+    <section className="py-20 px-6 bg-gray-50 w-full">
+      <div className="mx-auto text-center">
 
         {/* Heading */}
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900">

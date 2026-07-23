@@ -21,7 +21,7 @@ export default function WhyChooseUs() {
 
         {/* RIGHT CONTENT */}
         <div>
-          <h2 className="text-3xl md:text-5xl font-bold leading-tight">
+          <h2 className="text-3xl font-bold leading-tight">
             Why Choose Our <br />
             <span className="text-[#ff4a17]">
               Custom Software

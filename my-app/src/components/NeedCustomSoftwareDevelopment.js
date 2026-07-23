@@ -10,7 +10,7 @@ export default function NeedCustomSoftwareDevelopment() {
       <div className="max-w-xl z-10">
 
         {/* Heading */}
-        <h1 className="text-3xl md:text-6xl font-bold leading-tight mb-6">
+        <h1 className="text-3xl  font-bold leading-tight mb-6">
           Need a Custom <br />
           Software{" "}
           <span className="bg-[#ff4a17] text-transparent bg-clip-text">
@@ -49,7 +49,7 @@ export default function NeedCustomSoftwareDevelopment() {
 
         {/* CTA Button */}
         <button className="px-6 py-3 rounded-full bg-[#ff4a17] text-white font-medium flex items-center gap-2 hover:opacity-90 transition">
-          Start a Project →
+          Get Free Consultaion →
         </button>
 
       </div>

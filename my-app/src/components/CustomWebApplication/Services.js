@@ -30,7 +30,7 @@ import {
       title: "Website & Portal Development",
       desc: "We create responsive and user-friendly websites. Design portals for customers, employees, and partners. Optimized for speed, accessibility, and SEO. Built with modern UI/UX practices. Perfect for engagement and conversions.",
       icon:Layout,
-      gradient: "from-orange-500 to-red-500",
+      gradient: "from-[#ff4a17] to-red-500",
     },
     {
       title: "E-commerce Solutions",
@@ -42,7 +42,7 @@ import {
       title: "Enterprise Applications",
       desc: "Develop robust enterprise-grade web applications. Built for high performance and scalability. Secure and reliable for critical operations. Integrates seamlessly with existing systems. Supports complex business workflows.",
       icon: Server,
-      gradient: "from-yellow-400 to-orange-500",
+      gradient: "from-yellow-400 to-[#ff4a17]",
     },
     {
       title: "Analytics & Dashboards",
@@ -90,14 +90,14 @@ import {
   
   export default function Services() {
     return (
-      <section className="bg-[#f1f4fa] text-white py-20 px-6">
+      <section className="bg-[#f1f4fa] text-white  px-6 w-full max-w-none">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-bold text-black text-transparent bg-clip-text">
+          <h2 className="text-3xl  font-bold text-black text-transparent bg-clip-text">
             Services <span className="text-[#ff4a17]">Offered</span>
           </h2>
          
         </div>
-        <div className="max-w-7xl mx-auto grid md:grid-cols-3 gap-8">
+        <div className="mx-auto grid md:grid-cols-4 gap-8">
           {services.map((service, i) => {
             const Icon = service.icon;
   

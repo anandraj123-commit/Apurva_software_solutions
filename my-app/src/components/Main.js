@@ -171,12 +171,12 @@ const Main = (props) => {
       <WhyChooseUs/>
       <TeamSection/>
 
-      <section id="services" className="services section">
-        <div className="container section-title text-center">
-        <p>Featured <span className="text-[#ff4a17]">Services</span></p>
+      <section id="services" className="services section w-full max-w-none px-6">
+        <div className="section-title text-center">
+        <p className="!text-3xl"> Featured <span className="text-[#ff4a17]">Services</span></p>
           <h2></h2>
         </div>
-        <div className="container">
+        <div className="">
           <div className="row gy-5">
             <div className="col-xl-4 col-md-6 col-sm-12">
               <div className="service-item">
@@ -287,13 +287,13 @@ const Main = (props) => {
 </section>
 
       <section id="features" className="features section">
-        <div className="container">
+        <div className="w-full max-w-none px-6">
           <FeaturesTab />
         </div>
       </section>
 
-    <section id="services-2" className="services-2 section light-background">
-      <div className="text-center max-w-3xl mx-auto">
+    <section id="services-2" className="services-2 section light-background w-full max-w-none px-6">
+      <div className="text-center  mx-auto">
         <h2 className="text-3xl font-bold">
           Check Our{" "}
           <span className="bg-[#ff4a17] bg-clip-text text-transparent">
@@ -304,8 +304,8 @@ const Main = (props) => {
         <div className="w-20 h-[2px] bg-[#ff4a17] mx-auto mt-4"></div>
 
       </div>
-        <div className="container mt-12">
-          <div className="row gy-4">
+        
+          <div className="row gy-4 py-20">
             <div className="col-md-6 col-sm-12">
               <div className="service-item d-flex position-relative h-100 p-3">
                 <i className="bi bi-briefcase icon flex-shrink-0 me-3"></i>
@@ -499,7 +499,7 @@ const Main = (props) => {
               </div>
             </div>
           </div>
-        </div>
+    
       </section>
 {/* 
       <section id="testimonials" className="testimonials section dark-background">
@@ -522,9 +522,9 @@ const Main = (props) => {
         </div>
       </section> */}
 
-      <section id="portfolio" className="portfolio section">
+      <section id="portfolio" className="portfolio section w-full max-w-none px-6">
 
-      <div className="text-center max-w-3xl mx-auto">
+      <div className="text-center mx-auto">
         <h2 className="text-3xl font-bold">
         Our{" "}
           <span className="bg-[#ff4a17] bg-clip-text text-transparent">

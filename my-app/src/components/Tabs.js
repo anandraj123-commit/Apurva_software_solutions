@@ -50,7 +50,11 @@ export default function PortfolioBasicTabs(props) {
   };
 
   return (
-<Box sx={{ width: '100%' }}>
+<Box sx={{ width: '100%' }} style={{
+    width: "100vw",
+    marginLeft: "calc(50% - 50vw)",
+    marginRight: "calc(50% - 50vw)",
+  }}>
 <Box
   sx={{
     borderBottom: 0,

@@ -22,7 +22,7 @@ export default function Achievements() {
   return (
     <section
       ref={sectionRef}
-      className="w-full bg-[white] text-black px-6 lg:px-20 py-20 relative overflow-hidden"
+      className="w-full bg-[white] text-black px-6  relative overflow-hidden"
     >
       {/* SCAN LINE */}
       <div className="absolute inset-0 pointer-events-none">
@@ -40,15 +40,15 @@ export default function Achievements() {
         ))}
       </div>
 
-      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      <div className="mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 
         {/* LEFT */}
         <div>
-          <h1 className="text-3xl md:text-3xl lg:text-5xl font-bold mb-6">
+          <h1 className="text-3xl md:text-3xl font-bold mb-6">
             Our Achievements
           </h1>
 
-          <p className="text-black leading-relaxed max-w-xl">
+          <p className="text-black leading-relaxed">
             Our milestones at Zisan Tech Solutions showcase our unwavering commitment to excellence, client-focused results, and continual advancement. We are driven by a passion to deliver meaningful SAP and IT solutions.
           </p>
 

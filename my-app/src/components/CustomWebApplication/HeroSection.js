@@ -1,15 +1,15 @@
 const HeroSection = () => {
   return (
-    <section className="relative bg-white text-black overflow-hidden">
+    <section className="relative bg-white text-black overflow-hidden w-full max-w-none px-6">
       {/* Background glow lines */}
       <div className="absolute inset-0 opacity-20"></div>
 
-      <div className="max-w-7xl mx-auto px-6 py-16 grid md:grid-cols-2 gap-10 items-center relative z-10">
+      <div className="mx-auto grid md:grid-cols-2 gap-10 items-center relative z-10">
         
         {/* LEFT CONTENT */}
         <div>
-          <h1 className="text-3xl md:text-6xl font-bold leading-tight">
-            Customized Web <br />
+          <h1 className="text-3xl  font-bold leading-tight">
+            Customized Web 
             Development <br />
             <span className="text-[#ff4a17]">Solutions</span>
           </h1>

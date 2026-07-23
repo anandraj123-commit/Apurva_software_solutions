@@ -34,18 +34,18 @@ const DiscussYourProjectForm = ()=>{
         );
       };
     return (
-        <section className="discussYourProject">
-        <div className="max-w-6xl mx-auto bg-white rounded-2xl  overflow-hidden">
+        <section className="discussYourProject w-full max-w-none px-6">
+        <div className=" mx-auto bg-white rounded-2xl  overflow-hidden">
 
           {/* HEADER */}
-          <div className="text-white p-8 text-center">
+          <div className="text-white text-center">
             <h2 className="text-2xl font-bold">Share Your <span className="text-[#ff4a17]">Requirements</span></h2>
             <p className="opacity-90 mt-2 text-black">
               Fill in the details below and we'll reach out within one working day.
             </p>
           </div>
 
-          <div className="p-8 space-y-10">
+          <div className=" space-y-10">
 
             {/* STEP 1 */}
             <div>

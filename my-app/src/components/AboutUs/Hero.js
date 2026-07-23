@@ -19,7 +19,7 @@ const Hero = () => {
         <div className="relative z-10 container mx-auto px-6">
 
 {/* Heading */}
-<h1 className="text-5xl font-bold leading-tight overflow-hidden text-white">
+<h1 className="text-3xl font-bold leading-tight overflow-hidden text-white">
   <span className="block animate-slideUp">
     We Create Digital
   </span>

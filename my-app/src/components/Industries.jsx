@@ -123,10 +123,10 @@ const industries = [
 
 export default function Industries() {
   return (
-    <section className="bg-white py-20 px-6">
+    <section className="bg-white w-full max-w-none px-6">
       
       {/* Heading */}
-      <div className="text-center max-w-3xl mx-auto">
+      <div className="text-center mx-auto">
         <h2 className="text-3xl font-bold text-black">
           Industries we{" "}
           <span className="text-[#ff4a17]">empower</span>

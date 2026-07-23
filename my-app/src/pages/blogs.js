@@ -19,8 +19,8 @@ const Blogs = function () {
           </div>
         </section>
 
-        <section className="section blog-wrap bg-gray">
-          <div className="container">
+        <section className="section blog-wrap bg-gray w-full px-6">
+          
             <div className="row">
               {/* Blog Item 1 */}
               {blogsArray.map(blog => {
@@ -54,7 +54,7 @@ const Blogs = function () {
                 )
               })}
             </div>
-          </div>
+         
         </section>
       </div>
     </>

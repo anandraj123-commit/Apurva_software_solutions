@@ -49,7 +49,7 @@ import {
   export default function Services() {
     return (
       <section className="py-24 bg-white">
-        <div className="container mx-auto px-6">
+        <div className="w-full max-w-none mx-auto px-6">
           <div className="text-center max-w-3xl mx-auto">
             <h2 className="text-3xl font-bold text-black">
               Software Development

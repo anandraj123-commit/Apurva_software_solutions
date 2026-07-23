@@ -2,8 +2,8 @@ import React from "react";
 
 const WhyChooseIOS = () => {
   return ( 
-    <section className="py-16 px-6 bg-white"> 
-      <div className="max-w-6xl mx-auto">
+    <section className="py-20 px-6 bg-white w-full "> 
+      <div className="mx-auto">
 
         <h2 className="text-3xl font-bold mb-6 text-center">
           Why Choose Our iOS App<span className="text-[#ff4a17]"> Development Services</span>

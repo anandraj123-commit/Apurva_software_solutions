@@ -15,8 +15,8 @@ export default function HeroServices() {
     <>
     <img src="/img/website-mainteance-image.png"/>
 
-<section class="maintenance-process py-5">
-  <div class="container text-center">
+<section class="maintenance-process w-full max-w-none px-6 ">
+  <div class="text-center">
   <h2 className="text-3xl font-bold">
         Website Development &{" "}
           <span className="bg-[#ff4a17] bg-clip-text text-transparent">

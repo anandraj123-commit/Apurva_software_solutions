@@ -27,7 +27,7 @@ const services = [
       title: "JavaScript Engineering",
       desc: "We leverage modern JavaScript to build dynamic web applications. Our code follows ES6+ standards and best practices. We ensure responsive, interactive, and high-performance solutions. From simple scripts to complex systems, we cover all needs. Power your web apps with robust JavaScript development.",
       icon: <Code size={28} />,
-      gradient: "from-orange-500 to-amber-500",
+      gradient: "from-[#ff4a17] to-amber-500",
       hoverBg: "hover:bg-[#3f1d0d]",
     },
     {
@@ -62,19 +62,19 @@ const services = [
         title: "Single Page Applications",
         desc: "We develop fast and dynamic single page applications for seamless user experiences. Our SPAs eliminate page reloads and ensure smooth navigation. Built with modern frameworks like React and Vue. Optimized for speed, performance, and scalability. Deliver lightning-fast web apps with SPA architecture.",
         icon: <Zap size={28} />,
-        gradient: "from-orange-500 to-red-500",
+        gradient: "from-[#ff4a17] to-red-500",
         hoverBg: "hover:bg-[#431407]",
       }
   ];
 
 export default function ServicesUI() {
   return (
-    <div className="min-h-screen bg-white text-black px-6 py-16">
+    <div className="bg-white text-black px-6 py-16 w-full max-w-none ">
       
       {/* HEADER */}
-      <div className="text-center max-w-3xl mx-auto mb-16">
-        <h1 className="text-3 md:text-5xl font-bold mb-6">
-          Frontend Development <span className="text-[#ff4a17]">Services</span>
+      <div className="text-center mx-auto mb-16">
+        <h1 className="text-3xl  font-bold mb-6">
+          Frontend <span className="text-[#ff4a17]">Development Services</span>
         </h1>
         <p className="text-gray-600 leading-relaxed">
           We craft modern, high-performance web interfaces that deliver
@@ -85,7 +85,7 @@ export default function ServicesUI() {
       </div>
 
       {/* GRID */}
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+      <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-8 mx-auto">
         {services.map((item, index) => (
           <div
             key={index}

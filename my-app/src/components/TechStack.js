@@ -38,7 +38,7 @@ const cardVariants = {
 
 const TechStack = () => {
   return (
-    <div className="bg-white py-16 px-6">
+    <div className="bg-white py-20 px-6 w-full">
       {/* Heading */}
       <div className="text-center mb-12">
         <h2 className="text-3xl font-bold">
@@ -54,7 +54,7 @@ const TechStack = () => {
         variants={containerVariants}
         initial="hidden"
         animate="show"
-        className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 max-w-6xl mx-auto"
+        className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 mx-auto"
       >
         {techStack.map((tech, index) => (
           <motion.div

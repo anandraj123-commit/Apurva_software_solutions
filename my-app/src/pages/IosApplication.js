@@ -21,11 +21,11 @@ const IosApplication = () => {
         <div className="absolute inset-0 bg-black/20"></div>
   
         {/* Left Side Content */}
-        <div className="absolute top-1/2 left-10 transform -translate-y-1/2 max-w-md text-left">
+        <div className="absolute top-1/2 left-10  hidden lg:block transform -translate-y-1/2 max-w-lg text-left">
           
           <h1 className="text-3xl font-bold text-white leading-tight">
-            Build Next-Gen <br />
-            <span className="text-[#ff4a17]">Ios Applications</span> <br />
+            Build Next-Gen
+            <span className="text-[#ff4a17]"> Ios Applications</span> <br />
             Designed for Peak Performance
           </h1>
   
@@ -39,7 +39,7 @@ const IosApplication = () => {
           .getElementById("contact")
           .scrollIntoView({ behavior: "smooth" });
       }}>
-            Start Your Project
+            Get In Touch
           </button>
         </div>
       </div>

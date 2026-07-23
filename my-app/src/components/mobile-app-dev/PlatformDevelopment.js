@@ -29,25 +29,25 @@ import {
         title: "Wearable Apps",
         description: "Apple Watch and Wear OS applications",
         icon: Watch,
-        gradient: "from-orange-500 to-red-500",
+        gradient: "from-[#ff4a17] to-red-500",
       },
     ];
   
     return (
       <section className="bg-gray-100 py-24">
-        <div className="max-w-7xl mx-auto px-6">
+        <div className="max-w-full mx-auto px-6">
   
           {/* Heading */}
   
           <div className="text-center mb-20">
-            <h2 className="text-5xl font-bold text-black">
+            <h2 className="text-3xl  font-bold leading-tight text-black">
               Platform{" "}
               <span className="text-[#ff4a17]">
                 Development
               </span>
             </h2>
   
-            <p className="mt-5 text-xl text-black">
+            <p className="mt-4 text-sm text-black">
               We develop applications for all major platforms and devices
             </p>
           </div>
@@ -73,13 +73,13 @@ import {
   
                   {/* Title */}
   
-                  <h3 className="mt-10 text-2xl font-semibold text-white">
+                  <h3 className="mt-10 text-xl font-semibold text-white">
                     {item.title}
                   </h3>
   
                   {/* Description */}
   
-                  <p className="mt-6 text-gray-400 text-xl leading-10">
+                  <p className="mt-6 text-gray-400 text-sm leading-10">
                     {item.description}
                   </p>
                 </div>

@@ -53,7 +53,7 @@ const Stats = () => {
   `}
         </style>
   
-        <div className="container">
+        <div className="w-full max-w-none px-6">
           <div className="overflow-hidden">
             <div className="row gy-4 flex-nowrap animate-slide-left">
   

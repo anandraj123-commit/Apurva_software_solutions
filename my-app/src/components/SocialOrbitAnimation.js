@@ -15,7 +15,7 @@ export default function SocialOrbitHero() {
 
       {/* Background Image */}
       <img
-        src="/img/subscribe-apurva-software-solutions.png"
+        src="/img/subscribe-apurva-software-solutions.png" class="w-full"
         alt="Subscribe Apurva Software Solutions"
       />
 

@@ -26,17 +26,17 @@ const features = [
 
 const WhyChooseUs = () => {
   return (
-    <section className="bg-[white] text-black py-20 px-6 md:px-16">
+    <section className="bg-[white] text-black px-6 w-full max-w-none">
       
       {/* Header */}
-      <div className="text-center max-w-3xl mx-auto">
-        <h2 className="text-3xl md:text-5xl font-bold leading-tight">
+      <div className="text-center  mx-auto">
+        <h2 className="text-3xl  font-bold leading-tight">
           Why Partner With Our{" "}
           <span className="text-[#ff4a17]">
             Mobile App Experts?
           </span>
         </h2>
-        <p className="text-black mt-4 text-lg">
+        <p className="text-black mt-4 text-sm">
           We craft scalable, high-performance mobile applications designed to
           deliver exceptional user experiences and measurable business growth.
         </p>

@@ -35,7 +35,7 @@ const toggleFAQ = (index) => {
 setActiveIndex(activeIndex === index ? null : index);
 };
 
-return ( <section className="py-16 px-6 bg-gray-50"> <div className="max-w-6xl mx-auto">
+return ( <section className="py-20 px-6 bg-gray-50 w-full max-w-none"> <div className="mx-auto">
 
 
     <h2 className="text-3xl font-bold text-center mb-4">

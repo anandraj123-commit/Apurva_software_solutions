@@ -1,8 +1,8 @@
 const ConsultationHero = () => {
   return (
-    <section className="bg-[white] text-black min-h-screen flex items-center px-6 py-16 relative overflow-hidden">
+    <section className="bg-[white] text-black min-h-screen flex items-center px-6 w-full max-w-none relative overflow-hidden">
       
-      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center w-full">
+      <div className="mx-auto grid md:grid-cols-2 gap-12 items-center w-full">
         
         {/* LEFT CONTENT */}
         <div>
@@ -10,14 +10,14 @@ const ConsultationHero = () => {
             SIMPLE TO GET STARTED
           </p>
 
-          <h1 className="text-3xl md:text-6xl font-bold leading-tight mb-6">
+          <h1 className="text-3xl font-bold leading-tight mb-6">
             Get A Free{" "}
             <span className=" text-[#ff4a17] bg-clip-text">
               Consultation
             </span>
           </h1>
 
-          <p className="text-black leading-relaxed mb-8 max-w-lg">
+          <p className="text-black leading-relaxed mb-8">
           Apurva Software Solutions focuses on delivering tailored software development, expert consulting, and innovative product solutions that align with modern business needs. We believe true success in the tech industry comes from building forward-thinking, scalable, and impactful digital products. By combining creativity with technical excellence, we help our clients stay ahead through cutting-edge and reliable software solutions designed for long-term growth.
           </p>
 

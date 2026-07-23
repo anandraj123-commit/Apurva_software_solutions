@@ -17,8 +17,8 @@ const techStack = [
     title: "MERN Stack",
     animation: "group-hover:rotate-12",
     icon: Flame,
-    color: "text-orange-500",
-    border: "hover:border-orange-500",
+    color: "text-[#ff4a17]",
+    border: "hover:border-[#ff4a17]",
     badge: "Frontend",
     badgeColor: "bg-blue-500/20 text-blue-400",
     desc: "MongoDB, Express.js, React, Node.js",
@@ -86,7 +86,7 @@ const techStack = [
     color: "text-orange-400",
     border: "hover:border-orange-400",
     badge: "Cloud",
-    badgeColor: "bg-orange-500/20 text-orange-400",
+    badgeColor: "bg-[#ff4a17]/20 text-orange-400",
     desc: "Cloud infrastructure services",
     detail: `AWS provides scalable cloud infrastructure services. It includes compute, storage, and networking solutions. It supports serverless architectures. It ensures high availability and reliability. It offers global data centers. It enhances application scalability. It provides cost-effective solutions. It integrates with DevOps tools. It supports security and compliance. Ideal for modern cloud-based applications.`,
   },
@@ -163,7 +163,7 @@ const techStack = [
     color: "text-orange-400",
     border: "hover:border-orange-400",
     badge: "Cloud",
-    badgeColor: "bg-orange-500/20 text-orange-400",
+    badgeColor: "bg-[#ff4a17]/20 text-orange-400",
     desc: "Software as a Service platforms",
     detail: `SaaS applications are cloud-based software solutions delivered over the internet. They eliminate the need for local installation and maintenance. Users can access them from anywhere with a browser. SaaS platforms are highly scalable and cost-efficient. They support multi-tenant architecture for multiple users. They ensure automatic updates and maintenance. They provide high availability and reliability. They integrate easily with third-party services. They enhance business productivity and accessibility. Widely used for modern cloud-based applications.`,
   },
@@ -182,10 +182,10 @@ const techStack = [
 
 export default function TechStack() {
     return (
-      <section className="bg-white py-20 px-6">
+      <section className="bg-white px-6 w-full max-w-none">
         {/* Heading */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-5xl font-bold">
+        <div className="text-center mx-auto mb-16">
+          <h2 className="text-3xl  font-bold">
             Full Stack <span className="text-[#ff4a17]">Technology Stack</span>
           </h2>
           <p className="mt-4 text-gray-700">
@@ -195,7 +195,7 @@ export default function TechStack() {
         </div>
   
         {/* Grid */}
-        <div className="grid md:grid-cols-4 gap-8 max-w-7xl mx-auto">
+        <div className="grid md:grid-cols-4 gap-8  mx-auto">
           {techStack.map((tech, index) => {
             const Icon = tech.icon;
   

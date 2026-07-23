@@ -36,10 +36,14 @@ const Header = ({ handleInternshipModal }) => {
   <img src="img/ASS.png" alt="logo" />
 </Link>
 
-{/* ✅ Icon RIGHT (forced) */}
+
+
+
 <i
-  className="mobile-nav-toggle d-xl-none bi bi-list text-black hover:text-orange-500"
   onClick={toggleMobileNav}
+  className={`mobile-nav-toggle d-xl-none text-3xl text-black  hover:text-[#ff4a17] cursor-pointer ${
+    mobileNavOpen ? "bi bi-x" : "bi bi-list"
+  }`}
   style={{ marginLeft: "auto", order: 2 }}
 ></i>
 
@@ -69,34 +73,34 @@ const Header = ({ handleInternshipModal }) => {
                 <div className="grid grid-cols-3 gap-6">
 
                   <div>
-                    <h3 className="text-sm font-semibold text-orange-500 mb-3 border-l-4 p-1 border-orange-500">
+                    <h3 className="text-sm font-semibold text-[#ff4a17] mb-3 border-l-4 p-1 border-[#ff4a17]">
                       WEB DEVELOPMENT
                     </h3>
                     <div className="grid gap-3 text-sm">
-                      <Link to="/front end services">Front End Services</Link>
-                      <Link to="/custom web application">Custom Web Application</Link>
-                      <Link to="/full stack development service">Full Stack Development</Link>
+                      <Link to="/front end services" className="text-black">Front End Services</Link>
+                      <Link to="/custom web application" className="text-black" >Custom Web Application</Link>
+                      <Link to="/full stack development service" className="text-black">Full Stack Development</Link>
                     </div>
                   </div>
 
                   <div>
-                    <h3 className="text-sm font-semibold text-orange-500 mb-3 border-l-4 p-1 border-orange-500">
+                    <h3 className="text-sm font-semibold text-[#ff4a17] mb-3 border-l-4 p-1 border-[#ff4a17]">
                       MOBILE APP DEVELOPMENT
                     </h3>
                     <div className="grid gap-3 text-sm">
-                      <Link to="/mobile app development">Mobile App Development</Link>
-                      <Link to="/Android Application">Android Application</Link>
-                      <Link to="/Ios Application">Ios Application</Link>
-                      <Link to="/React Native Application">React Native Application</Link>
+                      <Link to="/mobile app development" className="text-black">Mobile App Development</Link>
+                      <Link to="/Android Application" className="text-black">Android Application</Link>
+                      <Link to="/Ios Application" className="text-black">Ios Application</Link>
+                      <Link to="/React Native Application" className="text-black">React Native Application</Link>
                     </div>
                   </div>
 
                   <div>
-                    <h3 className="text-sm font-semibold text-orange-500 mb-3 border-l-4 p-1 border-orange-500">
+                    <h3 className="text-sm font-semibold text-[#ff4a17] mb-3 border-l-4 p-1 border-[#ff4a17]">
                       MARKETING
                     </h3>
                     <div className="grid gap-2 text-sm">
-                      <Link to="/Digital Marketing">Digital Marketing</Link>
+                      <Link to="/Digital Marketing" className="text-black">Digital Marketing</Link>
                     </div>
                   </div>
 
@@ -148,7 +152,7 @@ const Header = ({ handleInternshipModal }) => {
 
 {/* <button 
   onClick={() => setMobileNavOpen(false)} 
-  className="text-black hover:text-orange-500 text-2xl p-2 transition duration-200"
+  className="text-black hover:text-[#ff4a17] text-2xl p-2 transition duration-200"
 >
   ✕
 </button> */}
@@ -163,8 +167,8 @@ const Header = ({ handleInternshipModal }) => {
           onClick={() => handleNavLinkClick("home")}
           className={`block p-2 rounded transition 
           ${activeTab === "home" 
-            ? "bg-orange-500 text-white" 
-            : "text-black hover:!text-orange-500"}`}>
+            ? "bg-[#ff4a17] text-white" 
+            : "text-black hover:!text-[#ff4a17]"}`}>
           Home
         </Link>
       </li>
@@ -174,8 +178,8 @@ const Header = ({ handleInternshipModal }) => {
           onClick={() => handleNavLinkClick("about")}
           className={`block p-2 rounded transition 
           ${activeTab === "about" 
-            ? "bg-orange-500 text-white" 
-            : "text-black hover:!text-orange-500"}`}>
+            ? "bg-[#ff4a17] text-white" 
+            : "text-black hover:!text-[#ff4a17]"}`}>
           About Us
         </Link>
       </li>
@@ -183,7 +187,7 @@ const Header = ({ handleInternshipModal }) => {
       <li>
         <button 
           onClick={() => setOpenDropdown(!openDropdown)} 
-          className="flex justify-between w-full p-2 text-black hover:!text-orange-500 transition">
+          className="flex justify-between w-full p-2 text-black hover:!text-[#ff4a17] transition">
           Services <span>▼</span>
         </button>
 
@@ -192,26 +196,26 @@ const Header = ({ handleInternshipModal }) => {
 
     {/* ✅ WEB DEVELOPMENT */}
     <div>
-      <h3 className="text-sm font-semibold text-orange-500 border-l-4 border-orange-500 pl-2 mb-2">
+      <h3 className="text-sm font-semibold text-[#ff4a17] border-l-4 border-[#ff4a17] pl-2 mb-2">
         WEB DEVELOPMENT
       </h3>
 
       <div className="ml-2 space-y-2">
         <Link to="/front end services"
           onClick={() => handleNavLinkClick("services")}
-          className="block p-2 rounded text-black hover:!text-orange-500 transition">
+          className="block p-2 rounded text-black hover:!text-[#ff4a17] transition">
           Front End Services
         </Link>
 
         <Link to="/custom web application"
           onClick={() => handleNavLinkClick("services")}
-          className="block p-2 rounded text-black hover:!text-orange-500 transition">
+          className="block p-2 rounded text-black hover:!text-[#ff4a17] transition">
           Custom Web Application
         </Link>
 
         <Link to="/full stack development service"
           onClick={() => handleNavLinkClick("services")}
-          className="block p-2 rounded text-black hover:!text-orange-500 transition">
+          className="block p-2 rounded text-black hover:!text-[#ff4a17] transition">
           Full Stack Development
         </Link>
       </div>
@@ -219,32 +223,32 @@ const Header = ({ handleInternshipModal }) => {
 
     {/* ✅ MOBILE APP DEVELOPMENT */}
     <div>
-      <h3 className="text-sm font-semibold text-orange-500 border-l-4 border-orange-500 pl-2 mb-2">
+      <h3 className="text-sm font-semibold text-[#ff4a17] border-l-4 border-[#ff4a17] pl-2 mb-2">
         MOBILE APP DEVELOPMENT
       </h3>
 
       <div className="ml-2 space-y-2">
         <Link to="/mobile app development"
           onClick={() => handleNavLinkClick("services")}
-          className="block p-2 rounded text-black hover:!text-orange-500 transition">
+          className="block p-2 rounded text-black hover:!text-[#ff4a17] transition">
           Mobile App Development
         </Link>
 
         <Link to="/Android Application"
           onClick={() => handleNavLinkClick("services")}
-          className="block p-2 rounded text-black hover:!text-orange-500 transition">
+          className="block p-2 rounded text-black hover:!text-[#ff4a17] transition">
           Android Application
         </Link>
 
         <Link to="/Ios Application"
           onClick={() => handleNavLinkClick("services")}
-          className="block p-2 rounded text-black hover:!text-orange-500 transition">
+          className="block p-2 rounded text-black hover:!text-[#ff4a17] transition">
           iOS Application
         </Link>
 
         <Link to="/React Native Application"
           onClick={() => handleNavLinkClick("services")}
-          className="block p-2 rounded text-black hover:!text-orange-500 transition">
+          className="block p-2 rounded text-black hover:!text-[#ff4a17] transition">
           React Native Application
         </Link>
       </div>
@@ -252,14 +256,14 @@ const Header = ({ handleInternshipModal }) => {
 
     {/* ✅ MARKETING */}
     <div>
-      <h3 className="text-sm font-semibold text-orange-500 border-l-4 border-orange-500 pl-2 mb-2">
+      <h3 className="text-sm font-semibold text-[#ff4a17] border-l-4 border-[#ff4a17] pl-2 mb-2">
         MARKETING
       </h3>
 
       <div className="ml-2 space-y-2">
         <Link to="/Digital Marketing"
           onClick={() => handleNavLinkClick("services")}
-          className="block p-2 rounded text-black hover:!text-orange-500 transition">
+          className="block p-2 rounded text-black hover:!text-[#ff4a17] transition">
           Digital Marketing
         </Link>
       </div>
@@ -274,8 +278,8 @@ const Header = ({ handleInternshipModal }) => {
           onClick={() => handleNavLinkClick("Services-We-Offer")}
           className={`block p-2 rounded transition 
           ${activeTab === "Services-We-Offer" 
-            ? "bg-orange-500 text-white" 
-            : "text-black hover:!text-orange-500"}`}>
+            ? "bg-[#ff4a17] text-white" 
+            : "text-black hover:!text-[#ff4a17]"}`}>
           All We Offer
         </Link>
       </li>
@@ -285,8 +289,8 @@ const Header = ({ handleInternshipModal }) => {
           onClick={() => handleNavLinkClick("discussYourProject")}
           className={`block p-2 rounded transition 
           ${activeTab === "discussYourProject" 
-            ? "bg-orange-500 text-white" 
-            : "text-black hover:!text-orange-500"}`}>
+            ? "bg-[#ff4a17] text-white" 
+            : "text-black hover:!text-[#ff4a17]"}`}>
           Discuss Your Project
         </Link>
       </li>
@@ -296,8 +300,8 @@ const Header = ({ handleInternshipModal }) => {
           onClick={() => handleNavLinkClick("blog")}
           className={`block p-2 rounded transition 
           ${activeTab === "blog" 
-            ? "bg-orange-500 text-white" 
-            : "text-black hover:!text-orange-500"}`}>
+            ? "bg-[#ff4a17] text-white" 
+            : "text-black hover:!text-[#ff4a17]"}`}>
           Blogs
         </Link>
       </li>
@@ -307,8 +311,8 @@ const Header = ({ handleInternshipModal }) => {
           onClick={() => handleNavLinkClick("contact")}
           className={`block p-2 rounded transition 
           ${activeTab === "contact" 
-            ? "bg-orange-500 text-white" 
-            : "text-black hover:!text-orange-500"}`}>
+            ? "bg-[#ff4a17] text-white" 
+            : "text-black hover:!text-[#ff4a17]"}`}>
           Contact Us
         </Link>
       </li>

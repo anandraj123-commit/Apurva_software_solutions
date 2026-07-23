@@ -1,7 +1,7 @@
 const ServicesFaqs = ()=>{
     return(
-        <section class="faq-section py-5">
-        <div class="container">
+        <section class="faq-section w-full max-w-none px-6">
+     
           <div class="text-center">
         <h2 className="text-3xl font-bold">
               Frequently{" "}
@@ -85,7 +85,7 @@ const ServicesFaqs = ()=>{
             </div>
       
           </div>
-        </div>
+       
       </section>
     )
 }

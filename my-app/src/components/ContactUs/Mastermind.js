@@ -21,25 +21,33 @@ const Mastermind = () => {
   }, []);
 
   return (
-    <section className="bg-white py-20 px-6">
-      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-        
+    <section className="bg-white w-full max-w-none px-6">
+      <div className="mx-auto grid md:grid-cols-2 gap-12 items-center">
         {/* LEFT CONTENT */}
         <div>
-          <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold leading-tight text-black">
-            Masterminds To <br /> Your Positive Goal
+          <h1 className="text-3xl  lg:text-6xl font-bold leading-tight text-black">
+            Masterminds To <br /> <span className="text-[#ff4a17]">Your Positive Goal</span>
           </h1>
 
-          <p className="text-gray-600 mt-6 mb-8 max-w-lg">
+          <p className="text-gray-600 mt-6 mb-8">
             Experience a rise in your pursuits with our expert consulting.
             We excel in tailoring success strategies to your unique goals,
             covering diverse fields for maximum impact.
           </p>
 
-          <button className="relative overflow-hidden bg-[#ff4a17] px-6 py-3 rounded-lg font-semibold text-white shadow-lg group">
-            <span className="relative z-20">Services</span>
-            <span className="absolute inset-0 bg-[#ff4a17] transform -translate-x-full group-hover:translate-x-0 transition-transform duration-500"></span>
-          </button>
+          <button
+  onClick={() => {
+    const contactSection = document.getElementById("contact");
+    contactSection?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  }}
+  className="relative overflow-hidden bg-[#ff4a17] px-6 py-3 rounded-lg font-semibold text-white shadow-lg group"
+>
+  <span className="relative z-20">Explore Services</span>
+  <span className="absolute inset-0 bg-[#ff4a17] transform -translate-x-full group-hover:translate-x-0 transition-transform duration-500"></span>
+</button>
         </div>
 
         {/* RIGHT IMAGE */}

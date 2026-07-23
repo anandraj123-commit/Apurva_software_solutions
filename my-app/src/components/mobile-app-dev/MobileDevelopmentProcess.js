@@ -42,9 +42,9 @@ import {
       description:
         "We launch your application, monitor performance, provide maintenance, and continuously improve features based on user feedback.",
       icon: Rocket,
-      gradient: "from-orange-500 to-red-500",
+      gradient: "from-[#ff4a17] to-red-500",
       align: "right",
-      dot: "bg-orange-500",
+      dot: "bg-[#ff4a17]",
     },
   ];
   
@@ -56,18 +56,18 @@ import {
         <div className="absolute left-0 top-20 h-80 w-80 rounded-full bg-purple-600/10 blur-[120px]" />
         <div className="absolute right-0 bottom-20 h-96 w-96 rounded-full bg-pink-600/10 blur-[140px]" />
   
-        <div className="mx-auto max-w-7xl px-6">
+        <div className="mx-auto px-6 w-full max-w-none">
           {/* Heading */}
   
           <div className="mb-24 text-center">
-            <h2 className="text-5xl md:text-6xl font-bold text-black">
+            <h2 className="text-3xl  font-bold leading-tight text-black">
               Our Mobile App{" "}
               <span className="text-[#ff4a17]">
                 Development Process
               </span>{" "}
             </h2>
   
-            <p className="mx-auto mt-8 max-w-3xl text-xl leading-9 text-black">
+            <p className="mx-auto mt-8  text-sm leading-9 text-black">
               From planning to deployment, every stage is carefully executed to
               create reliable, scalable, and user-friendly mobile applications.
             </p>
@@ -109,22 +109,22 @@ import {
                       className={`rounded-3xl bg-gradient-to-r ${item.gradient} p-10 transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_30px_70px_rgba(0,0,0,0.45)]`}
                     >
                       <div className="flex gap-6">
-                        <div className="flex h-20 w-20 items-center justify-center rounded-2xl bg-white/15 backdrop-blur-lg">
+                        <div className="flex h-20 w-20 items-center justify-center rounded-xl bg-white/15 backdrop-blur-lg">
                           <Icon className="h-10 w-10 text-white" />
                         </div>
   
                         <div>
-                          <p className="text-2xl text-white/80">
+                          <p className="text-xl text-white/80">
                             {item.step}
                           </p>
   
-                          <h3 className="mt-1 text-2xl font-bold text-white">
+                          <h3 className="mt-1 text-xl font-bold text-white">
                             {item.title}
                           </h3>
                         </div>
                       </div>
   
-                      <p className="mt-8 text-xl leading-10 text-white/90">
+                      <p className="mt-8 text-sm leading-10 text-white/90">
                         {item.description}
                       </p>
                     </div>

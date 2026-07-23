@@ -52,22 +52,20 @@ const apps = [
 
 const MobileShowcase = () => {
   return (
-    <section className="w-full py-10 bg-gray-50 text-center">
-      <div className="w-full px-4 ">
-
+    <section className="w-full  px-6 bg-gray-50 text-center">
          {/* Heading */}
-         <h2 className="text-3xl md:text-5xl font-bold text-black text-center">
+         <h2 className="text-3xl  font-bold text-black text-center">
          Stunning Mobile Experiences
         </h2>
 
-        <h3 className="text-3xl md:text-5xl font-bold  text-black bg-clip-text mt-2 text-center">
+        <h3 className="text-3xl  font-bold  text-black bg-clip-text mt-2 text-center">
           <span class="text-[#ff4a17]">& Next-Gen UI Design</span>
         </h3>
 
         {apps.map((row, rowIndex) => (
           <div
             key={rowIndex}
-            className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-12 block"
+            className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-20 block"
           >
             {row.map((app, index) => (
               <div
@@ -94,10 +92,6 @@ const MobileShowcase = () => {
             ))}
           </div>
         ))}
-
-
-
-      </div>
 
       {/* Animation Styles */}
       <style jsx>{`
@@ -127,7 +121,7 @@ const MobileShowcase = () => {
   className=" bg-[#ff4a17] text-white text-center px-6 py-3 rounded-lg font-semibold shadow-lg mt-12" 
 
 >
-  Start Your Project
+Get Free Consultation
 </button>
     </section>
   );

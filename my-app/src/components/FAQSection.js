@@ -76,7 +76,7 @@ export default function FAQSection() {
                 onClick={() => toggle(index)}
                 className="w-full flex justify-between items-center px-3 py-3 text-left"
               >
-                <span className="text-sm md:text-lg font-medium">
+                <span className="text-sm md:text-lg font-sm">
                   {item.question}
                 </span>
 

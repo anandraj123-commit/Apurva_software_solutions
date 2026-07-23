@@ -17,17 +17,42 @@ const MobileAppDevelopment = ()=>{
               alt="Mobile App Development"
               className="w-full"
             />
-                          <button
-      onClick={() => {
-        document
-          .getElementById("contact")
-          .scrollIntoView({ behavior: "smooth" });
-      }}
-      className="absolute bottom-62 left-[52px] bg-[#ff4a17] text-white px-6 py-3 rounded-lg font-semibold shadow-lg" style={{ left: "52px",bottom:' 62px'
-      }}
-    > 
-      Start a Project
-    </button>
+                      {/* Overlay (optional for better text visibility) */}
+          <div className="absolute inset-0 bg-black/20"></div>
+  
+  {/* Left Side Content */}
+  <div className="absolute  hidden lg:block top-1/2 left-10 transform -translate-y-1/2 max-w-lg text-left">
+  
+  <h1 className="text-3xl font-bold text-white leading-tight">
+  Transform Ideas Into
+  <span className="text-[#ff4a17]"> High-Performance Mobile Apps</span> <br />
+  Built for Android, iOS & Beyond
+</h1>
+
+<p className="mt-4 text-white/90 text-sm leading-relaxed">
+  At Apurva Software Solutions, we create innovative mobile applications that
+  combine exceptional performance, intuitive design, and scalable architecture.
+  Whether you need a native Android or iOS application, or a cross-platform
+  solution using modern frameworks, our team delivers seamless digital
+  experiences tailored to your business goals. From UI/UX design and secure
+  backend integration to real-time features, cloud connectivity, and ongoing
+  maintenance, we build reliable mobile apps that engage users, accelerate
+  growth, and keep your business ahead of the competition.
+</p>
+
+  {/* Button */}
+  <button 
+    className="mt-6 px-6 py-3 bg-[#ff4a17] text-white rounded-lg shadow-lg hover:bg-orange-600 transition"
+    onClick={() => {
+      document
+        .getElementById("contact")
+        .scrollIntoView({ behavior: "smooth" });
+    }}
+  >
+    Start Your Project
+  </button>
+</div>
+  
     </div>
     <WhyChooseUs/>
     <PlatformDevelopment/>

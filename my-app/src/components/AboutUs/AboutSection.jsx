@@ -3,8 +3,8 @@ import { CheckCircle } from "lucide-react";
 
 const AboutSection = () => {
   return (
-    <section className="bg-white text-[#ff4a17] py-16 px-6">
-      <div className="container mx-auto grid md:grid-cols-2 gap-10 items-center">
+    <section className="bg-white text-[#ff4a17] w-full max-w-none py-16 px-6">
+      <div className="mx-auto grid md:grid-cols-2 gap-10 items-center">
 
         {/* LEFT CONTENT */}
         <div>
@@ -15,7 +15,7 @@ const AboutSection = () => {
           </div>
 
           {/* Heading */}
-          <h1 className="text-3xl md:text-5xl font-bold leading-tight">
+          <h1 className="text-3xl font-bold leading-tight">
             A Company that{" "}
             <span className="text-transparent bg-clip-text bg-[#ff4a17]">
               help
@@ -27,7 +27,7 @@ const AboutSection = () => {
           </h1>
 
           {/* Paragraph */}
-          <p className="mt-6 text-black leading-relaxed max-w-xl">
+          <p className="mt-6 text-black leading-relaxed">
             Apurva Software Solutions is a modern software development company,
             specializing in building scalable web and mobile applications. Our
             expert team collaborates with clients to understand their goals and

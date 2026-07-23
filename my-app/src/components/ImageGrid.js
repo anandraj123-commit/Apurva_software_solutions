@@ -48,7 +48,7 @@ const getRandomTilt = () => {
 
   const ImageGrid = () => {
     return (
-      <div className="py-16 px-4 bg-gray-50">
+      <div className="py-16 px-4 bg-gray-50 w-full">
         
         {/* Heading */}
         <div className="text-center mb-12">
@@ -61,7 +61,7 @@ const getRandomTilt = () => {
         </div>
   
         {/* Irregular Masonry Grid */}
-        <div className="columns-2 sm:columns-3 md:columns-4 gap-6 space-y-6 max-w-6xl mx-auto">
+        <div className="columns-2 sm:columns-3 md:columns-4 gap-6 space-y-6 mx-auto">
           
           {images.map((src, index) => {
             const tilt = getRandomTilt();

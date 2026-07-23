@@ -58,7 +58,7 @@ export default function ValuesSection() {
   return (
     <section
       ref={containerRef}
-      className="relative w-full bg-[#f3f4f6] px-6 lg:px-20 py-24 overflow-hidden"
+      className="relative w-full bg-[#f3f4f6] px-6 overflow-hidden"
     >
       {/* PARTICLES */}
       <div className="absolute inset-0 pointer-events-none">
@@ -75,13 +75,13 @@ export default function ValuesSection() {
         ))}
       </div>
 
-      <div className="max-w-7xl mx-auto relative z-10">
+      <div className="mx-auto relative z-10">
         {/* HEADER */}
         <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-3xl md:text-5xl font-bold text-gray-900">
+          <h2 className="text-3xl sm:text-3xl  font-bold text-gray-900">
             Our Core Values
           </h2>
-          <p className="mt-4 text-gray-600 max-w-2xl mx-auto text-sm sm:text-base">
+          <p className="mt-4 text-gray-600  mx-auto text-sm sm:text-base">
             Our values guide everything we do and shape how we deliver impact to our clients.
           </p>
         </div>

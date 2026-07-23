@@ -2,8 +2,8 @@ import React from "react";
 
 const WhyChooseAndroid = () => {
 return ( 
-<section className="py-16 px-6 bg-white"> 
-    <div className="max-w-6xl mx-auto">
+<section className=" w-full max-w-none p-20 px-6 bg-[#f1f4fa]"> 
+    <div className="mx-auto">
 
     <h2 className="text-3xl font-bold mb-6 text-center">
       Why Choose Our Android App<span className="text-[#ff4a17]"> Development Services</span>

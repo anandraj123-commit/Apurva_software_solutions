@@ -102,10 +102,10 @@ const Contact = ({ onSubmitFormRequest }) => {
 
         }}>
         {" "}
-        <div className="container">
+        <div className="w-full max-w-none px-6">
           {" "}
 
-          <div className="text-center max-w-7xl mx-auto px-5">
+          <div className="text-center  mx-auto ">
         <h2 className="text-3xl font-bold text-gray-900">
         Get In{" "}
           <span className="bg-[#ff4a17] bg-clip-text text-transparent">

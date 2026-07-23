@@ -7,17 +7,13 @@ const Footer = (props) => {
   const [isBlink, setIsBlink] = useState(true);
 
   return (
-    <footer id="footer" className="footer dark-background">
-
-      <div className="container footer-top">
-        <div className="row gy-4">
-
+    <footer id="footer" className="footer dark-background w-full max-w-none px-6 ">
+        <div className="row">
           {/* About Company */}
           <div className="col-lg-4 col-md-6 footer-about">
             <a href="/" className="logo d-flex align-items-center" title="Apurva Software Solutions Home">
               <span className="sitename">Apurva Software Solutions</span>
             </a>
-
             <div className="footer-contact pt-3">
               <p>Veer Kuwar Singh Colony</p>
               <p>Gaya, Bihar</p>
@@ -30,7 +26,6 @@ const Footer = (props) => {
                 <span title="Support Email">supports@apurvasoftwaresolutions.com</span>
               </p>
             </div>
-
             {/* Social Links */}
             <div className="social-links d-flex mt-4">
               <a href="https://x.com/ApurvaSoftware" target="_blank" rel="noopener noreferrer">
@@ -101,10 +96,10 @@ const Footer = (props) => {
           </div>
 
         </div>
-      </div>
+    
 
       {/* ✅ SEO KEYWORDS – Visible & Styled */}
-      <div className="container footer-seo mt-4">
+      <div className=" footer-seo">
       <p className="footer-seo-text">
   <strong>Expertise:</strong>{' '}
   Software Development Company in India • Custom Software Development Services •
@@ -155,7 +150,7 @@ const Footer = (props) => {
 </p>
       </div>
 
-      <div className="container footer-seo mt-4">
+      <div className=" footer-seo mt-4">
       <p className="footer-seo-text">
   <strong>Why Choose Apurva Software Solutions:</strong>{' '}
   Trusted Software Development Company in India •
@@ -265,7 +260,7 @@ const Footer = (props) => {
 
 
       {/* Copyright */}
-      <div className="container copyright text-center mt-4">
+      <div className="copyright text-center mt-4">
         <p>
           © <strong>Apurva Software Solutions</strong> — All Rights Reserved
         </p>

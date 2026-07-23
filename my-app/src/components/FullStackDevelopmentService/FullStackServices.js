@@ -15,9 +15,9 @@ const services = [
   {
     title: "Frontend Development",
     icon: Monitor,
-    iconColor: "text-orange-500",
+    iconColor: "text-[#ff4a17]",
     hoverIcon: "group-hover:text-orange-700",
-    border: "hover:border-orange-500",
+    border: "hover:border-[#ff4a17]",
     bg: "hover:bg-orange-100",
     animation: "group-hover:-translate-y-1",
     desc: [
@@ -168,12 +168,12 @@ const services = [
 
 export default function FullStackServices() {
   return (
-    <section className="bg-white text-black py-20 px-6">
+    <section className="bg-white text-black px-6 w-full max-w-none">
       {/* Heading */}
-      <div className="text-center max-w-3xl mx-auto mb-16">
-        <h2 className="text-3xl md:text-5xl font-bold">
-          Full Stack Development{" "}
-          <span className="text-[#ff4a17]">Services</span>
+      <div className="text-center mx-auto mb-16">
+        <h2 className="text-3xl  font-bold">
+          Full Stack {" "}
+          <span className="text-[#ff4a17]">Development Services</span>
         </h2>
         <p className="mt-4 text-gray-600">
           We deliver end-to-end full stack solutions, transforming ideas into
@@ -183,7 +183,7 @@ export default function FullStackServices() {
       </div>
 
       {/* Grid */}
-      <div className="grid md:grid-cols-4 gap-8 max-w-7xl mx-auto">
+      <div className="grid md:grid-cols-4 gap-8  mx-auto">
         {services.map((service, index) => {
           const Icon = service.icon;
 

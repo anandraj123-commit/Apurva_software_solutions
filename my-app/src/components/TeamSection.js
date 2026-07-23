@@ -2,13 +2,13 @@ import { Phone, Mail, Users } from "lucide-react";
 
 export default function TeamSection() {
   return (
-    <section className="py-24 bg-[#f1f4fa]">
-      <div className="container mx-auto px-6">
+    <section className=" w-full max-w-none px-6 bg-[#f1f4fa]">
+      <div className="mx-auto">
         {/* Section Header */}
 
         <div className="text-center mb-16">
 
-          <h2 className="mt-6 text-3xl md:text-5xl font-bold text-gray-900">
+          <h2 className="text-3xl font-bold text-black">
             Experts Behind
             <span className="block text-[#ff4a17]">
               Apurva Software Solutions
@@ -38,14 +38,14 @@ export default function TeamSection() {
           {/* Right Content */}
 
           <div>
-            <p className="text-lg text-gray-600 leading-relaxed">
+            <p className="text-black mt-6 leading-relaxed">
               Apurva Software Solutions is a trusted software development
               company specializing in custom software development, web
               applications, mobile applications, AI solutions, cloud services,
               and digital transformation.
             </p>
 
-            <p className="mt-6 text-lg text-gray-600 leading-relaxed">
+            <p className="text-black mt-6 leading-relaxed">
               Our experienced team delivers scalable, secure and innovative
               technology solutions that help businesses grow faster and operate
               more efficiently.

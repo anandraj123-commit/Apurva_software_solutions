@@ -11,26 +11,28 @@ const DigitalMarketing = ()=>{
          alt="Ios Application"
          className="w-full h-auto"
        />
+
+<div className="absolute inset-0 bg-black/20"></div>
  
 {/* Left Side Content */}
-<div className="absolute top-1/2 left-9 transform -translate-y-1/2 max-w-lg text-left">
+<div className="absolute  hidden lg:block top-1/2 left-9 transform -translate-y-1/2 max-w-lg text-left">
   
   <h1 className="text-3xl font-bold text-gray-900 leading-tight">
     Transform Your Ideas Into <br />
-    <span className="text-orange-500">Powerful Digital Solutions</span> <br />
+    <span className="text-[#ff4a17]">Powerful Digital Solutions</span> <br />
     With Our Expertise
   </h1>
 
   {/* Button */}
   <button
-    className="mt-6 px-6 py-3 bg-orange-500 text-white rounded-lg shadow-md hover:bg-orange-600 transition duration-300"
+    className="mt-6 px-6 py-3 bg-[#ff4a17] text-white rounded-lg shadow-md hover:bg-orange-600 transition duration-300"
     onClick={() => {
       document
         .getElementById("contact")
         .scrollIntoView({ behavior: "smooth" });
     }}
   >
-    Get Started
+    Explore Services
   </button>
 </div>
 </div>

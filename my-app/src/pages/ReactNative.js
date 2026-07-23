@@ -19,11 +19,11 @@ const ReactNative = ()=>{
           <div className="absolute inset-0 bg-black/20"></div>
   
   {/* Left Side Content */}
-  <div className="absolute top-1/2 left-10 transform -translate-y-1/2 max-w-md text-left">
+  <div className="absolute  hidden lg:block top-1/2 left-10 transform -translate-y-1/2 max-w-lg text-left">
   
   <h1 className="text-3xl font-bold text-white leading-tight">
-    Build Powerful <br />
-    <span className="text-[#ff4a17]">React Native Apps</span> <br />
+    Build Powerful 
+    <span className="text-[#ff4a17]"> React Native Apps</span> <br />
     For Seamless Cross-Platform Experiences
   </h1>
 
