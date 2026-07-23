@@ -121,6 +121,12 @@ const Header = ({ handleInternshipModal }) => {
             </li>
 
             <li>
+              <Link to="/maintenance-support" className={activeTab === "maintenance-support" ? "active" : ""} onClick={() => handleNavLinkClick("maintenance-support")}>
+              Maintenance & Support
+              </Link>
+            </li>
+
+            <li>
               <Link to="/blog" className={activeTab === "blog" ? "active" : ""} onClick={() => handleNavLinkClick("blog")}>
                 Blogs
               </Link>
