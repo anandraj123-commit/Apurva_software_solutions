@@ -49,7 +49,7 @@ export default function Achievements() {
           </h1>
 
           <p className="text-black leading-relaxed">
-            Our milestones at Zisan Tech Solutions showcase our unwavering commitment to excellence, client-focused results, and continual advancement. We are driven by a passion to deliver meaningful SAP and IT solutions.
+            Our milestones at Apurva Software Solutions showcase our unwavering commitment to excellence, client-focused results, and continual advancement. We are driven by a passion to deliver meaningful SAP and IT solutions.
           </p>
 
           <br />

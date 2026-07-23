@@ -13,7 +13,48 @@ export default function HeroServices() {
   }
   return (
     <>
-    <img src="/img/website-mainteance-image.png"/>
+        <div className="relative w-full">
+        <img src="/img/apurvasoftwaresolutions-maintenance-service.png"
+        className="w-full"/>
+
+
+                {/* Overlay (optional for better text visibility) */}
+                <div className="absolute inset-0 bg-black/20"></div>
+  
+  {/* Left Side Content */}
+  <div className="absolute  hidden lg:block top-1/2 left-10 transform -translate-y-1/2 max-w-lg text-left">
+  
+  <h1 className="text-3xl font-bold text-white leading-tight">
+  Reliable 
+  <span className="text-[#ff4a17]"> Website Maintenance & Support</span> <br />
+  To Keep Your Business Running Smoothly
+</h1>
+
+<p className="mt-4 text-white/90 text-sm leading-relaxed">
+  Apurva Software Solutions provides comprehensive website maintenance and 
+  support services to ensure your digital presence stays secure, updated, 
+  and high-performing at all times. From regular updates and bug fixes to 
+  performance optimization and security monitoring, we handle everything 
+  so you can focus on growing your business. Our proactive approach includes 
+  backups, uptime monitoring, and continuous improvements to keep your website 
+  fast, reliable, and ready for future growth.
+</p>
+
+  {/* Button */}
+  <button 
+    className="mt-6 px-6 py-3 bg-[#ff4a17] text-white rounded-lg shadow-lg hover:bg-orange-600 transition"
+    onClick={() => {
+      document
+        .getElementById("contact")
+        .scrollIntoView({ behavior: "smooth" });
+    }}
+  >
+    Start Your Project
+  </button>
+</div>
+
+        </div>
+   
 
 <section class="maintenance-process w-full max-w-none px-6 ">
   <div class="text-center">
@@ -87,7 +128,7 @@ export default function HeroServices() {
 </section>
 
 <section class="faq-section py-5">
-  <div class="container">
+  <div class="w-full p-6">
     <div class="text-center">
   <h2 className="text-3xl font-bold">
         Frequently{" "}

@@ -100,7 +100,7 @@ const Header = ({ handleInternshipModal }) => {
                       MARKETING
                     </h3>
                     <div className="grid gap-2 text-sm">
-                      <Link to="/Digital Marketing" className="text-black">Digital Marketing</Link>
+                      <Link to="/Digital Marketing" className="text-black" >Digital Marketing</Link>
                     </div>
                   </div>
 
@@ -109,25 +109,25 @@ const Header = ({ handleInternshipModal }) => {
             </li>
 
             <li>
-              <Link to="/Services-We-Offer" onClick={() => handleNavLinkClick("Services-We-Offer")}>
+              <Link to="/Services-We-Offer" className={activeTab === "Services-We-Offer" ? "active" : ""} onClick={() => handleNavLinkClick("Services-We-Offer")}>
                 All We Offer
               </Link>
             </li>
 
             <li>
-              <Link to="/discussYourProject" onClick={() => handleNavLinkClick("discussYourProject")}>
+              <Link to="/discussYourProject" className={activeTab === "discussYourProject" ? "active" : ""} onClick={() => handleNavLinkClick("discussYourProject")}>
                 Discuss Your Project
               </Link>
             </li>
 
             <li>
-              <Link to="/blog" onClick={() => handleNavLinkClick("blog")}>
+              <Link to="/blog" className={activeTab === "blog" ? "active" : ""} onClick={() => handleNavLinkClick("blog")}>
                 Blogs
               </Link>
             </li>
 
             <li>
-              <Link to="/contact" onClick={() => handleNavLinkClick("contact")}>
+              <Link to="/contact" className={activeTab === "contact" ? "active" : ""} onClick={() => handleNavLinkClick("contact")}>
                 Contact Us
               </Link>
             </li>
@@ -274,15 +274,19 @@ const Header = ({ handleInternshipModal }) => {
       </li>
 
       <li>
-        <Link to="/Services-We-Offer" 
-          onClick={() => handleNavLinkClick("Services-We-Offer")}
-          className={`block p-2 rounded transition 
-          ${activeTab === "Services-We-Offer" 
-            ? "bg-[#ff4a17] text-white" 
-            : "text-black hover:!text-[#ff4a17]"}`}>
-          All We Offer
-        </Link>
-      </li>
+  <Link
+    to="/Services-We-Offer"
+    onClick={() => handleNavLinkClick("Services-We-Offer")}
+    className={`block p-2 rounded transition 
+      ${
+        activeTab === "Services-We-Offer"
+          ? "bg-[#ff4a17] text-white"
+          : "text-black hover:!text-[#ff4a17]"
+      }`}
+  >
+    All We Offer
+  </Link>
+</li>
 
       <li>
         <Link to="/discussYourProject" 

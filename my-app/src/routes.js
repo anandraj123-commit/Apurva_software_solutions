@@ -71,7 +71,7 @@ const routes = [
         element: <Navigate to="/" replace />
     },
     {
-        path:'services',
+        path:'maintenance-support',
         element:<HeroServices/>
     },
     {

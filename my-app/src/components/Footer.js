@@ -51,8 +51,8 @@ const Footer = (props) => {
             <h4>Useful Links</h4>
             <ul>
               <li><i className="bi bi-chevron-right"></i> <Link to="/">Home</Link></li>
-              <li><i className="bi bi-chevron-right"></i> <a href="#about">About Us</a></li>
-              <li><i className="bi bi-chevron-right"></i> <a href="/services">Services</a></li>
+              <li><i className="bi bi-chevron-right"></i> <a href="about">About Us</a></li>
+              <li><i className="bi bi-chevron-right"></i> <a href="/maintenance-support">Maintenance & Support</a></li>
               <li><i className="bi bi-chevron-right"></i> <a href="#portfolio">Portfolio</a></li>
               <li><i className="bi bi-chevron-right"></i> <a href="#team">Team</a></li>
               <li><i className="bi bi-chevron-right"></i> <Link to="/blogs">Blogs</Link></li>
