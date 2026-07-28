@@ -2,6 +2,10 @@ import Contact from "../forms/contact";
 import Industries from '../components/Industries';
 import FAQ from '../components/DigitalMarketing/faqs';
 import SocialOrbitHero from '../components/SocialOrbitAnimation';
+import ThreeColumnTestimonials from '../components/TestimonialScroller';
+import WhyChooseUsForDigitalMarketingService from '../components/WhyChooseUsForDigitalMarketingService';
+import DigitalMarketingServices from '../components/Digital Marketing Services';
+import Client from "../components/Client";
 const DigitalMarketing = ()=>{
     return (
         <>
@@ -36,9 +40,13 @@ const DigitalMarketing = ()=>{
   </button>
 </div>
 </div>
+<WhyChooseUsForDigitalMarketingService/>
+<DigitalMarketingServices/>
 <Industries/>
 <Contact/>
 <FAQ/>
+<ThreeColumnTestimonials/>
+<Client/>
 <SocialOrbitHero/>
 </>
     )

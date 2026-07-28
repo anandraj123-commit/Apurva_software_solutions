@@ -1,107 +1,107 @@
 import React, { useState } from "react";
 
 const faqs = [
-    {
-      question: "Do you build fully native apps or cross-platform solutions?",
-      answer:
-        "We specialize in crafting high-performance native iOS applications using Swift and SwiftUI. For projects requiring faster delivery across platforms, we also provide efficient cross-platform solutions tailored to your business goals.",
-    },
-    {
-      question: "How do you ensure apps run smoothly on all Apple devices?",
-      answer:
-        "Our team rigorously tests apps on multiple devices and screen sizes. By using adaptive layouts and Apple’s design standards, we guarantee a seamless and consistent experience across iPhones and iPads.",
-    },
-    {
-      question: "Can you upgrade or fix my existing application?",
-      answer:
-        "Absolutely. We analyze your current app, resolve bugs, improve performance, and modernize the architecture to ensure scalability and long-term maintainability.",
-    },
-    {
-      question: "How do you handle large data and performance challenges?",
-      answer:
-        "We implement advanced optimization techniques like lazy loading, efficient caching, and background processing to maintain fast and responsive performance even with complex datasets.",
-    },
-    {
-      question: "Do you assist with App Store submission and approval?",
-      answer:
-        "Yes, we handle the entire App Store process—from compliance checks to metadata optimization—ensuring your app meets Apple’s guidelines and gets approved without delays.",
-    },
-    {
-      question: "What industries do you serve?",
-      answer:
-        "We work across multiple industries including healthcare, fintech, e-commerce, education, logistics, and startups, delivering tailored digital solutions for each domain.",
-    },
-    {
-      question: "How long does it take to develop an app?",
-      answer:
-        "The timeline depends on the complexity and features of your project. A basic app may take 4–8 weeks, while complex applications can take several months.",
-    },
-    {
-      question: "Do you provide UI/UX design services?",
-      answer:
-        "Yes, we design intuitive and visually appealing user interfaces following modern design principles and Apple’s Human Interface Guidelines.",
-    },
-    {
-      question: "Can you integrate third-party services and APIs?",
-      answer:
-        "Absolutely. We integrate payment gateways, analytics tools, social logins, cloud services, and other APIs to enhance app functionality.",
-    },
-    {
-      question: "Will my app be scalable in the future?",
-      answer:
-        "Yes, we design applications with scalable architecture so your app can handle growth, increased users, and new features over time.",
-    },
-    {
-      question: "Do you provide post-launch support?",
-      answer:
-        "Yes, we offer ongoing maintenance, updates, and support to ensure your app remains secure and up-to-date.",
-    },
-    {
-      question: "How do you ensure app security?",
-      answer:
-        "We follow best practices like secure data storage, encryption, authentication, and regular security audits to protect your app and user data.",
-    },
-    {
-      question: "Can you help with cloud integration?",
-      answer:
-        "Yes, we integrate cloud platforms like AWS, Firebase, and Azure for scalable storage, real-time data, and backend services.",
-    },
-    {
-      question: "Do you build apps for startups?",
-      answer:
-        "Absolutely. We help startups validate ideas, build MVPs, and scale their products efficiently with cost-effective solutions.",
-    },
-    {
-      question: "What technologies do you use for development?",
-      answer:
-        "We use modern technologies like Swift, SwiftUI, React, Node.js, and cloud platforms to build high-quality applications.",
-    },
-    {
-      question: "Can you redesign my existing app?",
-      answer:
-        "Yes, we can revamp your app’s UI/UX, improve usability, and enhance overall performance to meet modern standards.",
-    },
-    {
-      question: "Do you offer custom software development?",
-      answer:
-        "Yes, we build custom software solutions tailored to your specific business needs and workflows.",
-    },
-    {
-      question: "How do you manage project communication?",
-      answer:
-        "We maintain transparent communication through regular updates, meetings, and collaboration tools to keep you informed at every stage.",
-    },
-    {
-      question: "Will I own the source code of my app?",
-      answer:
-        "Yes, once the project is completed, you will have full ownership of the source code and intellectual property.",
-    },
-    {
-      question: "How can I get started with your services?",
-      answer:
-        "Simply contact us through our website or schedule a consultation. We’ll discuss your requirements and propose the best solution for your project.",
-    },
-  ];
+  {
+    question: "What digital marketing services do you offer?",
+    answer:
+      "We offer a complete range of digital marketing services including SEO, social media marketing, Google Ads (PPC), content marketing, email campaigns, and lead generation. Our strategies are tailored to help your business grow online and achieve measurable results.",
+  },
+  {
+    question: "How long does it take to see results from SEO?",
+    answer:
+      "SEO is a long-term strategy. Typically, you may start seeing noticeable improvements within 3–6 months depending on competition, industry, and current website performance. We focus on sustainable growth and long-term rankings.",
+  },
+  {
+    question: "Do you manage social media accounts?",
+    answer:
+      "Yes, we handle complete social media management including content creation, posting, engagement, and paid campaigns. Our goal is to increase your brand visibility, engagement, and follower growth across platforms.",
+  },
+  {
+    question: "What is PPC advertising and how does it work?",
+    answer:
+      "PPC (Pay-Per-Click) advertising allows you to run ads on platforms like Google and pay only when someone clicks. We create optimized campaigns that target the right audience, ensuring maximum ROI and lead generation.",
+  },
+  {
+    question: "Can you help generate leads for my business?",
+    answer:
+      "Absolutely. We use a combination of SEO, paid ads, landing pages, and funnel strategies to generate high-quality leads. Our focus is on attracting the right audience that converts into customers.",
+  },
+  {
+    question: "Do you provide content marketing services?",
+    answer:
+      "Yes, we create high-quality blogs, articles, social media content, and ad creatives. Our content strategies are designed to improve SEO, engage users, and establish your brand authority.",
+  },
+  {
+    question: "How do you track campaign performance?",
+    answer:
+      "We use tools like Google Analytics, Search Console, and ad dashboards to track performance. You receive regular reports with insights on traffic, conversions, and ROI.",
+  },
+  {
+    question: "Can you improve my website’s conversion rate?",
+    answer:
+      "Yes, we optimize your website with better UI/UX, faster loading speed, and effective call-to-actions. Our goal is to turn visitors into customers through conversion-focused strategies.",
+  },
+  {
+    question: "Do you offer local SEO services?",
+    answer:
+      "Yes, we specialize in local SEO to help your business rank in local search results. This includes Google My Business optimization, local keywords, and location-based strategies.",
+  },
+  {
+    question: "What industries do you work with?",
+    answer:
+      "We work with various industries including e-commerce, healthcare, real estate, education, startups, and local businesses. Our strategies are customized for each business type.",
+  },
+  {
+    question: "How much does digital marketing cost?",
+    answer:
+      "The cost depends on your goals, services required, and competition level. We offer flexible packages and customized solutions to fit your budget and business needs.",
+  },
+  {
+    question: "Do you run social media ads?",
+    answer:
+      "Yes, we run targeted ad campaigns on platforms like Facebook, Instagram, and LinkedIn. Our campaigns are designed to increase reach, engagement, and conversions.",
+  },
+  {
+    question: "Can you help grow my brand online?",
+    answer:
+      "Absolutely. We build strong brand presence through consistent content, social media engagement, SEO, and paid campaigns. Our strategies focus on long-term brand growth.",
+  },
+  {
+    question: "Do you provide email marketing services?",
+    answer:
+      "Yes, we create and manage email campaigns including newsletters, automation, and drip campaigns. This helps in customer retention and increasing repeat business.",
+  },
+  {
+    question: "What is conversion rate optimization (CRO)?",
+    answer:
+      "CRO focuses on improving your website or landing page to increase the percentage of visitors who take action. We analyze user behavior and optimize design and content for better results.",
+  },
+  {
+    question: "Can you manage my Google Ads account?",
+    answer:
+      "Yes, we handle everything from campaign setup to optimization. We ensure your ads reach the right audience and deliver maximum return on investment.",
+  },
+  {
+    question: "Do you offer marketing automation services?",
+    answer:
+      "Yes, we use automation tools to streamline marketing processes like email campaigns, lead nurturing, and customer engagement. This improves efficiency and saves time.",
+  },
+  {
+    question: "How do you communicate project updates?",
+    answer:
+      "We provide regular updates through reports, meetings, and communication tools. Transparency is our priority, so you’re always informed about progress and results.",
+  },
+  {
+    question: "Will I get regular reports?",
+    answer:
+      "Yes, we provide detailed reports showing performance metrics like traffic, leads, conversions, and ROI. This helps you track the effectiveness of campaigns.",
+  },
+  {
+    question: "How can I get started with your digital marketing services?",
+    answer:
+      "You can contact us through our website or schedule a consultation. We’ll understand your business goals and create a customized digital marketing strategy for you.",
+  },
+];
 
 const FAQ = () => {
   const [activeIndex, setActiveIndex] = useState(null);
@@ -119,7 +119,7 @@ const FAQ = () => {
         </h2>
 
         <p className="text-center text-gray-500 mb-8">
-          Common questions about our iOS development expertise
+          Common questions about our digital marketing services
         </p>
 
         <div className="space-y-4">
