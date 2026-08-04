@@ -4,9 +4,87 @@ import Contact from '../forms/contact';
 import TechStack from '../components/FullStackDevelopmentService/ TechStack';
 import Industries from '../components/Industries';
 import FAQ from '../components/FullStackDevelopmentService/Faqs';
+import { Helmet } from "react-helmet-async";
 const FullStackDevelopmentService = ()=>{
     return (
         <>
+<Helmet>
+  {/* Basic */}
+  <meta charSet="UTF-8" />
+  <title>Full Stack Development Services | Apurva Software Solutions</title>
+
+  <meta
+    name="description"
+    content="Build scalable and secure full stack applications with Apurva Software Solutions. We specialize in React, Node.js, APIs, and cloud-based solutions for modern businesses."
+  />
+
+  <meta
+    name="keywords"
+    content="full stack development, React Node.js development, web application development, API development, cloud applications, Apurva Software Solutions"
+  />
+
+  <meta name="robots" content="index, follow" />
+
+  {/* Mobile */}
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  {/* Canonical */}
+  <link
+    rel="canonical"
+    href="https://apurvasoftwaresolutions.com/full-stack-development-service"
+  />
+
+  {/* Open Graph */}
+  <meta
+    property="og:title"
+    content="Full Stack Development Services for Scalable Applications"
+  />
+
+  <meta
+    property="og:description"
+    content="End-to-end full stack development using React, Node.js, and modern cloud technologies to build fast, secure, and scalable applications."
+  />
+
+  <meta
+    property="og:url"
+    content="https://apurvasoftwaresolutions.com/full-stack-development-service"
+  />
+
+  <meta property="og:type" content="website" />
+
+  <meta
+    property="og:image"
+    content="https://apurvasoftwaresolutions.com/apurvasoftwaresolutions.png"
+  />
+
+  {/* Twitter */}
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <meta
+    name="twitter:title"
+    content="Full Stack Development Services"
+  />
+
+  <meta
+    name="twitter:description"
+    content="Build powerful full stack applications with modern technologies like React and Node.js."
+  />
+
+  <meta
+    name="twitter:image"
+    content="https://apurvasoftwaresolutions.com/apurvasoftwaresolutions.png"
+  />
+
+  {/* Extra */}
+  <meta name="author" content="Apurva Software Solutions" />
+  <meta name="language" content="English" />
+  <meta name="revisit-after" content="7 days" />
+
+  {/* Favicon */}
+  <link rel="icon" href="/favicon.ico" />
+</Helmet>
+
+
         <div className="relative w-full">
         <img
           src="/img/FullStack-Development-Service.png"

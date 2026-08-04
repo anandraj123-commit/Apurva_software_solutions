@@ -4,9 +4,87 @@ import Industries from "../components/Industries";
 import SocialOrbitHero from "../components/SocialOrbitAnimation";
 import Contact from "../forms/contact";
 import Subscribe from "../forms/subscribe";
+import { Helmet } from "react-helmet-async";
 const FrontEndDevelopmentService = ()=>{
     return (
         <>
+<Helmet>
+  {/* Basic */}
+  <meta charSet="UTF-8" />
+  <title>Frontend Development Services | Apurva Software Solutions</title>
+
+  <meta
+    name="description"
+    content="Build engaging and responsive frontend experiences with Apurva Software Solutions. We specialize in React, Next.js, and modern UI technologies for fast and scalable web applications."
+  />
+
+  <meta
+    name="keywords"
+    content="frontend development, React development, Next.js services, UI development, responsive web design, Apurva Software Solutions"
+  />
+
+  <meta name="robots" content="index, follow" />
+
+  {/* Mobile */}
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  {/* Canonical */}
+  <link
+    rel="canonical"
+    href="https://apurvasoftwaresolutions.com/front-end-services"
+  />
+
+  {/* Open Graph */}
+  <meta
+    property="og:title"
+    content="Frontend Development Services for Modern Web Applications"
+  />
+
+  <meta
+    property="og:description"
+    content="We build fast, responsive, and scalable frontend applications using React, Next.js, and modern UI frameworks."
+  />
+
+  <meta
+    property="og:url"
+    content="https://apurvasoftwaresolutions.com/front-end-services"
+  />
+
+  <meta property="og:type" content="website" />
+
+  <meta
+    property="og:image"
+    content="https://apurvasoftwaresolutions.com/apurvasoftwaresolutions.png"
+  />
+
+  {/* Twitter */}
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <meta
+    name="twitter:title"
+    content="Frontend Development Services"
+  />
+
+  <meta
+    name="twitter:description"
+    content="Create modern, high-performance frontend applications with React and Next.js."
+  />
+
+  <meta
+    name="twitter:image"
+    content="https://apurvasoftwaresolutions.com/apurvasoftwaresolutions.png"
+  />
+
+  {/* Extra */}
+  <meta name="author" content="Apurva Software Solutions" />
+  <meta name="language" content="English" />
+  <meta name="revisit-after" content="7 days" />
+
+  {/* Favicon */}
+  <link rel="icon" href="/favicon.ico" />
+</Helmet>
+
+
         <div className="relative w-full">
         <img
           src="/img/Frontend-development-service.png"

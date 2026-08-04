@@ -4,10 +4,87 @@ import SocialOrbitHero from "../components/SocialOrbitAnimation";
 import Contact from "../forms/contact";
 import Industries from '../components/Industries';
 import FAQ from '../components/IosApplication/Faq';
+import { Helmet } from "react-helmet-async";
 
 const IosApplication = () => {
     return (
         <>
+<Helmet>
+  {/* Basic */}
+  <meta charSet="UTF-8" />
+  <title>iOS App Development Services | Apurva Software Solutions</title>
+
+  <meta
+    name="description"
+    content="Build high-performance iOS applications with Apurva Software Solutions. We specialize in Swift, SwiftUI, and scalable mobile app development for Apple devices."
+  />
+
+  <meta
+    name="keywords"
+    content="iOS app development, Swift development, iPhone app development, mobile app development, SwiftUI apps, Apurva Software Solutions"
+  />
+
+  <meta name="robots" content="index, follow" />
+
+  {/* Mobile */}
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  {/* Canonical */}
+  <link
+    rel="canonical"
+    href="https://apurvasoftwaresolutions.com/Ios-Application"
+  />
+
+  {/* Open Graph */}
+  <meta
+    property="og:title"
+    content="iOS App Development Services for High Performance Apps"
+  />
+
+  <meta
+    property="og:description"
+    content="We build secure, scalable, and high-performance iOS applications using Swift and modern Apple frameworks."
+  />
+
+  <meta
+    property="og:url"
+    content="https://apurvasoftwaresolutions.com/Ios-Application"
+  />
+
+  <meta property="og:type" content="website" />
+
+  <meta
+    property="og:image"
+    content="https://apurvasoftwaresolutions.com/apurvasoftwaresolutions.png"
+  />
+
+  {/* Twitter */}
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <meta
+    name="twitter:title"
+    content="iOS App Development Services"
+  />
+
+  <meta
+    name="twitter:description"
+    content="Create powerful iOS apps using Swift, SwiftUI, and modern Apple technologies."
+  />
+
+  <meta
+    name="twitter:image"
+    content="https://apurvasoftwaresolutions.com/apurvasoftwaresolutions.png"
+  />
+
+  {/* Extra */}
+  <meta name="author" content="Apurva Software Solutions" />
+  <meta name="language" content="English" />
+  <meta name="revisit-after" content="7 days" />
+
+  {/* Favicon */}
+  <link rel="icon" href="/favicon.ico" />
+</Helmet>
+
       <div className="relative w-full h-auto">
         
         {/* Background Image */}
