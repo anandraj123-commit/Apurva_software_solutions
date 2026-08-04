@@ -4,10 +4,53 @@ import SocialOrbitHero from "../components/SocialOrbitAnimation";
 import Contact from "../forms/contact";
 import Industries from '../components/Industries';
 import FAQ from '../components/Androidapplication /Faq';
+import { Helmet } from "react-helmet-async";
 
 const Androidapplication = () => {
     return (
         <>
+         <Helmet>
+        <title>Android App Development Services | Apurva Software Solutions</title>
+
+        <meta
+          name="description"
+          content="Build high-performance Android applications with Apurva Software Solutions. We create scalable, user-friendly apps using Kotlin and modern Android technologies."
+        />
+
+        <meta
+          name="keywords"
+          content="Android app development, Kotlin apps, mobile app development, Android development company"
+        />
+
+        {/* Open Graph */}
+        <meta property="og:title" content="Android App Development Services" />
+        <meta
+          property="og:description"
+          content="Custom Android apps designed for performance and scalability."
+        />
+        <meta
+          property="og:image"
+          content="https://apurvasoftwaresolutions.com/apurvasoftwaresolutions.png"
+        />
+        <meta
+          property="og:url"
+          content="https://apurvasoftwaresolutions.com/android-application"
+        />
+        <meta property="og:type" content="website" />
+
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Android App Development Services" />
+        <meta
+          name="twitter:description"
+          content="Build scalable Android apps with modern technologies."
+        />
+        <meta
+          name="twitter:image"
+          content="https://apurvasoftwaresolutions.com/apurvasoftwaresolutions.png"
+        />
+      </Helmet>
+
       <div className="relative w-full h-auto">
         
         {/* Background Image */}

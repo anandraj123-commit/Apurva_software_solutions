@@ -4,9 +4,76 @@ import Contact from "../forms/contact";
 import SocialOrbitHero from '../components/SocialOrbitAnimation.js';
 import ImageGrid from '../components/ImageGrid.js';
 import DiscussYourProjectForm from '../forms/DiscussYourProjectForm';
+import { Helmet } from "react-helmet-async";
 const AllServices = ()=>{
+   
+ 
+
+
     return (
         <>
+         <Helmet>
+  <meta charSet="UTF-8" />
+  <title>All Services | Web, Mobile & Digital Solutions</title>
+
+  <meta
+    name="description"
+    content="Explore Apurva Software Solutions' complete range of services including web development, mobile apps, UI/UX design, cloud solutions, and digital marketing to scale your business."
+  />
+
+  <meta
+    name="keywords"
+    content="web development services, mobile app development, UI UX design, cloud solutions, digital marketing services, software company India"
+  />
+
+  <meta name="robots" content="index, follow" />
+
+  {/* Mobile */}
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  {/* Canonical */}
+  <link
+    rel="canonical"
+    href="https://apurvasoftwaresolutions.com/Services-We-Offer"
+  />
+
+  {/* Open Graph */}
+  <meta property="og:title" content="Complete Digital Services | Apurva Software Solutions" />
+  <meta
+    property="og:description"
+    content="Discover our full range of scalable digital services including web, mobile, cloud, and marketing solutions."
+  />
+  <meta
+    property="og:url"
+    content="https://apurvasoftwaresolutions.com/Services-We-Offer"
+  />
+  <meta property="og:type" content="website" />
+  <meta
+    property="og:image"
+    content="https://apurvasoftwaresolutions.com/apurvasoftwaresolutions.png"
+  />
+
+  {/* Twitter */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="All Services | Apurva Software Solutions" />
+  <meta
+    name="twitter:description"
+    content="Explore web, mobile, cloud, and marketing services designed to grow your business."
+  />
+  <meta
+    name="twitter:image"
+    content="https://apurvasoftwaresolutions.com/apurvasoftwaresolutions.png"
+  />
+
+  {/* Extra */}
+  <meta name="author" content="Apurva Software Solutions" />
+  <meta name="language" content="English" />
+  <meta name="revisit-after" content="7 days" />
+
+  {/* Favicon */}
+  <link rel="icon" href="/favicon.ico" />
+</Helmet>
+
          <div className="relative w-full h-auto">
         
         {/* Background Image */}
