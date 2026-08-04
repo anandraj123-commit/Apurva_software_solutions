@@ -6,10 +6,6 @@ import ImageGrid from '../components/ImageGrid.js';
 import DiscussYourProjectForm from '../forms/DiscussYourProjectForm';
 import { Helmet } from "react-helmet-async";
 const AllServices = ()=>{
-   
- 
-
-
     return (
         <>
          <Helmet>
