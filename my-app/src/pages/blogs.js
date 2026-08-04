@@ -1,9 +1,89 @@
 import '../assets/scss/Blogs.scss';
 import { Link } from 'react-router-dom';
 import blogsArray from '../data/blogs.js';
+import { Helmet } from 'react-helmet-async';
 const Blogs = function () {
   return (
     <>
+    <Helmet>
+  {/* ✅ Title */}
+  <title>Tech Blog | Web & Mobile Development Insights | Apurva Software Solutions</title>
+
+  {/* ✅ Meta Description */}
+  <meta
+    name="description"
+    content="Explore our latest blogs on web development, mobile app development, UI/UX design, and software solutions. Stay updated with expert insights from Apurva Software Solutions."
+  />
+
+  {/* ✅ Keywords (optional but fine) */}
+  <meta
+    name="keywords"
+    content="tech blog, web development blogs, mobile app development articles, software development insights, UI UX blogs"
+  />
+
+  <meta name="robots" content="index, follow" />
+
+  {/* ✅ Canonical */}
+  <link
+    rel="canonical"
+    href="https://apurvasoftwaresolutions.com/blogs"
+  />
+
+  {/* ✅ Open Graph (Facebook / LinkedIn) */}
+  <meta property="og:title" content="Tech Blog | Apurva Software Solutions" />
+
+  <meta
+    property="og:description"
+    content="Read expert blogs on web, mobile, and software development trends and best practices."
+  />
+
+  <meta
+    property="og:url"
+    content="https://apurvasoftwaresolutions.com/blogs"
+  />
+
+  <meta property="og:type" content="website" />
+
+  <meta property="og:site_name" content="Apurva Software Solutions" />
+
+  <meta
+    property="og:image"
+    content="https://apurvasoftwaresolutions.com/apurvasoftwaresolutions.png"
+  />
+
+  {/* ✅ Twitter */}
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <meta
+    name="twitter:title"
+    content="Tech Blog | Apurva Software Solutions"
+  />
+
+  <meta
+    name="twitter:description"
+    content="Stay updated with the latest in web and mobile development."
+  />
+
+  <meta
+    name="twitter:image"
+    content="https://apurvasoftwaresolutions.com/apurvasoftwaresolutions.png"
+  />
+
+  <meta
+    name="twitter:url"
+    content="https://apurvasoftwaresolutions.com/blogs"
+  />
+
+  {/* Extra */}
+  <meta name="author" content="Apurva Software Solutions" />
+  <meta name="language" content="English" />
+  <meta name="revisit-after" content="7 days" />
+
+  {/* Favicon */}
+  <link rel="icon" href="/favicon.ico" />
+</Helmet>
+
+
       <div className="main-wrapper">
         <section class="blog-header">
           <div class="overlay"></div>

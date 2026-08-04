@@ -73,9 +73,13 @@ const ReactNative = ()=>{
           content="https://apurvasoftwaresolutions.com/apurvasoftwaresolutions.png"
         />
 
-        {/* Extra */}
-        <meta name="author" content="Apurva Software Solutions" />
-        <link rel="icon" href="/favicon.ico" />
+       {/* Extra */}
+  <meta name="author" content="Apurva Software Solutions" />
+  <meta name="language" content="English" />
+  <meta name="revisit-after" content="7 days" />
+
+  {/* Favicon */}
+  <link rel="icon" href="/favicon.ico" />
       </Helmet> 
 
      <div className="relative w-full h-auto">

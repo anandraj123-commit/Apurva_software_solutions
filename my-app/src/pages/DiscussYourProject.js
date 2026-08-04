@@ -57,7 +57,13 @@ const DiscussYourProject = () => {
           content="https://apurvasoftwaresolutions.com/apurvasoftwaresolutions.png"
         />
 
-        <meta name="author" content="Apurva Software Solutions" />
+       {/* Extra */}
+  <meta name="author" content="Apurva Software Solutions" />
+  <meta name="language" content="English" />
+  <meta name="revisit-after" content="7 days" />
+
+  {/* Favicon */}
+  <link rel="icon" href="/favicon.ico" />
       </Helmet>
       <div className="w-full discussYourProject">
 
