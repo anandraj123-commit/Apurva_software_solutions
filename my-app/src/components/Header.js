@@ -99,7 +99,7 @@ const Header = ({ handleInternshipModal }) => {
                     </h3>
                     <div className="grid gap-3 text-sm">
   <Link 
-    to="/front end services" 
+    to="/front-end-services" 
     className="text-black"
     onClick={() => handleNavLinkClick("services")}
   >
@@ -107,7 +107,7 @@ const Header = ({ handleInternshipModal }) => {
   </Link>
 
   <Link 
-    to="/custom web application" 
+    to="/custom-web-application" 
     className="text-black"
     onClick={() => handleNavLinkClick("services")}
   >
@@ -115,7 +115,7 @@ const Header = ({ handleInternshipModal }) => {
   </Link>
 
   <Link 
-    to="/full stack development service" 
+    to="/full-stack-development-service" 
     className="text-black"
     onClick={() => handleNavLinkClick("services")}
   >
@@ -129,10 +129,10 @@ const Header = ({ handleInternshipModal }) => {
                       MOBILE APP DEVELOPMENT
                     </h3>
                     <div className="grid gap-3 text-sm">
-                      <Link to="/mobile app development" className="text-black">Mobile App Development</Link>
-                      <Link to="/Android Application" className="text-black">Android Application</Link>
-                      <Link to="/Ios Application" className="text-black">Ios Application</Link>
-                      <Link to="/React Native Application" className="text-black">React Native Application</Link>
+                      <Link to="/mobile-app-development" className="text-black">Mobile App Development</Link>
+                      <Link to="/Android-Application" className="text-black">Android Application</Link>
+                      <Link to="/Ios-Application" className="text-black">Ios Application</Link>
+                      <Link to="/React-Native-Application" className="text-black">React Native Application</Link>
                     </div>
                   </div>
 
@@ -141,7 +141,7 @@ const Header = ({ handleInternshipModal }) => {
                       MARKETING
                     </h3>
                     <div className="grid gap-2 text-sm">
-                      <Link to="/Digital Marketing" className="text-black" >Digital Marketing</Link>
+                      <Link to="/Digital-Marketing" className="text-black" >Digital Marketing</Link>
                     </div>
                   </div>
 

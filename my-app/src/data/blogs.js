@@ -5,7 +5,7 @@ const blogsArray = [
       id: 1,
       type:'Digital Marketing',
       src: '/img/blog/social-media-marketing-apurva-software-solutions.jpg',
-      title: 'Social Media Marketing: A Key to Business Growth',
+      title: 'Social-Media-Marketing-A-Key-to-Business-Growth',
       excerpt: 'Boost your brand online with strategic posts, paid ads, and audience engagement. Apurva Software Solutions drives growth, trust, and visibility for businesses everywhere.',
       shortDesciption:`Boost your brand with engaging social media content and paid campaigns.<br /> Apurva Software Solutions ensures visibility, growth, and audience trust!`,
       description:`<p class="highlight">Apurva Software Solutions helps businesses grow by creating effective social media marketing strategies tailored to their needs. We focus on enhancing brand visibility and engagement across multiple platforms.</p>
@@ -44,7 +44,7 @@ const blogsArray = [
       id: 2,
       type:'Software Development',
       src: '/img/blog/apurva-software-solutions-web-mobile-app-development.jpg',
-      title: 'Web & Mobile App Development: How it Boosts Your Business.',
+      title: 'Web-Mobile-App-Development-How-it-Boosts-Your-Business',
       excerpt: 'Apurva Software Solutions builds responsive web and mobile apps. Drive business growth and engage users seamlessly!',
       shortDesciption:` Apurva Software Solutions creates innovative web and mobile apps.<br />Boost your business with responsive and user-friendly solutions!`,
       description:`<p class="highlight">Apurva Software Solutions builds custom web and mobile applications that drive business growth. Innovative design and responsive interfaces ensure excellent user experience.</p>
@@ -74,7 +74,7 @@ const blogsArray = [
       id: 3,
       type:'Digital Marketting',
       src: '/img/blog/local-seo-optimization.jpg',
-      title: 'Boost Your Business Locally with Local SEO',
+      title: 'Boost-Your-Business-Locally-with-Local-SEO',
       excerpt: 'Enhance your business visibility locally. Increase your reach with effective SEO strategies!',
       shortDesciption:`Enhance your local business presence effectively.<br />Reach more customers with targeted SEO strategies!`,
       description:`<p class="highlight">Boost your local business with cutting-edge mobile app solutions. Apurva Software Solutions creates responsive, user-friendly, and scalable apps to enhance customer engagement in your city or region.</p>
@@ -103,7 +103,7 @@ const blogsArray = [
       id: 4,
       type:'Software Development',
       src: '/img/blog/e-commerce-online-shopping.jpg',
-      title: 'Transform Your Business with E-Commerce Applications',
+      title: 'Transform-Your-Business-with-E-Commerce-Applications',
       excerpt: 'Build scalable and user-friendly e-commerce applications with Apurva Software Solutions. Enhance sales, streamline operations, and deliver a seamless shopping experience!',
       shortDescription: `Build scalable and user-friendly e-commerce applications.<br />Enhance sales, streamline operations, and deliver seamless shopping experiences!`,
       description: `
@@ -132,7 +132,7 @@ const blogsArray = [
       id: 5,
       type: 'Software Development',
       src: '/img/blog/crm_customer-relationship-management.jpg',
-      title: 'Boost Your Business Efficiency with CRM Software Applications',
+      title: 'Boost-Your-Business-Efficiency-with-CRM-Software-Applications',
       excerpt: 'Implement powerful CRM software applications with Apurva Software Solutions. Enhance customer relationships, streamline sales processes, and drive business growth!',
       shortDescription: `Implement powerful CRM software applications.<br />Enhance customer relationships, streamline sales processes, and drive business growth!`,
       description: `
@@ -162,7 +162,7 @@ const blogsArray = [
       id: 6,
       type: 'Software Development',
       src: '/img/blog/custom-software-development.jpg',
-      title: 'Why Choose Apurva Software Solutions for Custom Software Development',
+      title: 'Why-Choose-Apurva-Software-Solutions-for-Custom-Software-Development',
       excerpt: 'Discover why Apurva Software Solutions is the trusted partner for custom software development. We deliver scalable, secure, and business-driven digital solutions tailored to your needs.',
       shortDescription: `Discover why Apurva Software Solutions is the trusted partner for custom software development.<br />We deliver scalable, secure, and business-driven digital solutions tailored to your needs.`,
       description: `
@@ -213,7 +213,7 @@ const blogsArray = [
       id: 7,
       type: 'Software Development',
       src: '/img/blog/software-solutions-startups-msmes.jpg',
-      title: 'Software Development Solutions for Startups & MSMEs',
+      title: 'Software-Development-Solutions-for-Startups-MSMEs',
       excerpt: 'Empower your startup or MSME with custom software development solutions by Apurva Software Solutions. Build scalable, cost-effective, and growth-oriented digital products.',
       shortDescription: `Empower your startup or MSME with custom software development solutions.<br />Build scalable, cost-effective, and growth-oriented digital products.`,
       description: `
@@ -264,7 +264,7 @@ const blogsArray = [
       id: 8,
       type: 'Mobile App Development',
       src: '/img/blog/mobile-app-development-solutions.jpg',
-      title: 'Mobile App Development Solutions for Modern Businesses',
+      title: 'Mobile-App-Development-Solutions-for-Modern-Businesses',
       excerpt: 'Build powerful, scalable, and user-friendly mobile applications with Apurva Software Solutions. Transform your ideas into high-performing Android and iOS apps.',
       shortDescription: `Build powerful, scalable, and user-friendly mobile applications.<br />Transform your ideas into high-performing Android and iOS apps.`,
       description: `
@@ -311,7 +311,7 @@ const blogsArray = [
       id: 9,
       type: 'Web Development',
       src: '/img/blog/web-application-development.jpg',
-      title: 'Custom Web Application Development for Business Growth',
+      title: 'Custom-Web-Application-Development-for-Business-Growth',
       excerpt: 'Develop scalable, secure, and high-performance web applications with Apurva Software Solutions to accelerate your digital transformation.',
       shortDescription: `Develop scalable, secure, and high-performance web applications.<br />Accelerate your digital transformation.`,
       description: `
@@ -352,7 +352,7 @@ const blogsArray = [
       id: 10,
       type: 'PWA Development',
       src: '/img/blog/pwa-reduce-development-costs.jpg',
-      title: 'How PWA Applications Help Businesses Reduce Development Costs',
+      title: 'How-PWA-Applications-Help-Businesses-Reduce-Development-Costs',
       excerpt: 'Progressive Web Applications (PWAs) help businesses lower development and maintenance costs while delivering fast, reliable, and app-like user experiences.',
       shortDescription: `Progressive Web Applications help businesses lower development and maintenance costs.<br />Deliver fast, reliable, and app-like user experiences.`,
       description: `
@@ -402,7 +402,7 @@ const blogsArray = [
       id: 11,
       type: 'Web Development',
       src: '/img/blog/single-page-application-fast-responsive.jpg',
-      title: 'Single Page Applications (SPA): Building Fast & Responsive Web Experiences',
+      title: 'Single-Page-Applications-Building-Fast-Responsive-Web-Experiences',
       excerpt: 'Single Page Applications (SPAs) enable fast, responsive, and seamless user experiences. Learn how SPAs help businesses build modern, high-performance web applications.',
       shortDescription: `Single Page Applications enable fast, responsive, and seamless user experiences.<br />Build modern, high-performance web applications with SPA technology.`,
       description: `

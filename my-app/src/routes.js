@@ -22,24 +22,24 @@ const routes = [
         element:<Home/>
     },
     {
-        path:'/custom web application',
+        path:'/custom-web-application',
         element:<CustomWebApplication/>
     },
     {
-        path:'front end services',
+        path:'front-end-services',
         element:<FrontEndDevelopmentService/>
     },
     {
-        path:'full stack development service',
+        path:'full-stack-development-service',
         element:<FullStackDevelopmentService/>
     },
 
     {
-        path:'Android Application',
+        path:'Android-Application',
         element:<AndroidApplication/>
     },
     {
-        path:'mobile app development',
+        path:'mobile-app-development',
         element:<MobileAppDevelopment/>
     },
     {
@@ -76,11 +76,11 @@ const routes = [
         element:<HeroServices/>
     },
     {
-    path:'Ios Application',
+    path:'Ios-Application',
     element:<IosApplication/>
     },
     {
-        path:'React Native Application',
+        path:'React-Native-Application',
         element:<ReactNative/>
     },
     {
@@ -88,8 +88,10 @@ const routes = [
         element:<AllServices/>
     },
     {
-        path:'Digital Marketing',
+        path:'Digital-Marketing',
         element:<DigitalMarketing/>
-    }
+    },
+    
+
 ]
 export default routes;

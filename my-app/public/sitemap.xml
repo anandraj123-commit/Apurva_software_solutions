@@ -3,44 +3,186 @@
   
   <url>
     <loc>https://apurvasoftwaresolutions.com/</loc>
-    <lastmod>2025-08-06</lastmod>
+    <lastmod>2026-08-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
 
   <url>
-    <loc>https://apurvasoftwaresolutions.com/blogs</loc>
-    <lastmod>2025-08-26</lastmod>
+    <loc>https://www.apurvasoftwaresolutions.com/blogs</loc>
+    <lastmod>2026-08-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+<url>
+    <loc>https://www.apurvasoftwaresolutions.com/about</loc>
+    <lastmod>2026-08-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://apurvasoftwaresolutions.com/blog?id=1&amp;title=Social%20Media%20Marketing%3A%20A%20Key%20to%20Business%20Growth</loc>
-    <lastmod>2025-08-26</lastmod>
+    <loc>https://www.apurvasoftwaresolutions.com/maintenance-support</loc>
+    <lastmod>2026-08-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://www.apurvasoftwaresolutions.com/contact</loc>
+    <lastmod>2026-08-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://www.apurvasoftwaresolutions.com/discussYourProject</loc>
+    <lastmod>2026-08-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+
+  <url>
+    <loc>https://www.apurvasoftwaresolutions.com/front-end-services</loc>
+    <lastmod>2026-08-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://www.apurvasoftwaresolutions.com/custom-web-application</loc>
+    <lastmod>2026-08-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://www.apurvasoftwaresolutions.com/full-stack-development-service</loc>
+    <lastmod>2026-08-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://www.apurvasoftwaresolutions.com/mobile-app-development</loc>
+    <lastmod>2026-08-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://www.apurvasoftwaresolutions.com/Android-Application</loc>
+    <lastmod>2026-08-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://www.apurvasoftwaresolutions.com/Ios-Application</loc>
+    <lastmod>2026-08-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://www.apurvasoftwaresolutions.com/React-Native-Application</loc>
+    <lastmod>2026-08-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+ <url>
+    <loc>https://www.apurvasoftwaresolutions.com/Services-We-Offer</loc>
+    <lastmod>2026-08-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+
+
+  <url>
+    <loc>https://www.apurvasoftwaresolutions.com/Digital-Marketing</loc>
+    <lastmod>2026-08-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://www.apurvasoftwaresolutions.com/blog?id=1&amp;title=Social-Media-Marketing-A-Key-to-Business-Growth</loc>
+    <lastmod>2026-08-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://apurvasoftwaresolutions.com/blog?id=2&amp;title=Web%20%26%20Mobile%20App%20Development%3A%20How%20it%20Boosts%20Your%20Business</loc>
-    <lastmod>2025-08-26</lastmod>
+    <loc>https://www.apurvasoftwaresolutions.com/blog?id=2&amp;title=Web-Mobile-App-Development-How-it-Boosts-Your-Business</loc>
+    <lastmod>2026-08-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://apurvasoftwaresolutions.com/blog?id=3&amp;title=Boost%20Your%20Business%20Locally%20with%20Local%20SEO</loc>
-    <lastmod>2025-08-26</lastmod>
+    <loc>https://www.apurvasoftwaresolutions.com/blog?id=3&amp;title=Boost-Your-Business-Locally-with-Local-SEO</loc>
+    <lastmod>2026-08-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://apurvasoftwaresolutions.com/blog?id=4&amp;title=Transform%20Your%20Business%20with%20E-Commerce%20Applications</loc>
-    <lastmod>2025-08-26</lastmod>
+    <loc>https://www.apurvasoftwaresolutions.com/blog?id=4&amp;title=Transform-Your-Business-with-E-Commerce-Applications</loc>
+    <lastmod>2026-08-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
+  <url>
+    <loc>https://www.apurvasoftwaresolutions.com/blog?id=5&amp;title=Boost-Your-Business-Efficiency-with-CRM-Software-Applications</loc>
+    <lastmod>2026-08-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+ <url>
+    <loc>https://www.apurvasoftwaresolutions.com/blog?id=6&amp;title=Why-Choose-Apurva-Software-Solutions-for-Custom-Software-Development</loc>
+    <lastmod>2026-08-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+   <url>
+    <loc>https://www.apurvasoftwaresolutions.com/blog?id=7&amp;title=Software-Development-Solutions-for-Startups-MSMEs</loc>
+    <lastmod>2026-08-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+   <url>
+    <loc>https://www.apurvasoftwaresolutions.com/blog?id=8&amp;title=Mobile-App-Development-Solutions-for-Modern-Businesses</loc>
+    <lastmod>2026-08-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+   <url>
+    <loc>https://www.apurvasoftwaresolutions.com/blog?id=9&amp;title=Custom-Web-Application-Development-for-Business-Growth</loc>
+    <lastmod>2026-08-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+   <url>
+    <loc>https://www.apurvasoftwaresolutions.com/blog?id=10&amp;title=How-PWA-Applications-Help-Businesses-Reduce-Development-Costs</loc>
+    <lastmod>2026-08-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+   <url>
+    <loc>https://www.apurvasoftwaresolutions.com/blog?id=11&amp;title=Single-Page-Applications-Building-Fast-Responsive-Web-Experiences</loc>
+    <lastmod>2026-08-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>
