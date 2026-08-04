@@ -15,6 +15,7 @@ import IosApplication from './pages/IosApplication';
 import ReactNative from './pages/ReactNative';
 import AllServices from './pages/AllServices';
 import DigitalMarketing from './pages/digital-marketing';
+import Blog from './pages/blog';
 const routes = [
     {
         path:'/',
@@ -59,7 +60,7 @@ const routes = [
     },
     {
         path: 'blog',          // blog detail with query params
-        element: <Blogs />
+        element: <Blog />
       },
 
       {
