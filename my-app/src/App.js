@@ -9,6 +9,8 @@ import LoaderOverLay from "./components/loader/RouterLoader";
 import AnalyticsTracker from "./components/AnalyticsTracker";
 import WhatsAppButton from "./components/WhatsAppButton";
 
+import InternshipModal from "./components/modal/InternshipModal";
+
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 
@@ -20,14 +22,21 @@ function App() {
   const location = useLocation();
 
   const [loading, setLoading] = useState(false);
+  const [openInternship, setOpenInternship] = useState(false);
 
-  const modalRef = useRef();
+  // const modalRef = useRef();
 
   const { sendEmails } = useEmailSender();
 
   function handleInternshipModal() {
-    modalRef.current?.open();
+    setOpenInternship(true);
   }
+
+  useEffect(() => {
+    if (location.pathname === "/" && location.hash === "#internship") {
+      setOpenInternship(true);
+    }
+  }, [location]);
 
   async function onSubmitFormRequest(formData, INFOTYPE) {
     return await sendEmails(formData, INFOTYPE);
@@ -61,7 +70,7 @@ function App() {
             element={
               route.path === "/" ? (
                 <route.element.type
-                  modalRef={modalRef}
+                  
                   onSubmitFormRequest={onSubmitFormRequest}
                 />
               ) : (
@@ -71,6 +80,13 @@ function App() {
           />
         ))}
       </Routes>
+
+      {openInternship && (
+  <InternshipModal
+    onClose={() => setOpenInternship(false)}
+    onSubmitFormRequest={onSubmitFormRequest}
+  />
+)}
 
       <Footer
         onSubmitFormRequest={onSubmitFormRequest}
