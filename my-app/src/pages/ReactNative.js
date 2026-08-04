@@ -6,9 +6,78 @@ import FAQ from '../components/react-native/Faqs';
 import Industries from '../components/Industries';
 import OurServices from '../components/react-native/OurServices';
 import TechStack from '../components/TechStack';
+import { Helmet } from "react-helmet-async";
 const ReactNative = ()=>{
   return (
     <>
+      <Helmet>
+        {/* Basic SEO */}
+        <title>React Native App Development Company | Cross-Platform Apps</title>
+
+        <meta
+          name="description"
+          content="Build high-performance React Native apps for Android and iOS with a single codebase. Apurva Software Solutions delivers scalable, fast, and user-friendly mobile applications."
+        />
+
+        <meta
+          name="keywords"
+          content="react native development, react native app development, cross platform apps, mobile app development company, ios android apps"
+        />
+
+        <meta name="robots" content="index, follow" />
+
+        {/* Canonical */}
+        <link
+          rel="canonical"
+          href="https://apurvasoftwaresolutions.com/React-Native-Application"
+        />
+
+        {/* Open Graph */}
+        <meta
+          property="og:title"
+          content="React Native App Development Company"
+        />
+
+        <meta
+          property="og:description"
+          content="Create powerful cross-platform mobile apps using React Native for Android & iOS."
+        />
+
+        <meta
+          property="og:url"
+          content="https://apurvasoftwaresolutions.com/React-Native-Application"
+        />
+
+        <meta property="og:type" content="website" />
+
+        <meta
+          property="og:image"
+          content="https://apurvasoftwaresolutions.com/apurvasoftwaresolutions.png"
+        />
+
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+
+        <meta
+          name="twitter:title"
+          content="React Native App Development Services"
+        />
+
+        <meta
+          name="twitter:description"
+          content="Build fast and scalable cross-platform apps using React Native."
+        />
+
+        <meta
+          name="twitter:image"
+          content="https://apurvasoftwaresolutions.com/apurvasoftwaresolutions.png"
+        />
+
+        {/* Extra */}
+        <meta name="author" content="Apurva Software Solutions" />
+        <link rel="icon" href="/favicon.ico" />
+      </Helmet> 
+
      <div className="relative w-full h-auto">
      <img
           src="/img/react-native application.png"

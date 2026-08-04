@@ -4,6 +4,7 @@ import '../assets/css/Footer.css';
 import useEmailSender from '../components/hooks/useEmailSender';
 import Contact from "../forms/contact";
 import Hero from '../components/services/Hero';
+import { Helmet } from "react-helmet-async";
 
 
 export default function HeroServices() {
@@ -13,6 +14,67 @@ export default function HeroServices() {
   }
   return (
     <>
+
+<Helmet>
+        <title>
+          Website Maintenance & Support Services | Apurva Software Solutions
+        </title>
+
+        <meta
+          name="description"
+          content="Reliable website maintenance services including updates, security, backups, and performance optimization to keep your website running smoothly."
+        />
+
+        <meta
+          name="keywords"
+          content="website maintenance, website support, website security, bug fixes, website updates, performance optimization"
+        />
+
+        <meta name="robots" content="index, follow" />
+
+        <link
+          rel="canonical"
+          href="https://apurvasoftwaresolutions.com/maintenance-support"
+        />
+
+        {/* Open Graph */}
+        <meta
+          property="og:title"
+          content="Website Maintenance & Support Services"
+        />
+        <meta
+          property="og:description"
+          content="Keep your website secure, fast, and updated with our expert maintenance services."
+        />
+        <meta
+          property="og:url"
+          content="https://apurvasoftwaresolutions.com/maintenance-support"
+        />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:image"
+          content="https://apurvasoftwaresolutions.com/apurvasoftwaresolutions.png"
+        />
+
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="Website Maintenance Services"
+        />
+        <meta
+          name="twitter:description"
+          content="Professional website maintenance, updates, and security services."
+        />
+        <meta
+          name="twitter:image"
+          content="https://apurvasoftwaresolutions.com/apurvasoftwaresolutions.png"
+        />
+
+        <meta name="author" content="Apurva Software Solutions" />
+        <link rel="icon" href="/favicon.ico" />
+      </Helmet>
+
         <div className="relative w-full">
         <img src="/img/apurvasoftwaresolutions-maintenance-service.png"
         className="w-full"/>

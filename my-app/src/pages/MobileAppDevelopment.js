@@ -8,9 +8,86 @@ import WhyChooseUs from '../components/mobile-app-dev/WhyChooseUs';
 import PlatformDevelopment from '../components/mobile-app-dev/PlatformDevelopment';
 import SocialOrbitHero from '../components/SocialOrbitAnimation';
 import MobileDevelopmentProcess from '../components/mobile-app-dev/MobileDevelopmentProcess';
+import { Helmet } from "react-helmet-async";
 const MobileAppDevelopment = ()=>{
     return(
     <>
+<Helmet>
+  {/* Basic SEO */}
+  <meta charSet="UTF-8" />
+  <title>Mobile App Development Services | Android & iOS Apps</title>
+
+  <meta
+    name="description"
+    content="Top mobile app development company building scalable Android, iOS, and cross-platform apps using React Native, Flutter, and modern UI/UX design."
+  />
+
+  <meta
+    name="keywords"
+    content="mobile app development, android app development, ios app development, flutter apps, react native apps, app development company"
+  />
+
+  <meta name="robots" content="index, follow" />
+
+  {/* Mobile */}
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  {/* Canonical */}
+  <link
+    rel="canonical"
+    href="https://apurvasoftwaresolutions.com/mobile-app-development"
+  />
+
+  {/* Open Graph (Facebook / LinkedIn) */}
+  <meta
+    property="og:title"
+    content="Mobile App Development Company for Android & iOS"
+  />
+
+  <meta
+    property="og:description"
+    content="We build high-performance mobile apps for Android, iOS, and cross-platform using modern technologies."
+  />
+
+  <meta
+    property="og:url"
+    content="https://apurvasoftwaresolutions.com/mobile-app-development"
+  />
+
+  <meta property="og:type" content="website" />
+
+  <meta
+    property="og:image"
+    content="https://apurvasoftwaresolutions.com/apurvasoftwaresolutions.png"
+  />
+
+  {/* Twitter */}
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <meta
+    name="twitter:title"
+    content="Mobile App Development Services"
+  />
+
+  <meta
+    name="twitter:description"
+    content="Build scalable Android & iOS apps with modern UI and performance-driven architecture."
+  />
+
+  <meta
+    name="twitter:image"
+    content="https://apurvasoftwaresolutions.com/apurvasoftwaresolutions.png"
+  />
+
+  {/* Extra SEO */}
+  <meta name="author" content="Apurva Software Solutions" />
+  <meta name="language" content="English" />
+
+  {/* Favicon */}
+  <link rel="icon" href="/favicon.ico" />
+</Helmet>  
+
+
             <div className="relative w-full">
             <img
               src="/img/apurva-software-solutions-mobile-app-development.png"

@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Helmet } from "react-helmet-async";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 50 },
@@ -12,8 +13,84 @@ const stagger = {
 
 export default function MobileService() {
   return (
- 
-          <div className="w-full flex justify-center">
+         <>
+<Helmet>
+  {/* Basic */}
+  <meta charSet="UTF-8" />
+  <title>Mobile App Development Services | Android & iOS Apps</title>
+
+  <meta
+    name="description"
+    content="Top mobile app development company building scalable Android, iOS, and cross-platform apps. We specialize in React Native, Flutter, and modern UI/UX design."
+  />
+
+  <meta
+    name="keywords"
+    content="mobile app development, android app development, ios app development, flutter apps, react native apps, app development company"
+  />
+
+  <meta name="robots" content="index, follow" />
+
+  {/* Mobile */}
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  {/* Canonical */}
+  <link
+    rel="canonical"
+    href="https://apurvasoftwaresolutions.com/mobile-app-development"
+  />
+
+  {/* Open Graph */}
+  <meta
+    property="og:title"
+    content="Mobile App Development Company for Android & iOS"
+  />
+
+  <meta
+    property="og:description"
+    content="We build high-performance mobile apps for Android, iOS, and cross-platform using modern technologies."
+  />
+
+  <meta
+    property="og:url"
+    content="https://apurvasoftwaresolutions.com/mobile-app-development"
+  />
+
+  <meta property="og:type" content="website" />
+
+  <meta
+    property="og:image"
+    content="https://apurvasoftwaresolutions.com/apurvasoftwaresolutions.png"
+  />
+
+  {/* Twitter */}
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <meta
+    name="twitter:title"
+    content="Mobile App Development Services"
+  />
+
+  <meta
+    name="twitter:description"
+    content="Build scalable Android & iOS apps with modern UI and performance-driven architecture."
+  />
+
+  <meta
+    name="twitter:image"
+    content="https://apurvasoftwaresolutions.com/apurvasoftwaresolutions.png"
+  />
+
+  {/* Extra */}
+  <meta name="author" content="Apurva Software Solutions" />
+  <meta name="language" content="English" />
+  <meta name="revisit-after" content="7 days" />
+
+  {/* Favicon */}
+  <link rel="icon" href="/favicon.ico" />
+</Helmet>
+         
+<div className="w-full flex justify-center">
             {/* PHONE FRAME */}
             <div className="relative w-[360px] h-[720px] rounded-[56px] bg-black shadow-2xl overflow-hidden border border-white/10">
       
@@ -97,6 +174,9 @@ export default function MobileService() {
               <div className="absolute bottom-2 left-1/2 -translate-x-1/2 w-[130px] h-[5px] bg-white/60 rounded-full" />
             </div>
           </div>
+         
+         </>
+         
         );
       }
   
