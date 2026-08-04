@@ -2,11 +2,22 @@ import { useState } from "react";
 import '../assets/css/Header.css';
 import './modal/InternshipModal';
 import { Link } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
 const Header = ({ handleInternshipModal }) => {
   const [activeTab, setActiveTab] = useState("home");
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState(false);
+  const location = useLocation();
+
+  const isServicesActive =
+  location.pathname.includes("front") ||
+  location.pathname.includes("custom") ||
+  location.pathname.includes("full") ||
+  location.pathname.includes("mobile") ||
+  location.pathname.includes("Android") ||
+  location.pathname.includes("Ios") ||
+  location.pathname.includes("React");
 
   const toggleMobileNav = () => {
     setMobileNavOpen(!mobileNavOpen);
@@ -52,20 +63,30 @@ const Header = ({ handleInternshipModal }) => {
         {/* ✅ DESKTOP NAV (UNCHANGED) */}
         <nav id="navmenu" className="navmenu d-none d-xl-block">
           <ul>
-            <li>
-              <Link to="/" className={activeTab === "home" ? "active" : ""} onClick={() => handleNavLinkClick("home")}>
-                Home
-              </Link>
-            </li>
+          <li>
+  <Link
+    to="/"
+    className={location.pathname === "/" ? "active" : ""}
+  >
+    Home
+  </Link>
+</li>
 
             <li>
-              <Link to="/about" className={activeTab === "about" ? "active" : ""} onClick={() => handleNavLinkClick("about")}>
-                About Us
-              </Link>
-            </li>
+  <Link
+    to="/about"
+    className={location.pathname === "/about" ? "active" : ""}
+  >
+    About Us
+  </Link>
+</li>
 
             <li className="relative group">
-              <button className={`flex items-center gap-1 ${activeTab === "services" ? "active" : ""}`}>
+<button
+  className={`flex items-center gap-1 ${
+    location.pathname.includes("services") ? "active" : ""
+  }`}
+>
                 Services <span className="text-xs">▼</span>
               </button>
 
@@ -77,10 +98,30 @@ const Header = ({ handleInternshipModal }) => {
                       WEB DEVELOPMENT
                     </h3>
                     <div className="grid gap-3 text-sm">
-                      <Link to="/front end services" className="text-black">Front End Services</Link>
-                      <Link to="/custom web application" className="text-black" >Custom Web Application</Link>
-                      <Link to="/full stack development service" className="text-black">Full Stack Development</Link>
-                    </div>
+  <Link 
+    to="/front end services" 
+    className="text-black"
+    onClick={() => handleNavLinkClick("services")}
+  >
+    Front End Services
+  </Link>
+
+  <Link 
+    to="/custom web application" 
+    className="text-black"
+    onClick={() => handleNavLinkClick("services")}
+  >
+    Custom Web Application
+  </Link>
+
+  <Link 
+    to="/full stack development service" 
+    className="text-black"
+    onClick={() => handleNavLinkClick("services")}
+  >
+    Full Stack Development
+  </Link>
+</div>
                   </div>
 
                   <div>
@@ -109,34 +150,49 @@ const Header = ({ handleInternshipModal }) => {
             </li>
 
             <li>
-              <Link to="/Services-We-Offer" className={activeTab === "Services-We-Offer" ? "active" : ""} onClick={() => handleNavLinkClick("Services-We-Offer")}>
-                All We Offer
-              </Link>
-            </li>
+  <Link
+    to="/Services-We-Offer"
+    className={location.pathname === "/Services-We-Offer" ? "active" : ""}
+  >
+    All We Offer
+  </Link>
+</li>
 
-            <li>
-              <Link to="/discussYourProject" className={activeTab === "discussYourProject" ? "active" : ""} onClick={() => handleNavLinkClick("discussYourProject")}>
-                Discuss Your Project
-              </Link>
-            </li>
+<li>
+  <Link
+    to="/discussYourProject"
+    className={location.pathname === "/discussYourProject" ? "active" : ""}
+  >
+    Discuss Your Project
+  </Link>
+</li>
 
-            <li>
-              <Link to="/maintenance-support" className={activeTab === "maintenance-support" ? "active" : ""} onClick={() => handleNavLinkClick("maintenance-support")}>
-              Maintenance & Support
-              </Link>
-            </li>
+<li>
+  <Link
+    to="/maintenance-support"
+    className={location.pathname === "/maintenance-support" ? "active" : ""}
+  >
+    Maintenance & Support
+  </Link>
+</li>
 
-            <li>
-              <Link to="/blog" className={activeTab === "blog" ? "active" : ""} onClick={() => handleNavLinkClick("blog")}>
-                Blogs
-              </Link>
-            </li>
+<li>
+  <Link
+    to="/blogs"
+    className={location.pathname === "/blogs" ? "active" : ""}
+  >
+    Blogs
+  </Link>
+</li>
 
-            <li>
-              <Link to="/contact" className={activeTab === "contact" ? "active" : ""} onClick={() => handleNavLinkClick("contact")}>
-                Contact Us
-              </Link>
-            </li>
+<li>
+  <Link
+    to="/contact"
+    className={location.pathname === "/contact" ? "active" : ""}
+  >
+    Contact Us
+  </Link>
+</li>
           </ul>
         </nav>
 
