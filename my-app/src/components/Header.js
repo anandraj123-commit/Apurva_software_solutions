@@ -263,19 +263,19 @@ const Header = ({ handleInternshipModal }) => {
       </h3>
 
       <div className="ml-2 space-y-2">
-        <Link to="/front end services"
+        <Link to="/front-end-services"
           onClick={() => handleNavLinkClick("services")}
           className="block p-2 rounded text-black hover:!text-[#ff4a17] transition">
           Front End Services
         </Link>
 
-        <Link to="/custom web application"
+        <Link to="/custom-web-application"
           onClick={() => handleNavLinkClick("services")}
           className="block p-2 rounded text-black hover:!text-[#ff4a17] transition">
           Custom Web Application
         </Link>
 
-        <Link to="/full stack development service"
+        <Link to="/full-stack-development-service"
           onClick={() => handleNavLinkClick("services")}
           className="block p-2 rounded text-black hover:!text-[#ff4a17] transition">
           Full Stack Development
@@ -290,25 +290,25 @@ const Header = ({ handleInternshipModal }) => {
       </h3>
 
       <div className="ml-2 space-y-2">
-        <Link to="/mobile app development"
+        <Link to="/mobile-app-development"
           onClick={() => handleNavLinkClick("services")}
           className="block p-2 rounded text-black hover:!text-[#ff4a17] transition">
           Mobile App Development
         </Link>
 
-        <Link to="/Android Application"
+        <Link to="/Android-Application"
           onClick={() => handleNavLinkClick("services")}
           className="block p-2 rounded text-black hover:!text-[#ff4a17] transition">
           Android Application
         </Link>
 
-        <Link to="/Ios Application"
+        <Link to="/Ios-Application"
           onClick={() => handleNavLinkClick("services")}
           className="block p-2 rounded text-black hover:!text-[#ff4a17] transition">
           iOS Application
         </Link>
 
-        <Link to="/React Native Application"
+        <Link to="/React-Native-Application"
           onClick={() => handleNavLinkClick("services")}
           className="block p-2 rounded text-black hover:!text-[#ff4a17] transition">
           React Native Application
@@ -323,7 +323,7 @@ const Header = ({ handleInternshipModal }) => {
       </h3>
 
       <div className="ml-2 space-y-2">
-        <Link to="/Digital Marketing"
+        <Link to="/Digital-Marketing"
           onClick={() => handleNavLinkClick("services")}
           className="block p-2 rounded text-black hover:!text-[#ff4a17] transition">
           Digital Marketing

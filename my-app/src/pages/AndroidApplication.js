@@ -17,10 +17,7 @@ const Androidapplication = () => {
           content="Build high-performance Android applications with Apurva Software Solutions. We create scalable, user-friendly apps using Kotlin and modern Android technologies."
         />
 
-        <meta
-          name="keywords"
-          content="Android app development, Kotlin apps, mobile app development, Android development company"
-        />
+        <meta name="keywords" content="android app development, android development company India, Kotlin app development, mobile app development services, custom android app development company, hire android developers India, android app development for startups, enterprise android app development solutions, secure android app development services, scalable android applications, native android app development, android studio development services, UI UX design for android apps, ecommerce android app development, fintech android app development, healthcare android app solutions, on demand android app development, android app maintenance services, android app testing services, cloud integrated android apps, AI powered android applications, affordable android app development company, best android app developers India" />
 
         {/* Open Graph */}
         <meta property="og:title" content="Android App Development Services" />

@@ -18,10 +18,11 @@ const FullStackDevelopmentService = ()=>{
     content="Build scalable and secure full stack applications with Apurva Software Solutions. We specialize in React, Node.js, APIs, and cloud-based solutions for modern businesses."
   />
 
-  <meta
-    name="keywords"
-    content="full stack development, React Node.js development, web application development, API development, cloud applications, Apurva Software Solutions"
-  />
+<meta
+name="keywords"
+content="full stack development, full stack development company India, full stack web development services, React Node.js development, MERN stack development company, MEAN stack development services, custom web application development, end to end web development services, full stack software development company, frontend and backend development services, scalable web application development, cloud based application development services, API development and integration services, REST API development company India, GraphQL API development services, enterprise full stack development solutions, startup full stack development company India, SaaS application development company, ecommerce full stack development services, secure web application development services, high performance web applications development, real time web application development, database design and development services, MongoDB MySQL database development, server side development services Node.js, React frontend development services, Next.js full stack development services, microservices architecture development services, DevOps and cloud integration services, AWS cloud application development company, Azure cloud development services, full stack development outsourcing India, hire full stack developers India, dedicated development team India, agile software development services, UI UX integrated full stack development, cross platform web application development, business automation web solutions, digital transformation services company India, custom enterprise software development, scalable backend architecture services, full stack maintenance and support services, performance optimization web applications, secure authentication web applications, CI CD pipeline development services, modern JavaScript application development, technology consulting full stack services, affordable full stack development company, trusted full stack developers India, end to end IT solutions provider"
+/>
+
 
   <meta name="robots" content="index, follow" />
 

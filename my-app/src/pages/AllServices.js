@@ -17,10 +17,7 @@ const AllServices = ()=>{
     content="Explore Apurva Software Solutions' complete range of services including web development, mobile apps, UI/UX design, cloud solutions, and digital marketing to scale your business."
   />
 
-  <meta
-    name="keywords"
-    content="web development services, mobile app development, UI UX design, cloud solutions, digital marketing services, software company India"
-  />
+  <meta name="keywords" content="web development services, mobile app development, UI UX design services, cloud solutions, digital marketing services, software company India, custom web development company India, responsive website development services, ecommerce web development company, full stack web development services, frontend and backend development company, website redesign services India, affordable web development company, mobile app development company India, android and ios app development services, cross platform mobile app development, Flutter app development services India, React Native app development company, custom mobile app development solutions, enterprise mobile app development company, UI UX design company India, user interface design services, user experience optimization services, creative UI UX design agency, cloud application development services, cloud migration services India, SaaS development company India, DevOps and cloud solutions provider, digital marketing agency India, SEO services company India, social media marketing services India, PPC advertising services company, content marketing services India, branding and digital strategy agency, IT consulting services company India, software development company India, custom software solutions provider, startup IT services company India, enterprise IT solutions provider, website maintenance and support services, performance optimization services web, secure web application development, API development and integration services, CMS development services India, WordPress development company India, scalable web and app solutions, AI powered digital solutions company, business automation software services, end to end IT services company India" />
 
   <meta name="robots" content="index, follow" />
 

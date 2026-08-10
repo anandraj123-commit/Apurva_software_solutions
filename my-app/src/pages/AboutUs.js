@@ -22,10 +22,7 @@ const AboutUs=()=>{
     content="Learn about Apurva Software Solutions, our mission, team, and expertise in web development, mobile apps, and digital marketing services."
   />
 
-  <meta
-    name="keywords"
-    content="about Apurva Software Solutions, software company, web development team, mobile app developers, digital marketing company"
-  />
+  <meta name="keywords" content="Apurva Software Solutions, software company India, IT company profile, web development company, mobile app development company, digital marketing company, custom software development, IT solutions provider, full stack development company, UI UX design company, software development company India, professional web development team India, mobile app developers India, digital transformation company India, startup software development company, enterprise software development services, affordable IT services company India, experienced software developers team, custom web and app development services, leading IT solutions provider India, business software solutions company, scalable software development services, innovative technology company India, web and mobile app development experts, cloud based software development company, secure software development services, agile software development company, ecommerce website development company India, SaaS application development company, cross platform app development company, React and Angular development company, API development services India, backend development company India, frontend development experts India, software consulting services company, IT outsourcing company India, dedicated development team India, hire software developers India, custom enterprise solutions provider, mobile first development company India, responsive web design company India, software maintenance and support services, performance optimization services IT, AI powered software development company, fintech software development company India, healthcare IT solutions provider India, education software development company India, on demand app development company, trusted IT partner for startups" />
 
   <meta name="robots" content="index, follow" />
 

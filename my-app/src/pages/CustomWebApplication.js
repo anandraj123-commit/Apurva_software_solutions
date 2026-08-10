@@ -21,10 +21,7 @@ const CustomWebApplication = () => {
     content="Build scalable and secure custom web applications with Apurva Software Solutions. We create tailored solutions using modern technologies like React and Node.js."
   />
 
-  <meta
-    name="keywords"
-    content="custom web application development, web app development company, React web apps, Node.js applications, scalable web solutions"
-  />
+<meta name="keywords" content="custom web application development, web app development company, web application development services, React web app development, Node.js web application development, scalable web application solutions, full stack web development company, custom web app development company India, enterprise web application development services, SaaS web application development company, secure web application development services, frontend and backend web development, responsive web application development, progressive web app development services, cloud based web application development, API driven web application development, custom business web applications, web portal development company India, ecommerce web application development, CRM web application development services, ERP web application development solutions, startup web application development company, hire web app developers India, affordable web application development services, high performance web applications, UI UX design for web applications, modern JavaScript web development company, MERN stack development services India, MEAN stack web application development, microservices web application architecture, DevOps for web applications, web app maintenance and support services, scalable backend development services, custom dashboard web applications, real time web application development, secure login authentication web apps, database driven web applications, REST API web development services, GraphQL web application development, cloud integrated web apps, AWS web application development services, Azure web app development company, web application optimization services, cross browser compatible web apps, web app testing and QA services, business automation web applications, digital transformation web solutions, custom enterprise web solutions, web app development for startups" />
 
   <meta name="robots" content="index, follow" />
 

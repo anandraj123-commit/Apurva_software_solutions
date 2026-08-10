@@ -15,17 +15,11 @@ const MobileAppDevelopment = ()=>{
 <Helmet>
   {/* Basic SEO */}
   <meta charSet="UTF-8" />
-  <title>Mobile App Development Services | Android & iOS Apps</title>
+  <title>Mobile App Development Company | Android, iOS & Cross-Platform Solutions</title>
 
-  <meta
-    name="description"
-    content="Top mobile app development company building scalable Android, iOS, and cross-platform apps using React Native, Flutter, and modern UI/UX design."
-  />
+  <meta name="description" content="Leading mobile app development company delivering high-performance Android, iOS, and cross-platform apps with Flutter and React Native. We build scalable, user-centric applications tailored for startups and enterprises."/>
 
-  <meta
-    name="keywords"
-    content="mobile app development, android app development, ios app development, flutter apps, react native apps, app development company"
-  />
+  <meta name="keywords" content="mobile app development, android app development, ios app development, flutter app development, react native app development, app development company, mobile app developers, android app developers, ios app developers, cross platform app development, custom mobile app development company, best mobile app development services India, affordable mobile app development company, hire mobile app developers India, enterprise mobile app development solutions, android app development company India, custom Android app development services, hire Android developers India, android app development for startups, secure Android mobile app development, ios app development company India, custom iPhone app development services, hire iOS developers India, iOS app development for startups, scalable iOS mobile app solutions, flutter app development company India, custom Flutter app development services, hire Flutter developers India, cross platform Flutter app development, Flutter app development for startups, react native app development company India, custom React Native app development services, hire React Native developers India, cross platform app development using React Native, React Native app development for startups, mobile app UI UX design services, mobile app maintenance and support services, ecommerce mobile app development company, healthcare mobile app development services, fintech mobile app development company, education mobile app development solutions, on demand mobile app development services, startup mobile app development company India, mobile app development with cloud integration, AI powered mobile app development services, mobile app development company with fast delivery, affordable cross platform app development services, professional mobile app development agency India, full stack mobile app development company, mobile app development services for small businesses India"/>
 
   <meta name="robots" content="index, follow" />
 

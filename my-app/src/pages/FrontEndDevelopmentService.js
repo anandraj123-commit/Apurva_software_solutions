@@ -18,10 +18,11 @@ const FrontEndDevelopmentService = ()=>{
     content="Build engaging and responsive frontend experiences with Apurva Software Solutions. We specialize in React, Next.js, and modern UI technologies for fast and scalable web applications."
   />
 
-  <meta
-    name="keywords"
-    content="frontend development, React development, Next.js services, UI development, responsive web design, Apurva Software Solutions"
-  />
+<meta
+name="keywords"
+content="frontend development, React development, Next.js development, UI development services, responsive web design, frontend development company India, React js development company, Next.js development services India, modern frontend development services, custom frontend development company, user interface development services, responsive website development services, cross browser compatible frontend development, mobile responsive web design services, high performance frontend development, scalable frontend architecture services, JavaScript frontend development company, HTML CSS frontend development services, Tailwind CSS development services, Bootstrap frontend development company, single page application development services, SPA development company India, progressive web app frontend development, frontend optimization and performance services, UI UX frontend implementation services, pixel perfect frontend development company, ecommerce frontend development services, SaaS frontend development company, startup frontend development services India, enterprise frontend development company, frontend development for web applications, custom dashboard frontend development, real time frontend web applications, API integration frontend services, frontend development with React hooks, Next.js SSR development services, static site generation frontend services, frontend testing and QA services, frontend maintenance and support services, secure frontend development practices, accessibility friendly frontend development, SEO friendly frontend development services, fast loading website frontend development, interactive UI development services, animation and microinteraction frontend design, modern web UI frameworks development, frontend development outsourcing India, hire frontend developers India, affordable frontend development company, full stack frontend integration services"
+/>
+
 
   <meta name="robots" content="index, follow" />
 

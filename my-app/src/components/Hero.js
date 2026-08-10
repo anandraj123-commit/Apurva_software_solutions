@@ -40,7 +40,7 @@ const Hero = () => {
 </a>
   
 <Link
-  to="/discuss-your-project"
+  to="/discussyourproject"
   style={{ backgroundColor: "var(--accent-color)", color: "#fff" }}
   className="btn px-6 py-2 rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl"
 >
