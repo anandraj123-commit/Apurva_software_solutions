@@ -31,7 +31,7 @@ const Androidapplication = () => {
         />
         <meta
           property="og:url"
-          content="https://apurvasoftwaresolutions.com/android-application"
+          content="https://apurvasoftwaresolutions.com/Android-Application"
         />
         <meta property="og:type" content="website" />
 

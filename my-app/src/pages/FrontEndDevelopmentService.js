@@ -32,7 +32,7 @@ content="frontend development, React development, Next.js development, UI develo
   {/* Canonical */}
   <link
     rel="canonical"
-    href="https://apurvasoftwaresolutions.com/front-end-services"
+    href="https://www.apurvasoftwaresolutions.com/front-end-services"
   />
 
   {/* Open Graph */}

@@ -31,7 +31,7 @@ const DigitalMarketing = ()=>{
   {/* Canonical */}
   <link
     rel="canonical"
-    href="https://apurvasoftwaresolutions.com/digital-marketing"
+    href="https://apurvasoftwaresolutions.com/Digital-Marketing"
   />
 
   {/* Open Graph */}
