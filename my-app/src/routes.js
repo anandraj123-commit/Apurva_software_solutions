@@ -62,6 +62,10 @@ const routes = [
         path: 'blog',          // blog detail with query params
         element: <Blog />
       },
+      {
+        path: 'blog/:slug',
+        element: <Blog />
+    },
 
       {
         path: 'MobileService', 

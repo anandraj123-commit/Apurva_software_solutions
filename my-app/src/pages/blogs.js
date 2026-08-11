@@ -1,144 +1,411 @@
-import '../assets/scss/Blogs.scss';
-import { Link } from 'react-router-dom';
-import blogsArray from '../data/blogs.js';
-import { Helmet } from 'react-helmet-async';
-const Blogs = function () {
+
+import "../assets/scss/Blogs.scss";
+import { Link } from "react-router-dom";
+import blogsArray from "../data/blogs.js";
+import { Helmet } from "react-helmet-async";
+
+
+/*
+=========================================================
+CREATE SEO-FRIENDLY BLOG SLUG
+=========================================================
+
+Example:
+
+Web-Mobile-App-Development-How-it-Boosts-Your-Business
+
+becomes:
+
+web-mobile-app-development-how-it-boosts-your-business
+=========================================================
+*/
+
+const createSlug = (title = "") => {
+  return title
+    .toString()
+    .trim()
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+};
+
+
+const Blogs = () => {
+
   return (
     <>
-    <Helmet>
-  {/* ✅ Title */}
-  <title>Tech Blog | Web & Mobile Development Insights | Apurva Software Solutions</title>
+      {/* =====================================================
+          SEO
+      ===================================================== */}
 
-  {/* ✅ Meta Description */}
-  <meta
-    name="description"
-    content="Explore our latest blogs on web development, mobile app development, UI/UX design, and software solutions. Stay updated with expert insights from Apurva Software Solutions."
-  />
+      <Helmet>
 
-  {/* ✅ Keywords (optional but fine) */}
-  <meta
-    name="keywords"
-    content="tech blog, web development blogs, mobile app development articles, software development insights, UI UX blogs"
-  />
+        {/* Title */}
 
-  <meta name="robots" content="index, follow" />
+        <title>
+          Tech Blog | Web & Mobile Development Insights | Apurva Software Solutions
+        </title>
 
-  {/* ✅ Canonical */}
-  <link
-    rel="canonical"
-    href="https://apurvasoftwaresolutions.com/blogs"
-  />
 
-  {/* ✅ Open Graph (Facebook / LinkedIn) */}
-  <meta property="og:title" content="Tech Blog | Apurva Software Solutions" />
+        {/* Description */}
 
-  <meta
-    property="og:description"
-    content="Read expert blogs on web, mobile, and software development trends and best practices."
-  />
+        <meta
+          name="description"
+          content="Explore our latest blogs on web development, mobile app development, UI/UX design, and software solutions. Stay updated with expert insights from Apurva Software Solutions."
+        />
 
-  <meta
-    property="og:url"
-    content="https://apurvasoftwaresolutions.com/blogs"
-  />
 
-  <meta property="og:type" content="website" />
+        {/* Keywords */}
 
-  <meta property="og:site_name" content="Apurva Software Solutions" />
+        <meta
+          name="keywords"
+          content="tech blog, web development blogs, mobile app development articles, software development insights, UI UX blogs"
+        />
 
-  <meta
-    property="og:image"
-    content="https://apurvasoftwaresolutions.com/apurvasoftwaresolutions.png"
-  />
 
-  {/* ✅ Twitter */}
-  <meta name="twitter:card" content="summary_large_image" />
+        {/* Robots */}
 
-  <meta
-    name="twitter:title"
-    content="Tech Blog | Apurva Software Solutions"
-  />
+        <meta
+          name="robots"
+          content="index, follow"
+        />
 
-  <meta
-    name="twitter:description"
-    content="Stay updated with the latest in web and mobile development."
-  />
 
-  <meta
-    name="twitter:image"
-    content="https://apurvasoftwaresolutions.com/apurvasoftwaresolutions.png"
-  />
+        {/* Canonical */}
 
-  <meta
-    name="twitter:url"
-    content="https://apurvasoftwaresolutions.com/blogs"
-  />
+        <link
+          rel="canonical"
+          href="https://apurvasoftwaresolutions.com/blogs"
+        />
 
-  {/* Extra */}
-  <meta name="author" content="Apurva Software Solutions" />
-  <meta name="language" content="English" />
-  <meta name="revisit-after" content="7 days" />
 
-  {/* Favicon */}
-  <link rel="icon" href="/favicon.ico" />
-</Helmet>
+        {/* =================================================
+            OPEN GRAPH
+        ================================================= */}
 
+        <meta
+          property="og:title"
+          content="Tech Blog | Apurva Software Solutions"
+        />
+
+        <meta
+          property="og:description"
+          content="Read expert blogs on web, mobile, and software development trends and best practices."
+        />
+
+        <meta
+          property="og:url"
+          content="https://apurvasoftwaresolutions.com/blogs"
+        />
+
+        <meta
+          property="og:type"
+          content="website"
+        />
+
+        <meta
+          property="og:site_name"
+          content="Apurva Software Solutions"
+        />
+
+        <meta
+          property="og:image"
+          content="https://apurvasoftwaresolutions.com/apurvasoftwaresolutions.png"
+        />
+
+
+        {/* =================================================
+            TWITTER / X
+        ================================================= */}
+
+        <meta
+          name="twitter:card"
+          content="summary_large_image"
+        />
+
+        <meta
+          name="twitter:title"
+          content="Tech Blog | Apurva Software Solutions"
+        />
+
+        <meta
+          name="twitter:description"
+          content="Stay updated with the latest in web and mobile development."
+        />
+
+        <meta
+          name="twitter:image"
+          content="https://apurvasoftwaresolutions.com/apurvasoftwaresolutions.png"
+        />
+
+        <meta
+          name="twitter:url"
+          content="https://apurvasoftwaresolutions.com/blogs"
+        />
+
+
+        {/* =================================================
+            EXTRA SEO
+        ================================================= */}
+
+        <meta
+          name="author"
+          content="Apurva Software Solutions"
+        />
+
+        <meta
+          name="language"
+          content="English"
+        />
+
+
+        {/* Favicon */}
+
+        <link
+          rel="icon"
+          href="/favicon.ico"
+        />
+
+      </Helmet>
+
+
+      {/* =====================================================
+          MAIN WRAPPER
+      ===================================================== */}
 
       <div className="main-wrapper">
-        <section class="blog-header">
-          <div class="overlay"></div>
-          <div class="content">
-            <p class="subtitle">Our blog</p>
-            <h1 class="title">Blog Articles</h1>
-            <nav class="breadcrumb">
-              <div class="center">
-                <a href="/">Home</a> /
-                <span>Our blog</span>
+
+
+        {/* =================================================
+            BLOG HEADER
+        ================================================= */}
+
+        <section className="blog-header">
+
+          <div className="overlay"></div>
+
+
+          <div className="content">
+
+            <p className="subtitle">
+              Our blog
+            </p>
+
+
+            <h1 className="title">
+              Blog Articles
+            </h1>
+
+
+            <nav className="breadcrumb">
+
+              <div className="center">
+
+                <Link to="/">
+                  Home
+                </Link>
+
+                {" / "}
+
+                <span>
+                  Our blog
+                </span>
+
               </div>
+
             </nav>
+
           </div>
+
         </section>
 
+
+        {/* =================================================
+            BLOG LIST
+        ================================================= */}
+
         <section className="section blog-wrap bg-gray w-full px-6">
-          
-            <div className="row">
-              {/* Blog Item 1 */}
-              {blogsArray.map(blog => {
-                 const dateStr = blog.createdAt
-                 ? new Date(blog.createdAt).toLocaleDateString("en-US", {
-                     month: "short",
-                     day: "numeric",
-                     year: "numeric",
-                 })
-                 : "Recently posted";
-                return (
-                  <div className="col-lg-6 col-md-6 mb-5" key={blog.id}>
-                    <div class="blog-card">
-                      <div class="blog-image">
-                        <img src={blog.src} alt="Blog post image"/>
-                      </div>
-                      <div class="blog-content">
-                        <div class="blog-meta">
-                          <span class="meta-item"><i class="icon">🖋️</i> {blog.type}</span>
-                          <span class="meta-item"><i class="icon">💬</i> {Math.floor(Math.random() * (50 - 10 + 1)) + 10} Comments</span>
-                          <span class="meta-item"><i class="icon">⏰</i> {dateStr}</span>
-                        </div>
-                        <h2 class="blog-title">{blog.title}</h2>
-                        <p class="blog-excerpt">
-                          {blog.excerpt}
-                        </p>
-                        <Link to={`/blog?id=${blog.id}&title=${encodeURIComponent(blog.title)}`} className='learn-more'>Learn More</Link>
-                      </div>
-                    </div>
-                  </div>
+
+          <div className="row">
+
+            {blogsArray.map((blog) => {
+
+
+              /*
+              =================================================
+              DATE
+              =================================================
+              */
+
+              const dateStr = blog.createdAt
+                ? new Date(
+                  blog.createdAt
+                ).toLocaleDateString(
+                  "en-US",
+                  {
+                    month: "short",
+                    day: "numeric",
+                    year: "numeric",
+                  }
                 )
-              })}
-            </div>
-         
+                : "Recently posted";
+
+
+              /*
+              =================================================
+              CREATE SEO URL
+              =================================================
+              */
+
+              const blogSlug =
+                createSlug(
+                  blog.title
+                );
+
+
+              /*
+              =================================================
+              BLOG URL
+
+              Example:
+
+              /blog/web-mobile-app-development-how-it-boosts-your-business
+              =================================================
+              */
+
+              const blogUrl =
+                `/blog/${blogSlug}`;
+
+
+              return (
+
+                <div
+                  className="col-lg-6 col-md-6 mb-5"
+                  key={blog.id}
+                >
+
+                  <div className="blog-card">
+
+
+                    {/* =================================================
+                        BLOG IMAGE
+                    ================================================= */}
+
+                    <div className="blog-image">
+
+                      <img
+                        src={blog.src}
+                        alt={blog.title}
+                      />
+
+                    </div>
+
+
+                    {/* =================================================
+                        BLOG CONTENT
+                    ================================================= */}
+
+                    <div className="blog-content">
+
+
+                      {/* BLOG META */}
+
+                      <div className="blog-meta">
+
+                        <span className="meta-item">
+
+                          <i className="icon">
+                            🖋️
+                          </i>
+
+                          {" "}
+
+                          {blog.type}
+
+                        </span>
+
+
+                        <span className="meta-item">
+
+                          <i className="icon">
+                            💬
+                          </i>
+
+                          {" "}
+
+                          {blog.comments
+                            ?.length || 0}{" "}
+                          Comments
+
+                        </span>
+
+
+                        <span className="meta-item">
+
+                          <i className="icon">
+                            ⏰
+                          </i>
+
+                          {" "}
+
+                          {dateStr}
+
+                        </span>
+
+                      </div>
+
+
+                      {/* BLOG TITLE */}
+
+                      <h2 className="blog-title">
+
+                        {blog.title.replace(
+                          /-/g,
+                          " "
+                        )}
+
+                      </h2>
+
+
+                      {/* BLOG EXCERPT */}
+
+                      <p className="blog-excerpt">
+
+                        {blog.excerpt}
+
+                      </p>
+
+
+                      {/* =================================================
+                          SEO BLOG LINK
+                      ================================================= */}
+
+                      <Link
+                        to={blogUrl}
+                        className="learn-more"
+                      >
+                        Learn More
+                      </Link>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+              );
+            })}
+
+          </div>
+
         </section>
+
       </div>
+
     </>
   );
 };
 
+
 export default Blogs;
+
