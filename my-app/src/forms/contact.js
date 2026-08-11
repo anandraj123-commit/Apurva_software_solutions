@@ -146,8 +146,27 @@ const Contact = ({ onSubmitFormRequest }) => {
                     Call Us{" "}
                   </h4>{" "}
                   <p className="text-black text-sm">+91 6203253537</p>{" "}
-                  <p className="text-black text-sm">+91 9629776056</p>{" "}
                 </div>{" "}
+                <div className="bg-[white] rounded-3xl p-4 border border-slate-800 text-center">
+
+<i className="bi bi-whatsapp text-[#ff4a17] text-xl"></i>
+
+<h4 className="text-black text-lg font-semibold mt-4">
+  WhatsApp
+</h4>
+
+<p className="text-black text-sm mt-2">
+  <a
+    href="https://wa.me/918797044416"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="hover:underline"
+  >
+    💬 +91 8797044416
+  </a>
+</p>
+
+</div>{" "}
                 <div className="bg-[white] rounded-3xl p-4 border border-slate-800 text-center">
                   {" "}
                   <i className="bi bi-envelopetext-[#ff4a17] text-xl"></i>{" "}

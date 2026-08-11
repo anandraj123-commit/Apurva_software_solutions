@@ -22,6 +22,17 @@ const Footer = (props) => {
                 <strong>Phone:</strong>{' '}
                 <span title="Call Apurva Software Solutions">+91 6203253537</span>
               </p>
+              <p className="mt-3">
+  <strong>WhatsApp:</strong>{" "}
+  <a
+    href="https://wa.me/918797044416"
+    target="_blank"
+    rel="noopener noreferrer"
+    title="Chat with Apurva Software Solutions on WhatsApp"
+  >
+    +91 8797044416
+  </a>
+</p>
               <p>
                 <strong>Email:</strong>{' '}
                 <span title="Support Email">supports@apurvasoftwaresolutions.com</span>
